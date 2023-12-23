@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "492417238440",
+    "project_id": "mobilelegendguide-e4e08",
+    "storage_bucket": "mobilelegendguide-e4e08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492417238440:android:048c776a8847a01c86c99d",
+        "android_client_info": {
+          "package_name": "com.example.mobilelegendguide"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsGHGGBGh5UTZRZmeKFUsPmVgI1aKWPJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
