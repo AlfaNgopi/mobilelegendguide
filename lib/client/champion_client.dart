@@ -19,4 +19,17 @@ class ChampionClient {
       return Future.error(e);
     }
   }
+
+  static createChampion(Champion champion) async {
+    try {
+      final docChampion =
+          FirebaseFirestore.instance.collection('champion').doc();
+      final json = champion.toJson();
+
+      await docChampion.set(json);
+      print("Champion Client : createChampion success");
+    } catch (e) {
+      print("Champion Client : createChampion $e");
+    }
+  }
 }

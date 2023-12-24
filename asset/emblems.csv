@@ -1,0 +1,32 @@
+﻿name,image,desc,ffff
+Common,asset/emblems/common-emblem.png,"Emblem dengan Regen HP dan Mana yang tinggi, biasanya digunakan untuk mengganti Item Enchanted Talisman di early game",Common
+Tank,asset/emblems/tank-emblem.png,Emblem dengan base atrribut defense yang cukup untuk tank bertahan di early game,Tank
+Assasin,asset/emblems/assasin-emblem.png,Emblem dengan Adaptive Penetration yang tinggi,Assasin
+Mage,asset/emblems/mage-emblem.png,Emblem khusus untuk hero berdamage output magical,Mage
+Fighter,asset/emblems/fighter-emblem.png,Emblem dengan Spell Vamp bawaan sehingga sudah memiliki life steal yang cukup untuk early game,Fighter
+Support,asset/emblems/support-emblem.png,"Emblem dengan atrribut yang meningkatkan efek healing, sangat effektif untuk healer",Support
+Marksman,asset/emblems/marksman-emblem.png,Emblem khusus untuk hero mm yang scaling,Marksman
+Thrill,asset/emblems/thrill-emblem-mlbb.png,Mendapat tambahan 16 adaptive attack,Thrill
+Swift,asset/emblems/swift-emblem-mlbb.png,Mendapat tambahan 10% attack speed,Swift
+Vitality,asset/emblems/vitality-emblem-mlbb.png,Mendapat tambahan 225 extra max HP,Vitality
+Rupture,asset/emblems/rupture-emblem-mlbb.png,Mendapat tambahan 5 adaptive penetration,Rupture
+Inspire,asset/emblems/inspire-emblem-mlbb.png,Mendapat tambahan 5% extra cooldown reduction,Inspire
+Firmness,asset/emblems/firmness-emblem-mlbb.png,Mendapat tambahan 6 extra physical dan magic defense,Firmness
+Agility,asset/emblems/agility-emblem-mlbb.png,Mendapat tambahan 5% movement speed,Agility
+Fatal,asset/emblems/fatal-emblem-mlbb.png,Mendapat tambahan 5% extra crit chance dan 10% extra crit damage,Fatal
+Life Drain,asset/emblems/life-drain-emblem-mlbb.png,Mendapatkan kill atau assist dari minion musuh akan memulihkan 3% HP dan 1.5% mana,Life Drain
+Seasoned Hunter,asset/emblems/seasoned-hunter-emblem-mlbb.png,Damage kepada Lord dan Turtle akan meningkat sebesar 15%. Bonus ini berkurang setengahnya ketika melawan creep biasa dan tidak memengaruhi damage Retribution,Seasoned Hunter
+Tenacity,asset/emblems/tenacity-emblem-mlbb.png,"Ketika HP di bawah 50%, physical dan magic defense meningkat sebesar 18",Tenacity
+Master Assasin,asset/emblems/master-assasin-emblem-mlbb.png,"Jika hanya ada satu musuh yang berada di sekitar, jumlah damage yang diberikan akan meningkat sebesar 4%",Master Assasin
+Bargain Hunter,asset/emblems/bargain-hunter-emblem-mlbb.png,Equipment (item) bisa dibeli dengan harga 95% dari harga aslinya,Bargain Hunter
+Festival of Blood,asset/emblems/festival-of-blood-emblem-mlbb.png,"Mendapat tambahan 6% spell vamp. Setiap kill atau assist dari hero lawan akan mendapatkan tambahan 0,5% spell vamp, dapat di-stack hingga 6 kali",Festival of Blood
+Pull Yourself Together,asset/emblems/pull-yourself-together-emblem-mlbb.png,Cooldown dari battle spells dan skill item aktif akan berkurang sebanyak 15%,Pull Yourself Together
+Weapon Master,asset/emblems/weapon-master-emblem-mlbb.png,"Physical attack dan magic power yang didapat dari item, emblem, talent, dan skill akan meningkat sebanyak 5%",Weapon Master
+Impure Rage,asset/emblems/impure-rage-emblem-mlbb.png,"Memberikan damage menggunakan skill akan mendapatkan tambahan adaptive damage (berskala dengan level) dan memulihkan 2% mana. Jika hero yang menggunakannya tidak menggunakan mana, akan memulihkan 1% HP sebagai gantinya",Impure Rage
+Quantum Charge,asset/emblems/quantum-charge-emblem-mlbb.png,"Memberikan damage menggunakan basic attack akan meningkatkan movement speed sebesar 40% selama 1,5 detik dan memulihkan 75-180 HP (berskala dengan level)",Quantum Charge
+Concussive Blast,asset/emblems/concussive-blast-emblem-mlbb.png,Setelah basic attack berikutnya akan memberikan magic damage kepada musuh terdekat,Concussive Blast
+Killing Spree,asset/emblems/killing-spree-emblem-mlbb.png,"Setelah menjatuhkan hero lawan, secara instan akan memulihkan 8% max HP dan mendapatkan tambahan 15% movement speed selama 3 detik",Killing Spree
+Lethal Ignition,asset/emblems/lethal-ignition-emblem-mlbb.png,Memberikan damage kepada hero lawan akan meningkatkan damage hero rekan satu tim sebesar 6% selama 3 detik,Lethal Ignition
+Brave Smite,asset/emblems/brave-smite-emblem-mlbb.png,Memberikan damage melalui skill kepada musuh akan memulihkan 5% max HP,Brave Smite
+Focusing Mark,asset/emblems/focusing-mark-emblem-mlbb.png,Memberikan damage kepada hero musuh akan meningkatkan damage hero rekan satu tim sebesar 6% selama 3 detik,Focusing Mark
+Weakness Finder,asset/emblems/weakness-finder-emblem-mlbb.png,"Basic attack memiliki kesempatan sebesar 20% mengurangi movement speed hero lawan sebesar 90% dan attack speed lawan sebesar 50% selama 0,5 detik",Weakness Finder

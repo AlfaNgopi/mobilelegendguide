@@ -1,0 +1,6 @@
+﻿name,image,desc
+EXP,asset/lane/exp.png,"Biasanya Fighter atau tank, hero yang sangat berguna jika sudah level 4,Di early game, mereka bisa memberikan kontribusi yang besar dalam berebut Turtle pertama."
+GOLD,asset/lane/gold.png,"Biasanya diisi Marksman, Gold Laner relatif lemah di awal game, namun dapat mengumpulkan item perlengkapan lebih cepat dengan membunuh Gerobak Minion yang memberikan tambahan gold, yang dapat memberi tim kemampuan damage berkelanjutan yang kuat di late game."
+MID,asset/lane/mid.png,"Biasanya diisi Mage, Mid Laner bertugas membersihkan minion dengan cepat dan membantu rekan tim di lane lainya"
+JUNGLE,asset/lane/jungle.png,"Biasanya diisi hero dengan damage besar atau berdarah tebal, bertugas membunuh creep dan mendapatkan objektiv turtle atau lord"
+ROAM,asset/lane/roam.png,"Biasanya diisi hero yang tidak bergantung level atau item, bertugas membantu hero yang lemah di early game. Membuka vision, inisiasi, mengontrol musuh, adalah tugas role ini"
