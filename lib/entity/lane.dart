@@ -23,7 +23,7 @@ class Lane {
         'description': description,
       };
 
-  static fromJson(Map<String, dynamic> json) => Lane(
+  static Lane fromJson(Map<String, dynamic> json) => Lane(
         name: json['name'],
         iconDirectory: json['iconDirectory'],
         description: json['description'],

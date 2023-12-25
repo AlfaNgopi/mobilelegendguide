@@ -4,26 +4,29 @@ import 'package:mobilelegendguide/entity/emblem.dart';
 
 class EmblemSet {
   late Image icon;
-  late String name,
-      iconDirectory,
-      description,
-      talent1Name,
-      talent2Name,
-      talent3Name;
+  late String name, iconDirectory, description;
+
   late Emblem talent1, talent2, talent3;
+
+  String? _talent1Name, _talent2Name, _talent3Name;
 
   EmblemSet({
     required this.name,
     required this.iconDirectory,
     required this.description,
-    required this.talent1Name,
-    required this.talent2Name,
-    required this.talent3Name,
+    required String talent1Name,
+    required String talent2Name,
+    required String talent3Name,
   }) {
     icon = Image.asset(
       iconDirectory,
       scale: 1.8,
     );
+
+    _talent1Name = talent1Name;
+    _talent2Name = talent2Name;
+    _talent3Name = talent3Name;
+
     setEmblems(talent1Name, talent2Name, talent3Name);
   }
 
@@ -37,9 +40,9 @@ class EmblemSet {
         'name': name,
         'icondir': iconDirectory,
         'desc': description,
-        'talent1': talent1Name,
-        'talent2': talent2Name,
-        'talent3': talent3Name,
+        'talent1': _talent1Name,
+        'talent2': _talent2Name,
+        'talent3': _talent3Name,
       };
 
   static EmblemSet fromJson(Map<String, dynamic> json) => EmblemSet(

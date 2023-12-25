@@ -2,23 +2,15 @@
 import 'package:mobilelegendguide/client/champion_client.dart';
 import 'package:mobilelegendguide/entity/champion.dart';
 import 'package:mobilelegendguide/entity/emblem_set.dart';
-import 'package:mobilelegendguide/entity/lane.dart';
 import 'package:mobilelegendguide/entity/stats.dart';
-import 'package:mobilelegendguide/entity/type.dart';
 
 void addDummyChampion() {
   ChampionClient.createChampion(Champion(
     championId: 1,
     profileDirectory: "asset/alucard.png",
     name: "Alucard",
-    lane: Lane(
-        name: "EXP",
-        description: "desckosong",
-        iconDirectory: "asset/lane/exp.png"),
-    type: Type(
-        name: "Fighter",
-        description: "desckosong",
-        iconDirectory: "asset/classes/fig.png"),
+    laneName: "EXP",
+    typeName: "Fighter",
     stats: Stats(
         hp: 100,
         hpRegen: 100,

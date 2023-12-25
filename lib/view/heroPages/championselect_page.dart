@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobilelegendguide/client/champion_client.dart';
 import 'package:mobilelegendguide/entity/champion.dart';
+import 'package:mobilelegendguide/static_data.dart';
 import 'package:mobilelegendguide/view/heroPages/champion_page.dart';
 
 class ChampionSelectPage extends StatefulWidget {
@@ -17,9 +18,12 @@ class _ChampionSelectPageState extends State<ChampionSelectPage> {
   late int champCount = 0;
 
   void refresh() async {
-    var championsFromDatabase = await ChampionClient.fetchAll();
+    // var championsFromDatabase = await ChampionClient.fetchAll();
+    await Future.delayed(const Duration(seconds: 3));
+    var championsFromStaticData = StaticData.champions;
+
     setState(() {
-      champions = championsFromDatabase;
+      champions = championsFromStaticData;
       champCount = champions.length;
     });
   }
@@ -45,7 +49,7 @@ class _ChampionSelectPageState extends State<ChampionSelectPage> {
             ),
           ],
         ),
-        body: champCount == 0
+        body: champions.isEmpty
             ? const Center(
                 child: CircularProgressIndicator(),
               )
@@ -59,7 +63,7 @@ class _ChampionSelectPageState extends State<ChampionSelectPage> {
   Widget buildChampionList(Champion champ) => AnimatedContainer(
         duration: const Duration(milliseconds: 500),
         child: ListTile(
-          onTap: () async {
+          onTap: () {
             Navigator.push(
                 context,
                 MaterialPageRoute(

@@ -16,13 +16,13 @@ class Type {
 
   Map<String, dynamic> toJson() => {
         'name': name,
-        'icondir': iconDirectory,
-        'desc': description,
+        'iconDirectory': iconDirectory,
+        'description': description,
       };
 
   static Type fromJson(Map<String, dynamic> json) => Type(
         name: json['name'],
-        iconDirectory: json['icondir'],
-        description: json['desc'],
+        iconDirectory: json['iconDirectory'],
+        description: json['description'],
       );
 }
