@@ -336,7 +336,14 @@ class ChampionPage extends StatelessWidget {
                 width: cardsWidth,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [],
+                  children: [
+                    champion.builds[0].item1.icon,
+                    champion.builds[0].item2.icon,
+                    champion.builds[0].item3.icon,
+                    champion.builds[0].item4.icon,
+                    champion.builds[0].item5.icon,
+                    champion.builds[0].item6.icon,
+                  ],
                 ),
               ),
             ],

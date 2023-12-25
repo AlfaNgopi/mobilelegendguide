@@ -8,8 +8,15 @@ Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
 
-  StaticData.loadData();
-  runApp(const MainApp());
+  // addDummyChampion();
+
+  StaticData.loadData().then((value) {
+    print("Data loaded");
+
+    runApp(const MainApp());
+  }).catchError((error) {
+    print("Error loading data: $error");
+  });
 }
 
 class MainApp extends StatelessWidget {

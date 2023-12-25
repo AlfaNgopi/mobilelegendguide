@@ -16,15 +16,17 @@ class ChampionSelectPage extends StatefulWidget {
 class _ChampionSelectPageState extends State<ChampionSelectPage> {
   List<Champion> champions = [];
   late int champCount = 0;
+  bool isLoading = true;
 
   void refresh() async {
     // var championsFromDatabase = await ChampionClient.fetchAll();
-    await Future.delayed(const Duration(seconds: 3));
+
     var championsFromStaticData = StaticData.champions;
 
     setState(() {
       champions = championsFromStaticData;
       champCount = champions.length;
+      isLoading = false;
     });
   }
 
@@ -49,7 +51,7 @@ class _ChampionSelectPageState extends State<ChampionSelectPage> {
             ),
           ],
         ),
-        body: champions.isEmpty
+        body: isLoading
             ? const Center(
                 child: CircularProgressIndicator(),
               )

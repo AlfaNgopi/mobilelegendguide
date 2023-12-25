@@ -7,7 +7,7 @@ class TypeClient {
   static Future<List<Type>> fetchAll() {
     try {
       Future<List<Type>> types = FirebaseFirestore.instance
-          .collection('statss')
+          .collection('type')
           .get()
           .then((value) =>
               value.docs.map((e) => Type.fromJson(e.data())).toList());

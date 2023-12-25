@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobilelegendguide/client/emblem_client.dart';
 import 'package:mobilelegendguide/entity/emblem.dart';
+import 'package:mobilelegendguide/static_data.dart';
 
 class EmblemSet {
   late Image icon;
@@ -27,13 +28,23 @@ class EmblemSet {
     _talent2Name = talent2Name;
     _talent3Name = talent3Name;
 
-    setEmblems(talent1Name, talent2Name, talent3Name);
+    setEmblemsFromStaticData(talent1Name, talent2Name, talent3Name);
   }
 
   setEmblems(String talent1Name, String talent2Name, String talent3Name) async {
     talent1 = await EmblemClient.fetchEmblem(talent1Name);
     talent2 = await EmblemClient.fetchEmblem(talent2Name);
     talent3 = await EmblemClient.fetchEmblem(talent3Name);
+  }
+
+  setEmblemsFromStaticData(
+      String talent1Name, String talent2Name, String talent3Name) {
+    talent1 =
+        StaticData.emblems.firstWhere((emblem) => emblem.name == talent1Name);
+    talent2 =
+        StaticData.emblems.firstWhere((emblem) => emblem.name == talent2Name);
+    talent3 =
+        StaticData.emblems.firstWhere((emblem) => emblem.name == talent3Name);
   }
 
   Map<String, dynamic> toJson() => {

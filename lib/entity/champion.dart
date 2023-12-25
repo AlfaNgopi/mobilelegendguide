@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:mobilelegendguide/client/lane_client.dart';
 import 'package:mobilelegendguide/client/type_client.dart';
+import 'package:mobilelegendguide/entity/build.dart';
 import 'package:mobilelegendguide/entity/emblem_set.dart';
 import 'package:mobilelegendguide/entity/lane.dart';
 import 'package:mobilelegendguide/entity/stats.dart';
 import 'package:mobilelegendguide/entity/type.dart';
+import 'package:mobilelegendguide/static_data.dart';
 
 class Champion {
   late Image icon;
@@ -16,6 +18,7 @@ class Champion {
   Stats stats;
   String profileDirectory;
   EmblemSet emblem;
+  List<Build> builds;
 
   String? _laneName;
   String? _typeName;
@@ -29,6 +32,7 @@ class Champion {
     required this.profileDirectory,
     required this.stats,
     required this.emblem,
+    required this.builds,
   }) {
     _laneName = laneName;
     _typeName = typeName;
@@ -37,8 +41,8 @@ class Champion {
       scale: 0.6,
     );
 
-    setLane(laneName);
-    setType(typeName);
+    setLaneFromStaticData(laneName);
+    setTypeFromStaticData(typeName);
   }
 
   setType(String typeName) async {
@@ -47,6 +51,14 @@ class Champion {
 
   setLane(String laneName) async {
     lane = await LaneClient.fetchLane(laneName);
+  }
+
+  setLaneFromStaticData(String laneName) {
+    lane = StaticData.lanes.firstWhere((lane) => lane.name == laneName);
+  }
+
+  setTypeFromStaticData(String typeName) {
+    type = StaticData.types.firstWhere((type) => type.name == typeName);
   }
 
   Map<String, dynamic> toJson() => {
@@ -58,6 +70,7 @@ class Champion {
         'profileDirectory': profileDirectory,
         'stats': stats.toJson(),
         'emblem': emblem.toJson(),
+        'builds': builds.map((build) => build.toJson()).toList(),
       };
 
   static Champion fromJson(Map<String, dynamic> json) => Champion(
@@ -69,5 +82,8 @@ class Champion {
         profileDirectory: json['profileDirectory'],
         stats: Stats.fromJson(json['stats']),
         emblem: EmblemSet.fromJson(json['emblem']),
+        builds: (json['builds'] as List<dynamic>)
+            .map((build) => Build.fromJson(build))
+            .toList(),
       );
 }

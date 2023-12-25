@@ -1,5 +1,6 @@
 // ignore: file_names
 import 'package:mobilelegendguide/client/champion_client.dart';
+import 'package:mobilelegendguide/entity/build.dart';
 import 'package:mobilelegendguide/entity/champion.dart';
 import 'package:mobilelegendguide/entity/emblem_set.dart';
 import 'package:mobilelegendguide/entity/stats.dart';
@@ -32,5 +33,34 @@ void addDummyChampion() {
       talent3Name: "inspire",
     ),
     speciality: "desckosong",
+    builds: [
+      Build(
+          name: "Build 1",
+          itemName1: "Holy_Crystal",
+          itemName2: "Holy_Crystal",
+          itemName3: "Holy_Crystal",
+          itemName4: "Holy_Crystal",
+          itemName5: "Holy_Crystal",
+          itemName6: "Holy_Crystal",
+          description: "desckosong"),
+      Build(
+          name: "Build 2",
+          itemName1: "Holy_Crystal",
+          itemName2: "Holy_Crystal",
+          itemName3: "Holy_Crystal",
+          itemName4: "Holy_Crystal",
+          itemName5: "Holy_Crystal",
+          itemName6: "Holy_Crystal",
+          description: "desckosong"),
+      Build(
+          name: "Build 3",
+          itemName1: "Holy_Crystal",
+          itemName2: "Holy_Crystal",
+          itemName3: "Holy_Crystal",
+          itemName4: "Holy_Crystal",
+          itemName5: "Holy_Crystal",
+          itemName6: "Holy_Crystal",
+          description: "desckosong"),
+    ],
   ));
 }
