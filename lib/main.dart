@@ -8,10 +8,9 @@ Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
 
-  // addDummyChampion();
-
   StaticData.loadData().then((value) {
     print("Data loaded");
+    // addDummyChampion();
 
     runApp(const MainApp());
   }).catchError((error) {

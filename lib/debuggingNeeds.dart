@@ -62,5 +62,7 @@ void addDummyChampion() {
           itemName6: "Holy_Crystal",
           description: "desckosong"),
     ],
+    strongAgainstNames: ["Alucard", "Alucard", "Alucard"],
+    weakAgainstNames: ["Alucard", "Alucard", "Alucard"],
   ));
 }

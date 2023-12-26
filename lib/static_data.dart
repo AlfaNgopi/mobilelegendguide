@@ -26,6 +26,10 @@ class StaticData {
 
   static _loadChampions() async {
     champions = await ChampionClient.fetchAll();
+    for (Champion champ in champions) {
+      await champ.setStrongAgainstFromStaticData();
+      await champ.setWeakAgainstFromStaticData();
+    }
   }
 
   static _loadLanes() async {

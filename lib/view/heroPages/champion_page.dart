@@ -360,9 +360,11 @@ class ChampionPage extends StatelessWidget {
               SizedBox(
                 width: cardsWidth,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [],
-                ),
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: List.generate(
+                      champion.strongAgainst.length,
+                      (index) => champion.strongAgainst[index].icon,
+                    )),
               ),
             ],
           ),
@@ -378,9 +380,11 @@ class ChampionPage extends StatelessWidget {
               SizedBox(
                 width: cardsWidth,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [],
-                ),
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: List.generate(
+                      champion.weakAgainst.length,
+                      (index) => champion.weakAgainst[index].icon,
+                    )),
               ),
             ],
           ),
