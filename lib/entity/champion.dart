@@ -4,6 +4,7 @@ import 'package:mobilelegendguide/client/type_client.dart';
 import 'package:mobilelegendguide/entity/build.dart';
 import 'package:mobilelegendguide/entity/emblem_set.dart';
 import 'package:mobilelegendguide/entity/lane.dart';
+import 'package:mobilelegendguide/entity/skill.dart';
 import 'package:mobilelegendguide/entity/stats.dart';
 import 'package:mobilelegendguide/entity/type.dart';
 import 'package:mobilelegendguide/static_data.dart';
@@ -16,6 +17,7 @@ class Champion {
   late Lane lane;
   String speciality;
   Stats stats;
+  List<Skill> skills = [];
   String profileDirectory;
   EmblemSet emblem;
   List<Build> builds;
@@ -35,6 +37,7 @@ class Champion {
     required this.speciality,
     required this.profileDirectory,
     required this.stats,
+    this.skills = const [],
     required this.emblem,
     required this.builds,
     required List<dynamic> strongAgainstNames,
@@ -90,6 +93,7 @@ class Champion {
         'speciality': speciality,
         'profileDirectory': profileDirectory,
         'stats': stats.toJson(),
+        'skills': skills.map((skill) => skill.toJson()).toList(),
         'emblem': emblem.toJson(),
         'builds': builds.map((build) => build.toJson()).toList(),
         'strongAgainst': _strongAgainstNames,
@@ -104,6 +108,9 @@ class Champion {
         speciality: json['speciality'],
         profileDirectory: json['profileDirectory'],
         stats: Stats.fromJson(json['stats']),
+        skills: (json['skills'] as List<dynamic>)
+            .map((skill) => Skill.fromJson(skill))
+            .toList(),
         emblem: EmblemSet.fromJson(json['emblem']),
         builds: (json['builds'] as List<dynamic>)
             .map((build) => Build.fromJson(build))

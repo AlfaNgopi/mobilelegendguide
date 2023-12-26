@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mobilelegendguide/client/champion_client.dart';
 import 'package:mobilelegendguide/entity/champion.dart';
 import 'package:mobilelegendguide/static_data.dart';
 import 'package:mobilelegendguide/view/heroPages/champion_page.dart';

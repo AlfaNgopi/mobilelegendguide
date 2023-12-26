@@ -6,7 +6,7 @@ class ChampionPage extends StatelessWidget {
   final Color cardsColor = Colors.blue;
   final Champion champion;
 
-  final Color backgroundColor = const Color.fromRGBO(0, 119, 182, 100);
+  final Color backgroundColor = const Color.fromRGBO(0, 71, 110, 1);
   ChampionPage({super.key, required this.champion});
 
   @override
@@ -244,6 +244,57 @@ class ChampionPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(champion.lane.description),
+              ),
+            ],
+          ),
+        ),
+
+        Container(
+          color: cardsColor,
+          margin: cardsMargin,
+          child: Column(
+            children: [
+              const Text("Skills", textScaleFactor: 2),
+              Column(
+                children: List.generate(
+                    champion.skills.length,
+                    (index) => Column(
+                          children: [
+                            Row(
+                              children: [
+                                SizedBox(
+                                  width: cardsWidth * 0.3,
+                                  child: champion.skills[index].icon,
+                                ),
+                                SizedBox(
+                                  width: cardsWidth * 0.7,
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        champion.skills[index].name,
+                                        textScaleFactor: 1.5,
+                                      ),
+                                      Text(
+                                        champion.skills[index].description,
+                                        overflow: TextOverflow.fade,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                            index == champion.skills.length - 1
+                                ? Container()
+                                : Divider(
+                                    color: backgroundColor,
+                                    thickness: 3,
+                                    endIndent: 20,
+                                    indent: 20,
+                                  )
+                          ],
+                        )),
               ),
             ],
           ),
