@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_radar_chart/flutter_radar_chart.dart';
 import 'package:mobilelegendguide/entity/champion.dart';
 import 'package:mobilelegendguide/view/components/emblem_show.dart';
 
@@ -249,57 +250,6 @@ class ChampionPage extends StatelessWidget {
           ),
         ),
 
-        Container(
-          color: cardsColor,
-          margin: cardsMargin,
-          child: Column(
-            children: [
-              const Text("Skills", textScaleFactor: 2),
-              Column(
-                children: List.generate(
-                    champion.skills.length,
-                    (index) => Column(
-                          children: [
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: cardsWidth * 0.3,
-                                  child: champion.skills[index].icon,
-                                ),
-                                SizedBox(
-                                  width: cardsWidth * 0.7,
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        champion.skills[index].name,
-                                        textScaleFactor: 1.5,
-                                      ),
-                                      Text(
-                                        champion.skills[index].description,
-                                        overflow: TextOverflow.fade,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                            index == champion.skills.length - 1
-                                ? Container()
-                                : Divider(
-                                    color: backgroundColor,
-                                    thickness: 3,
-                                    endIndent: 20,
-                                    indent: 20,
-                                  )
-                          ],
-                        )),
-              ),
-            ],
-          ),
-        ),
-
         // Class status
         Container(
           color: cardsColor,
@@ -371,6 +321,93 @@ class ChampionPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(champion.type.description),
+              ),
+            ],
+          ),
+        ),
+
+        Container(
+          color: cardsColor,
+          margin: cardsMargin,
+          child: Column(
+            children: [
+              const Text("Skills", textScaleFactor: 2),
+              Column(
+                children: List.generate(
+                    champion.skills.length,
+                    (index) => Column(
+                          children: [
+                            Row(
+                              children: [
+                                SizedBox(
+                                  width: cardsWidth * 0.3,
+                                  child: champion.skills[index].icon,
+                                ),
+                                SizedBox(
+                                  width: cardsWidth * 0.7,
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        champion.skills[index].name,
+                                        textScaleFactor: 1.5,
+                                      ),
+                                      Text(
+                                        champion.skills[index].description,
+                                        overflow: TextOverflow.fade,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                            index == champion.skills.length - 1
+                                ? Container()
+                                : Divider(
+                                    color: backgroundColor,
+                                    thickness: 3,
+                                    endIndent: 20,
+                                    indent: 20,
+                                  )
+                          ],
+                        )),
+              ),
+            ],
+          ),
+        ),
+
+        Container(
+          color: cardsColor,
+          margin: cardsMargin,
+          child: Column(
+            children: [
+              const Text("TEAM INFLUENCE", textScaleFactor: 2),
+              SizedBox(
+                width: 200,
+                height: 200,
+                child: RadarChart(
+                  ticks: [2, 4, 6, 8, 10, 12],
+                  features: [
+                    "PUSH",
+                    "EARLY TO MIDGAME",
+                    "PICK-OFF",
+                    "TEAM FIGHT",
+                    "LATE GAME"
+                  ],
+                  data: [champion.getChampInfluence()],
+                  outlineColor: Colors.transparent,
+                  axisColor: Colors.red,
+                  sides: 5,
+                  featuresTextStyle: TextStyle(
+                    color: Colors.black,
+                    fontSize: 10,
+                  ),
+                  ticksTextStyle: TextStyle(
+                    color: Colors.black,
+                    fontSize: 10,
+                  ),
+                ),
               ),
             ],
           ),

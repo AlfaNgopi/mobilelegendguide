@@ -14,6 +14,7 @@ dependencies:
   cloud_firestore: ^4.4.5
   flutter_slidable: ^0.6.0
   firebase_core: ^2.17.0
+  flutter_radar_chart: ^0.2.1
 
 dev_dependencies:
   flutter_test:

@@ -3,11 +3,13 @@ import 'package:mobilelegendguide/client/champion_client.dart';
 import 'package:mobilelegendguide/entity/build.dart';
 import 'package:mobilelegendguide/entity/champion.dart';
 import 'package:mobilelegendguide/entity/emblem_set.dart';
+import 'package:mobilelegendguide/entity/influence.dart';
 import 'package:mobilelegendguide/entity/skill.dart';
 import 'package:mobilelegendguide/entity/stats.dart';
 
 void addDummyChampion() {
-  ChampionClient.createChampion(Champion(
+  ChampionClient.createChampion(
+    Champion(
       championId: 1,
       profileDirectory: "asset/alucard.png",
       name: "Alucard",
@@ -63,16 +65,8 @@ void addDummyChampion() {
             itemName6: "Holy_Crystal",
             description: "desckosong"),
       ],
-      strongAgainstNames: [
-        "Alucard",
-        "Alucard",
-        "Alucard"
-      ],
-      weakAgainstNames: [
-        "Alucard",
-        "Alucard",
-        "Alucard"
-      ],
+      strongAgainstNames: ["Alucard", "Alucard", "Alucard"],
+      weakAgainstNames: ["Alucard", "Alucard", "Alucard"],
       skills: [
         Skill(
           name: "Pursuit",
@@ -100,5 +94,9 @@ void addDummyChampion() {
             description:
                 "Alucard charges forward and launches a Fission Wave, dealing 350 / 400 / 450 (+120% Total Physical Attack) Physical Damage to enemies in its path.",
             cooldown: " 40.0 / 35.0 / 30.0"),
-      ]));
+      ],
+      influence: Influence(
+          earlytomidgame: 9, lategame: 7, teamfight: 3, pickoff: 6, push: 6),
+    ),
+  );
 }
