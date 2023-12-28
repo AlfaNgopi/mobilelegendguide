@@ -49,6 +49,19 @@ class StaticData {
     items = await ItemClient.fetchAll();
   }
 
+  //Style UI
+
+  static Color get backgroundColor => const Color.fromRGBO(0, 71, 110, 1);
+  static EdgeInsetsGeometry get cardsMargin => const EdgeInsets.all(10);
+
+  static EdgeInsetsGeometry get cardsPadding => const EdgeInsets.all(10);
+
+  static List<Image> get carrouselImages => [
+        Image.asset("asset/carrousel/1.jpg"),
+        Image.asset("asset/carrousel/2.jpg"),
+        Image.asset("asset/carrousel/3.jpg")
+      ];
+
   static TextStyle get selectTypeHero => const TextStyle(
         color: Colors.white,
         fontSize: 15,
@@ -69,6 +82,11 @@ class StaticData {
 
   static TextStyle get titleTextStyle => const TextStyle(
         color: Colors.white,
+        fontSize: 30,
+        fontWeight: FontWeight.bold,
+      );
+  static TextStyle get menuTextStyle => const TextStyle(
+        color: Colors.black,
         fontSize: 30,
         fontWeight: FontWeight.bold,
       );

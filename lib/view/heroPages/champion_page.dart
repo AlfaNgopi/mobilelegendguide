@@ -8,7 +8,6 @@ class ChampionPage extends StatelessWidget {
   final Color cardsColor = Colors.blue;
   final Champion champion;
 
-  final Color backgroundColor = const Color.fromRGBO(0, 71, 110, 1);
   ChampionPage({super.key, required this.champion});
 
   @override
@@ -21,7 +20,7 @@ class ChampionPage extends StatelessWidget {
         EdgeInsets.symmetric(vertical: 10, horizontal: 10);
 
     return Scaffold(
-      backgroundColor: backgroundColor,
+      backgroundColor: StaticData.backgroundColor,
       appBar: AppBar(
         title: Text(champion.name),
       ),
@@ -284,7 +283,7 @@ class ChampionPage extends StatelessWidget {
                             index == champion.skills.length - 1
                                 ? Container()
                                 : Divider(
-                                    color: backgroundColor,
+                                    color: StaticData.backgroundColor,
                                     thickness: 3,
                                     endIndent: 20,
                                     indent: 20,

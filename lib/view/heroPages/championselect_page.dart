@@ -4,9 +4,7 @@ import 'package:mobilelegendguide/static_data.dart';
 import 'package:mobilelegendguide/view/heroPages/champion_page.dart';
 
 class ChampionSelectPage extends StatefulWidget {
-  const ChampionSelectPage({super.key, required this.title});
-
-  final String title;
+  const ChampionSelectPage({super.key});
 
   @override
   State<ChampionSelectPage> createState() => _ChampionSelectPageState();
@@ -48,21 +46,11 @@ class _ChampionSelectPageState extends State<ChampionSelectPage> {
 
     const EdgeInsetsGeometry cardsMargin =
         EdgeInsets.symmetric(vertical: 10, horizontal: 10);
-    final Color backgroundColor = const Color.fromRGBO(0, 71, 110, 1);
 
     return Scaffold(
-        backgroundColor: backgroundColor,
+        backgroundColor: StaticData.backgroundColor,
         appBar: AppBar(
           title: const Text("Select Hero"),
-          actions: [
-            IconButton(onPressed: () {}, icon: const Icon(Icons.add)),
-            IconButton(
-              onPressed: () async {
-                refresh();
-              },
-              icon: const Icon(Icons.replay_rounded),
-            ),
-          ],
         ),
         body: Column(
           children: [
