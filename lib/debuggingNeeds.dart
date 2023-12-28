@@ -14,7 +14,7 @@ void addDummyChampion() {
       profileDirectory: "asset/alucard.png",
       name: "Alucard",
       laneName: "EXP",
-      typeName: "Fighter",
+      typeName: ["Fighter", "Assassin"],
       stats: Stats(
           hp: 100,
           hpRegen: 100,

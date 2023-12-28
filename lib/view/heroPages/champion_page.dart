@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_radar_chart/flutter_radar_chart.dart';
 import 'package:mobilelegendguide/entity/champion.dart';
+import 'package:mobilelegendguide/static_data.dart';
 import 'package:mobilelegendguide/view/components/emblem_show.dart';
 
 class ChampionPage extends StatelessWidget {
@@ -70,10 +71,8 @@ class ChampionPage extends StatelessWidget {
                                 padding:
                                     const EdgeInsets.symmetric(vertical: 8.0),
                                 child: Row(
-                                  children: [
-                                    champion.type.icon,
-                                    Text(champion.type.name),
-                                  ],
+                                  children: List.generate(champion.type.length,
+                                      (index) => champion.type[index].icon),
                                 ),
                               ),
                               Padding(
@@ -193,54 +192,17 @@ class ChampionPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(5.0),
                 child: Row(
-                  children: [
-                    Container(
-                      color: champion.lane.name == "EXP"
-                          ? Colors.yellow
-                          : cardsColor,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: champion.lane.icon,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: List.generate(
+                      StaticData.lanes.length,
+                      (index) => Container(
+                        color:
+                            champion.lane.name == StaticData.lanes[index].name
+                                ? Colors.yellow
+                                : cardsColor,
+                        child: StaticData.lanes[index].icon,
                       ),
-                    ),
-                    Container(
-                      color: champion.lane.name == "GOLD"
-                          ? Colors.yellow
-                          : cardsColor,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: champion.lane.icon,
-                      ),
-                    ),
-                    Container(
-                      color: champion.lane.name == "MID"
-                          ? Colors.yellow
-                          : cardsColor,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: champion.lane.icon,
-                      ),
-                    ),
-                    Container(
-                      color: champion.lane.name == "JUNGLE"
-                          ? Colors.yellow
-                          : cardsColor,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: champion.lane.icon,
-                      ),
-                    ),
-                    Container(
-                      color: champion.lane.name == "ROAM"
-                          ? Colors.yellow
-                          : cardsColor,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: champion.lane.icon,
-                      ),
-                    ),
-                  ],
-                ),
+                    )),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -260,67 +222,24 @@ class ChampionPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(5.0),
                 child: Row(
-                  children: [
-                    Container(
-                      color: champion.type.name == "FIGHTER"
-                          ? Colors.yellow
-                          : cardsColor,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: champion.type.icon,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: List.generate(
+                      StaticData.types.length,
+                      (index) => Container(
+                        color: champion.type
+                                .where((element) =>
+                                    element.name ==
+                                    StaticData.types[index].name)
+                                .isNotEmpty
+                            ? Colors.yellow
+                            : cardsColor,
+                        child: StaticData.types[index].icon,
                       ),
-                    ),
-                    Container(
-                      color: champion.type.name == "MARKSMAN"
-                          ? Colors.yellow
-                          : cardsColor,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: champion.type.icon,
-                      ),
-                    ),
-                    Container(
-                      color: champion.type.name == "MAGE"
-                          ? Colors.yellow
-                          : cardsColor,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: champion.type.icon,
-                      ),
-                    ),
-                    Container(
-                      color: champion.type.name == "ASSASIN"
-                          ? Colors.yellow
-                          : cardsColor,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: champion.type.icon,
-                      ),
-                    ),
-                    Container(
-                      color: champion.type.name == "TANK"
-                          ? Colors.yellow
-                          : cardsColor,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: champion.type.icon,
-                      ),
-                    ),
-                    Container(
-                      color: champion.type.name == "SUPPORT"
-                          ? Colors.yellow
-                          : cardsColor,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: champion.type.icon,
-                      ),
-                    ),
-                  ],
-                ),
+                    )),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text(champion.type.description),
+                child: Text(champion.type.first.description),
               ),
             ],
           ),

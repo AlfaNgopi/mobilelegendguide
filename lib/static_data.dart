@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:mobilelegendguide/client/champion_client.dart';
 import 'package:mobilelegendguide/client/emblem_client.dart';
 import 'package:mobilelegendguide/client/item_client.dart';
@@ -47,4 +48,28 @@ class StaticData {
   static _loadItems() async {
     items = await ItemClient.fetchAll();
   }
+
+  static TextStyle get selectTypeHero => const TextStyle(
+        color: Colors.white,
+        fontSize: 15,
+      );
+
+  static TextStyle get selectTypeHeroActive => const TextStyle(
+        color: Colors.yellow,
+        fontSize: 15,
+        fontWeight: FontWeight.bold,
+        shadows: [
+          Shadow(
+            blurRadius: 10.0,
+            color: Colors.yellow,
+            offset: Offset(0, 0),
+          ),
+        ],
+      );
+
+  static TextStyle get titleTextStyle => const TextStyle(
+        color: Colors.white,
+        fontSize: 30,
+        fontWeight: FontWeight.bold,
+      );
 }

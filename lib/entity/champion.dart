@@ -14,7 +14,7 @@ class Champion {
   late Image icon;
   int championId;
   String name;
-  late Type type;
+  List<Type> type = [];
   late Lane lane;
   String speciality;
   Stats stats;
@@ -27,7 +27,7 @@ class Champion {
   late List<Champion> weakAgainst = [];
 
   String? _laneName;
-  String? _typeName;
+  List<dynamic>? _typeName;
   late List<dynamic> _strongAgainstNames;
   late List<dynamic> _weakAgainstNames;
 
@@ -35,7 +35,7 @@ class Champion {
     required this.championId,
     required this.name,
     required String laneName,
-    required String typeName,
+    required List<dynamic> typeName,
     required this.speciality,
     required this.profileDirectory,
     required this.stats,
@@ -58,8 +58,11 @@ class Champion {
     setTypeFromStaticData(typeName);
   }
 
-  setType(String typeName) async {
-    type = await TypeClient.fetchType(typeName);
+  setType(List<String> typeName) async {
+    type = [];
+    for (String typ in typeName) {
+      type.add(await TypeClient.fetchType(typ));
+    }
   }
 
   setLane(String laneName) async {
@@ -70,8 +73,20 @@ class Champion {
     lane = StaticData.lanes.firstWhere((lane) => lane.name == laneName);
   }
 
-  setTypeFromStaticData(String typeName) {
-    type = StaticData.types.firstWhere((type) => type.name == typeName);
+  setTypeFromStaticData(List<dynamic> typeName) {
+    type = [];
+    for (String typ in typeName) {
+      var temp = StaticData.types.firstWhere(
+        (type) => type.name == typ,
+        orElse: () => Type(
+            name: "null",
+            iconDirectory: "iconDirectory",
+            description: "description"),
+      );
+      if (temp.name != "null") {
+        type.add(temp);
+      }
+    }
   }
 
   setStrongAgainstFromStaticData() {
