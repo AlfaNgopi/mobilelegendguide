@@ -1,9 +1,11 @@
 // ignore: file_names
 import 'package:mobilelegendguide/client/champion_client.dart';
+import 'package:mobilelegendguide/client/item_client.dart';
 import 'package:mobilelegendguide/entity/build.dart';
 import 'package:mobilelegendguide/entity/champion.dart';
 import 'package:mobilelegendguide/entity/emblem_set.dart';
 import 'package:mobilelegendguide/entity/influence.dart';
+import 'package:mobilelegendguide/entity/item.dart';
 import 'package:mobilelegendguide/entity/skill.dart';
 import 'package:mobilelegendguide/entity/stats.dart';
 
@@ -99,4 +101,23 @@ void addDummyChampion() {
           earlytomidgame: 9, lategame: 7, teamfight: 3, pickoff: 6, push: 6),
     ),
   );
+}
+
+void addDummyItem() {
+  ItemClient.createItem(Item(
+      name: "Holy_Crystal",
+      subname: "Scalable Magic Power",
+      type: "Magic",
+      iconDirectory: "asset/items/Holy_Crystal.png",
+      tips: "No Tips",
+      statModifier: {
+        "Physical Attack": "70",
+        "Movement Speed": "5"
+      },
+      passives: [
+        {
+          "name": "Mystery",
+          "description": "Increase magic attack by 21%-35% (Scales with level)"
+        }
+      ]));
 }

@@ -4,6 +4,18 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:mobilelegendguide/entity/item.dart';
 
 class ItemClient {
+  static createItem(Item item) async {
+    try {
+      final docChampion = FirebaseFirestore.instance.collection('item').doc();
+      final json = item.toJson();
+
+      await docChampion.set(json);
+      print("Item Client : createItem success");
+    } catch (e) {
+      print("Item Client : createItem $e");
+    }
+  }
+
   static Future<List<Item>> fetchAll() {
     try {
       Future<List<Item>> lanes = FirebaseFirestore.instance

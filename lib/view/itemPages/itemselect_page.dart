@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:mobilelegendguide/entity/champion.dart';
+import 'package:mobilelegendguide/entity/item.dart';
 import 'package:mobilelegendguide/static_data.dart';
-import 'package:mobilelegendguide/view/heroPages/champion_page.dart';
+import 'package:mobilelegendguide/view/itemPages/item_page.dart';
 
-class ChampionSelectPage extends StatefulWidget {
-  const ChampionSelectPage({super.key});
+class ItemSelectPage extends StatefulWidget {
+  const ItemSelectPage({super.key});
 
   @override
-  State<ChampionSelectPage> createState() => _ChampionSelectPageState();
+  State<ItemSelectPage> createState() => _ItemSelectPageState();
 }
 
-class _ChampionSelectPageState extends State<ChampionSelectPage> {
-  List<Champion> champions = [];
-  late int champCount = 0;
+class _ItemSelectPageState extends State<ItemSelectPage> {
+  List<Item> items = [];
+  late int itemCount = 0;
   bool isLoading = true;
   final Color cardsColor = Colors.blue;
 
@@ -21,11 +21,11 @@ class _ChampionSelectPageState extends State<ChampionSelectPage> {
   void refresh() async {
     // var championsFromDatabase = await ChampionClient.fetchAll();
 
-    var championsFromStaticData = StaticData.champions;
+    var itemsFromStaticData = StaticData.items;
 
     setState(() {
-      champions = championsFromStaticData;
-      champCount = champions.length;
+      items = itemsFromStaticData;
+      itemCount = items.length;
       isLoading = false;
     });
   }
@@ -50,14 +50,14 @@ class _ChampionSelectPageState extends State<ChampionSelectPage> {
     return Scaffold(
         backgroundColor: StaticData.backgroundColor,
         appBar: AppBar(
-          title: const Text("Select Hero"),
+          title: const Text("Select Item"),
         ),
         body: ListView(
           children: [
             // Search Container
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
               Text(
-                "Pilih Hero",
+                "Pilih Item",
                 style: StaticData.titleTextStyle,
               ),
               myContainer(
@@ -84,24 +84,31 @@ class _ChampionSelectPageState extends State<ChampionSelectPage> {
             Container(
               color: cardsColor,
               margin: cardsMargin,
-              padding: EdgeInsets.symmetric(horizontal: 5),
-              child: buildTypeSelector(
-                  StaticData.types.map((e) => e.name).toList(), cardsWidth),
+              padding: StaticData.cardsPadding,
+              child: buildTypeSelector([
+                "Attack",
+                "Magic",
+                "Defense",
+                "Movement",
+                "Jungling",
+                "Roaming",
+                "Other"
+              ], cardsWidth),
             ),
 
-            // List of Champions
+            // List of items
+
             Container(
               color: cardsColor,
-              margin: cardsMargin,
-              padding: const EdgeInsets.all(10),
-              // height: MediaQuery.of(context).size.height - 300,
+              margin: StaticData.cardsMargin,
+              padding: StaticData.cardsPadding,
               child: GridView.count(
                   crossAxisCount: 4,
-                  mainAxisSpacing: 5,
-                  crossAxisSpacing: 5,
+                  mainAxisSpacing: 2,
+                  crossAxisSpacing: 2,
                   shrinkWrap: true,
                   children: [
-                    for (var champ in champions) buildChampionList(champ),
+                    for (var item in items) buildItemList(item),
                   ]),
             ),
           ],
@@ -123,23 +130,10 @@ class _ChampionSelectPageState extends State<ChampionSelectPage> {
   }
 
   ListView pp() => ListView.builder(
-      itemCount: champCount,
+      itemCount: itemCount,
       itemBuilder: (context, index) {
-        return buildChampionList(champions[index]);
+        return buildItemList(items[index]);
       });
-
-  Widget buildChampionList(Champion champ) => Container(
-        child: InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => ChampionPage(
-                            champion: champ,
-                          )));
-            },
-            child: champ.icon),
-      );
 
   Widget buildTypeSelector(List<String> list, double cardsWidth) {
     return Container(
@@ -160,6 +154,22 @@ class _ChampionSelectPageState extends State<ChampionSelectPage> {
           }),
         ));
   }
+
+  Widget buildItemList(Item item) => Container(
+        child: InkWell(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => ItemPage(
+                            item: item,
+                          )));
+            },
+            child: Image.asset(
+              item.iconDirectory,
+              fit: BoxFit.cover,
+            )),
+      );
 
   Widget buildTextButtonList(String itemName, double cardsWidth) => TextButton(
         onPressed: () {
@@ -185,18 +195,15 @@ class _ChampionSelectPageState extends State<ChampionSelectPage> {
 
     print("mencari $query dengan tipe $selectedType");
 
-    List<Champion> champsAsType;
+    List<Item> champsAsType;
     if (selectedType != "All") {
-      champsAsType = StaticData.champions
-          .where((champ) => champ.type
-              .where((element) => element.name == selectedType)
-              .isNotEmpty)
-          .toList();
+      champsAsType =
+          StaticData.items.where((item) => item.type == selectedType).toList();
     } else {
-      champsAsType = StaticData.champions;
+      champsAsType = StaticData.items;
     }
 
-    List<Champion> hasilCari = champsAsType;
+    List<Item> hasilCari = champsAsType;
     if (query.isNotEmpty) {
       hasilCari = [];
       for (var champ in champsAsType) {
@@ -207,8 +214,8 @@ class _ChampionSelectPageState extends State<ChampionSelectPage> {
     }
 
     setState(() {
-      champions = hasilCari;
-      champCount = champions.length;
+      items = hasilCari;
+      itemCount = items.length;
     });
   }
 }

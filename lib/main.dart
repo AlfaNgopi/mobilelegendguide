@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:mobilelegendguide/debuggingNeeds.dart';
 import 'package:mobilelegendguide/static_data.dart';
 import 'package:mobilelegendguide/view/heroPages/championselect_page.dart';
+import 'package:mobilelegendguide/view/itemPages/itemselect_page.dart';
 import 'package:mobilelegendguide/view/mainPages/home_page.dart';
 
 Future main() async {
@@ -31,6 +32,7 @@ class MainApp extends StatelessWidget {
       routes: {
         "/home": (context) => HomePage(),
         "/champions": (context) => ChampionSelectPage(),
+        "/items": (context) => ItemSelectPage(),
       },
     );
   }
