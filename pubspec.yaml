@@ -35,3 +35,8 @@ flutter:
     - asset/skills/
     - asset/carrousel/
     - asset/other/
+
+  fonts:
+    - family: Bungee
+      fonts:
+        - asset: asset/fonts/Bungee-Regular.ttf

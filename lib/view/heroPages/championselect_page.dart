@@ -109,9 +109,6 @@ class _ChampionSelectPageState extends State<ChampionSelectPage> {
   }
 
   Container myContainer({required Widget child}) {
-    final double width = MediaQuery.of(context).size.width;
-    const double sideCardsMargin = 10;
-    final double cardsWidth = width - sideCardsMargin * 2;
     const EdgeInsetsGeometry cardsMargin =
         EdgeInsets.symmetric(vertical: 10, horizontal: 10);
 

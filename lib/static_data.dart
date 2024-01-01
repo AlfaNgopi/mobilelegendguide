@@ -52,6 +52,7 @@ class StaticData {
   //Style UI
 
   static Color get backgroundColor => const Color.fromRGBO(0, 71, 110, 1);
+  static Color get cardColor => Colors.blue;
   static EdgeInsetsGeometry get cardsMargin => const EdgeInsets.all(10);
 
   static EdgeInsetsGeometry get cardsPadding => const EdgeInsets.all(10);
@@ -89,5 +90,47 @@ class StaticData {
         color: Colors.black,
         fontSize: 30,
         fontWeight: FontWeight.bold,
+      );
+
+  static TextStyle get priceTextStyle => const TextStyle(
+        color: Colors.yellow,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+      );
+
+  static TextStyle get itemTitleStyle => const TextStyle(
+        color: Colors.white,
+        fontSize: 20,
+        fontWeight: FontWeight.w900,
+      );
+
+  static TextStyle get itemTypeTextStyle => const TextStyle(
+        color: Colors.red,
+        fontSize: 15,
+        fontFamily: "Bungee",
+        // shadows: [
+        //   Shadow(
+        //     blurRadius: 10.0,
+        //     color: Colors.red,
+        //     offset: Offset(0, 0),
+        //   ),
+        // ],
+      );
+
+  static TextStyle get sectionTitleTextStyle => const TextStyle(
+        color: Colors.white,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+      );
+
+  static TextStyle get itemTipsTextStyle => const TextStyle(
+        color: Colors.black,
+        fontSize: 20,
+      );
+
+  static TextStyle get itemPassiveTitleTextStyle => const TextStyle(
+        color: Colors.white,
+        fontSize: 15,
+        fontFamily: "Bungee",
       );
 }

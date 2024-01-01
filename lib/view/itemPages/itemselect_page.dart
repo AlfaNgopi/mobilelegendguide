@@ -116,9 +116,6 @@ class _ItemSelectPageState extends State<ItemSelectPage> {
   }
 
   Container myContainer({required Widget child}) {
-    final double width = MediaQuery.of(context).size.width;
-    const double sideCardsMargin = 10;
-    final double cardsWidth = width - sideCardsMargin * 2;
     const EdgeInsetsGeometry cardsMargin =
         EdgeInsets.symmetric(vertical: 10, horizontal: 10);
 
@@ -155,21 +152,19 @@ class _ItemSelectPageState extends State<ItemSelectPage> {
         ));
   }
 
-  Widget buildItemList(Item item) => Container(
-        child: InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => ItemPage(
-                            item: item,
-                          )));
-            },
-            child: Image.asset(
-              item.iconDirectory,
-              fit: BoxFit.cover,
-            )),
-      );
+  Widget buildItemList(Item item) => InkWell(
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => ItemPage(
+                      item: item,
+                    )));
+      },
+      child: Image.asset(
+        item.iconDirectory,
+        fit: BoxFit.cover,
+      ));
 
   Widget buildTextButtonList(String itemName, double cardsWidth) => TextButton(
         onPressed: () {
@@ -193,6 +188,7 @@ class _ItemSelectPageState extends State<ItemSelectPage> {
   void onFilter() {
     String query = searchController.text;
 
+    // ignore: avoid_print
     print("mencari $query dengan tipe $selectedType");
 
     List<Item> champsAsType;

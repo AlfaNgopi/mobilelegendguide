@@ -104,20 +104,21 @@ void addDummyChampion() {
 }
 
 void addDummyItem() {
-  ItemClient.createItem(Item(
-      name: "Holy_Crystal",
-      subname: "Scalable Magic Power",
-      type: "Magic",
-      iconDirectory: "asset/items/Holy_Crystal.png",
-      tips: "No Tips",
-      statModifier: {
-        "Physical Attack": "70",
-        "Movement Speed": "5"
-      },
-      passives: [
-        {
-          "name": "Mystery",
-          "description": "Increase magic attack by 21%-35% (Scales with level)"
-        }
-      ]));
+  ItemClient.createItem(
+    Item(
+        name: "Holy_Crystal",
+        subname: "Scalable Magic Power",
+        type: "Magic",
+        iconDirectory: "asset/items/Holy_Crystal.png",
+        tips: "No Tips",
+        statModifier: {"Physical Attack": "70", "Movement Speed": "5"},
+        passives: [
+          {
+            "name": "Mystery",
+            "description":
+                "Increase magic attack by 21%-35% (Scales with level)"
+          }
+        ],
+        price: 2000),
+  );
 }

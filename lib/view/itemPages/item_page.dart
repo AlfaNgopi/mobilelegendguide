@@ -1,21 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_radar_chart/flutter_radar_chart.dart';
 import 'package:mobilelegendguide/entity/item.dart';
 import 'package:mobilelegendguide/static_data.dart';
-import 'package:mobilelegendguide/view/components/emblem_show.dart';
 
 class ItemPage extends StatelessWidget {
   final Color cardsColor = Colors.blue;
   final Item item;
 
-  ItemPage({super.key, required this.item});
+  const ItemPage({super.key, required this.item});
 
   @override
   Widget build(BuildContext context) {
     //this variable
-    final double width = MediaQuery.of(context).size.width;
-    const double sideCardsMargin = 10;
-    final double cardsWidth = width - sideCardsMargin * 2;
+    double cardsWidth = MediaQuery.of(context).size.width - 20;
     const EdgeInsetsGeometry cardsMargin =
         EdgeInsets.symmetric(vertical: 10, horizontal: 10);
 
@@ -25,59 +21,61 @@ class ItemPage extends StatelessWidget {
         title: Text(item.name),
       ),
       body: ListView(children: [
-        //hro profile
-        Container(
-          color: cardsColor,
-          margin: cardsMargin,
-          child: Column(
-            children: [
-              Text(item.name, textScaleFactor: 3),
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      // color: Colors.yellow,
-                      width: cardsWidth / 2,
-                      padding: const EdgeInsets.symmetric(horizontal: 5),
-                      child: Image.asset(item.iconDirectory, scale: 0.6),
-                    ),
+        //*hro profile
+        Card(
+          color: StaticData.cardColor,
+          margin: StaticData.cardsMargin,
+          child: Padding(
+            padding: StaticData.cardsPadding,
+            child: Row(
+              children: [
+                Container(
+                  // color: Colors.yellow,
+                  padding: const EdgeInsets.only(right: 10),
 
-                    //class lane name
-                    Container(
-                      // color: Colors.green,
-                      width: cardsWidth / 2,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                  child: Image.asset(
+                    item.iconDirectory,
+                    scale: 1,
+                  ),
+                ),
+                Flexible(
+                  // color: Colors.red,
+                  // width: cardsWidth * 0.7,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Column(
-                            //mainAxisAlignment: MainAxisAlignment.start,
-
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                          Text(
+                            item.name,
+                            style: StaticData.itemTitleStyle,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          Row(
                             children: [
-                              Padding(
-                                  padding:
-                                      const EdgeInsets.symmetric(vertical: 8.0),
-                                  child: Text(item.type)),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(vertical: 8.0),
-                                child: Row(
-                                  children: [
-                                    Text(item.subname),
-                                  ],
-                                ),
+                              Image.asset("asset/bp.png"),
+                              Text(
+                                item.price.toString(),
+                                style: StaticData.priceTextStyle,
                               ),
                             ],
-                          ),
+                          )
                         ],
                       ),
-                    )
-                  ],
-                ),
-              ),
-            ],
+                      Text(
+                        item.subname,
+                      ),
+                      Text(
+                        item.type,
+                        style: StaticData.itemTypeTextStyle,
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
           ),
         ),
 
@@ -85,21 +83,33 @@ class ItemPage extends StatelessWidget {
         Container(
           color: cardsColor,
           margin: cardsMargin,
+          padding: StaticData.cardsPadding,
           child: Column(
             children: [
-              const Text("Stats", textScaleFactor: 2),
+              Text(
+                "Stats Modifier",
+                style: StaticData.sectionTitleTextStyle,
+              ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     color: Colors.blue,
-                    width: cardsWidth / 2,
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: List.generate(
+                          item.statModifier.length,
+                          (index) =>
+                              Text(item.statModifier.keys.elementAt(index))),
+                    ),
+                  ),
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
                       children: List.generate(
                           item.statModifier.length,
                           (index) => Text(
-                              "${item.statModifier.keys.elementAt(index)} : ${item.statModifier.values.elementAt(index)}")),
+                              "${item.statModifier.values.elementAt(index)}")),
                     ),
                   ),
                 ],
@@ -111,17 +121,34 @@ class ItemPage extends StatelessWidget {
         Container(
           color: cardsColor,
           margin: cardsMargin,
+          padding: StaticData.cardsPadding,
           child: Column(
             children: [
-              Text(item.tips),
-              const Text("Unique Passive", textScaleFactor: 2),
+              SizedBox(
+                width: double.infinity,
+                child: Text(
+                  item.tips,
+                  style: StaticData.itemTipsTextStyle,
+                  textAlign: TextAlign.left,
+                ),
+              ),
+              Text(
+                "Unique Passive",
+                style: StaticData.sectionTitleTextStyle,
+              ),
               Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: List.generate(
                     item.passives.length,
                     (index) => Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(item.passives[index]["name"]!,
-                                textScaleFactor: 1.5),
+                            Text(
+                              item.passives[index]["name"]!,
+                              style: StaticData.itemPassiveTitleTextStyle,
+                            ),
                             Text(item.passives[index]["description"]!),
                           ],
                         )),

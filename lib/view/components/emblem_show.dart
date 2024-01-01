@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:mobilelegendguide/entity/emblem_set.dart';
+import 'package:mobilelegendguide/static_data.dart';
 
+// ignore: non_constant_identifier_names
 Widget EmblemShow(double cardWidth, EmblemSet emblemsSet) {
   return Container(
     color: const Color.fromRGBO(0, 119, 182, 100),
-    padding: EdgeInsets.all(8.0),
+    padding: StaticData.cardsPadding,
     child: Row(
       children: [
         CircleAvatar(
@@ -14,7 +16,7 @@ Widget EmblemShow(double cardWidth, EmblemSet emblemsSet) {
         Container(
           width: cardWidth - 120,
           decoration: BoxDecoration(
-            color: Color.fromARGB(156, 0, 66, 102),
+            color: const Color.fromARGB(156, 0, 66, 102),
             border: Border.all(color: Colors.black),
           ),
           child: Padding(

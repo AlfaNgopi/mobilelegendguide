@@ -1,6 +1,9 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:mobilelegendguide/debuggingNeeds.dart';
+// ignore: unused_import
+import 'package:mobilelegendguide/debuggingneeds.dart';
 import 'package:mobilelegendguide/static_data.dart';
 import 'package:mobilelegendguide/view/heroPages/championselect_page.dart';
 import 'package:mobilelegendguide/view/itemPages/itemselect_page.dart';
@@ -30,9 +33,9 @@ class MainApp extends StatelessWidget {
       title: 'FireBase',
       home: const HomePage(),
       routes: {
-        "/home": (context) => HomePage(),
-        "/champions": (context) => ChampionSelectPage(),
-        "/items": (context) => ItemSelectPage(),
+        "/home": (context) => const HomePage(),
+        "/champions": (context) => const ChampionSelectPage(),
+        "/items": (context) => const ItemSelectPage(),
       },
     );
   }

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_radar_chart/flutter_radar_chart.dart';
 import 'package:mobilelegendguide/entity/champion.dart';
@@ -8,7 +10,7 @@ class ChampionPage extends StatelessWidget {
   final Color cardsColor = Colors.blue;
   final Champion champion;
 
-  ChampionPage({super.key, required this.champion});
+  const ChampionPage({super.key, required this.champion});
 
   @override
   Widget build(BuildContext context) {
@@ -32,98 +34,63 @@ class ChampionPage extends StatelessWidget {
           child: Column(
             children: [
               Text(champion.name, textScaleFactor: 3),
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      // color: Colors.yellow,
-                      width: cardsWidth / 2,
-                      padding: const EdgeInsets.symmetric(horizontal: 5),
-                      child: Image.asset(champion.profileDirectory, scale: 0.6),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    // color: Colors.yellow,
+                    width: cardsWidth / 2,
+                    padding: const EdgeInsets.symmetric(horizontal: 5),
+                    child: Image.asset(champion.profileDirectory, scale: 0.6),
+                  ),
+
+                  //class lane name
+                  SizedBox(
+                    // color: Colors.green,
+                    width: cardsWidth / 2,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Column(
+                          //mainAxisAlignment: MainAxisAlignment.start,
+
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(vertical: 8.0),
+                              child: Row(
+                                children: [
+                                  champion.lane.icon,
+                                  Text(champion.lane.name)
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(vertical: 8.0),
+                              child: Row(
+                                children: List.generate(champion.type.length,
+                                    (index) => champion.type[index].icon),
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(vertical: 8.0),
+                              child: Row(
+                                children: [
+                                  Text(champion.speciality),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
-
-                    //class lane name
-                    Container(
-                      // color: Colors.green,
-                      width: cardsWidth / 2,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Column(
-                            //mainAxisAlignment: MainAxisAlignment.start,
-
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(vertical: 8.0),
-                                child: Row(
-                                  children: [
-                                    champion.lane.icon,
-                                    Text(champion.lane.name)
-                                  ],
-                                ),
-                              ),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(vertical: 8.0),
-                                child: Row(
-                                  children: List.generate(champion.type.length,
-                                      (index) => champion.type[index].icon),
-                                ),
-                              ),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(vertical: 8.0),
-                                child: Row(
-                                  children: [
-                                    Text(champion.speciality),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    )
-                  ],
-                ),
+                  )
+                ],
               ),
-              Container(
-                //color: Colors.white12,
-                child: Row(
-                  children: [
-                    Container(
-                      //color: Colors.white,
-                      width: cardsWidth / 3,
-                      child: Row(
-                        children: [
-                          Text("BP"),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      //color: Colors.red,
-                      width: cardsWidth / 3,
-                      child: Row(
-                        children: [
-                          Text("Diamond"),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      width: cardsWidth / 3,
-                      child: Row(
-                        children: [
-                          Text("Ticket"),
-                        ],
-                      ),
-                    )
-                  ],
-                ),
-              )
             ],
           ),
         ),

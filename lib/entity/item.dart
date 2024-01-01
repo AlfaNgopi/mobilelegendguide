@@ -7,9 +7,10 @@ class Item {
   String type;
   String iconDirectory;
   String tips;
+
   Map<String, dynamic> statModifier;
   List<Map<dynamic, dynamic>> passives;
-  double price = 0;
+  int price;
 
   Item({
     required this.name,
@@ -19,6 +20,7 @@ class Item {
     required this.tips,
     this.statModifier = const {"Physical Attack": "70", "Movement Speed": "5"},
     this.passives = const [],
+    required this.price,
   }) {
     icon = Image.asset(
       iconDirectory,
@@ -34,6 +36,7 @@ class Item {
         'passives': passives,
         'statModifier': statModifier,
         'subname': subname,
+        'price': price,
       };
 
   static Item fromJson(Map<String, dynamic> json) => Item(
@@ -49,5 +52,6 @@ class Item {
             .toList(),
         statModifier: json['statModifier'] as Map<String, dynamic>,
         subname: json['subname'],
+        price: json['price'],
       );
 }
