@@ -30,9 +30,7 @@ void addDummyChampion() {
           atkSpeedRatio: 90,
           movementSpeed: 100),
       emblem: EmblemSet(
-        name: "Physical Emblem",
-        iconDirectory: "asset/emblems/assassin-emblem.png",
-        description: "desckosong",
+        roleEmblemName: "Assassin",
         talent1Name: "fatal",
         talent2Name: "tenacity",
         talent3Name: "inspire",

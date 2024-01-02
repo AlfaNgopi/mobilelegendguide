@@ -10,7 +10,7 @@ Widget EmblemShow(double cardWidth, EmblemSet emblemsSet) {
     child: Row(
       children: [
         CircleAvatar(
-          backgroundImage: AssetImage(emblemsSet.iconDirectory),
+          backgroundImage: AssetImage(emblemsSet.roleEmblem.iconDirectory),
           radius: 40,
         ),
         Container(

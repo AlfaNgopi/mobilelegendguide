@@ -1,10 +1,11 @@
 // ignore_for_file: avoid_print
+// ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-// ignore: unused_import
 import 'package:mobilelegendguide/debuggingneeds.dart';
 import 'package:mobilelegendguide/static_data.dart';
+import 'package:mobilelegendguide/view/emblemPages/emblem_page.dart';
 import 'package:mobilelegendguide/view/heroPages/championselect_page.dart';
 import 'package:mobilelegendguide/view/itemPages/itemselect_page.dart';
 import 'package:mobilelegendguide/view/mainPages/home_page.dart';
@@ -36,6 +37,7 @@ class MainApp extends StatelessWidget {
         "/home": (context) => const HomePage(),
         "/champions": (context) => const ChampionSelectPage(),
         "/items": (context) => const ItemSelectPage(),
+        "/emblems": (context) => const EmblemPage(),
       },
     );
   }
