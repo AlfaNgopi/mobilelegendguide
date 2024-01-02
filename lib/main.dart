@@ -17,6 +17,7 @@ Future main() async {
   StaticData.loadData().then((value) {
     print("Data loaded");
     // addDummyChampion();
+    // addDummyEmblem();
 
     runApp(const MainApp());
   }).catchError((error) {

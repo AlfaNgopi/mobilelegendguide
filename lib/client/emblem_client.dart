@@ -4,6 +4,18 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:mobilelegendguide/entity/emblem.dart';
 
 class EmblemClient {
+  static createEmblem(Emblem emblem) async {
+    try {
+      final docChampion = FirebaseFirestore.instance.collection('emblem').doc();
+      final json = emblem.toJson();
+
+      await docChampion.set(json);
+      print("emblem Client : createemblem success");
+    } catch (e) {
+      print("emblem Client : createemblem $e");
+    }
+  }
+
   static Future<List<Emblem>> fetchAll() {
     try {
       Future<List<Emblem>> emblems = FirebaseFirestore.instance

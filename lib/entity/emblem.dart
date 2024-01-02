@@ -4,12 +4,14 @@ class Emblem {
   late Image icon;
   late String name, iconDirectory, description;
   late String tier;
+  Map<String, dynamic>? statModifier = {};
 
   Emblem(
       {required this.name,
       required this.iconDirectory,
       required this.description,
-      required this.tier}) {
+      required this.tier,
+      this.statModifier}) {
     icon = Image.asset(
       iconDirectory,
       scale: 1.8,
@@ -21,6 +23,7 @@ class Emblem {
         'iconDirectory': iconDirectory,
         'description': description,
         'tier': tier,
+        'statModifier': statModifier,
       };
 
   static Emblem fromJson(Map<String, dynamic> json) => Emblem(
@@ -28,5 +31,6 @@ class Emblem {
         iconDirectory: json['iconDirectory'],
         description: json['description'],
         tier: json['tier'],
+        statModifier: {},
       );
 }

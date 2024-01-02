@@ -1,8 +1,10 @@
 // ignore: file_names
 import 'package:mobilelegendguide/client/champion_client.dart';
+import 'package:mobilelegendguide/client/emblem_client.dart';
 import 'package:mobilelegendguide/client/item_client.dart';
 import 'package:mobilelegendguide/entity/build.dart';
 import 'package:mobilelegendguide/entity/champion.dart';
+import 'package:mobilelegendguide/entity/emblem.dart';
 import 'package:mobilelegendguide/entity/emblem_set.dart';
 import 'package:mobilelegendguide/entity/influence.dart';
 import 'package:mobilelegendguide/entity/item.dart';
@@ -119,4 +121,13 @@ void addDummyItem() {
         ],
         price: 2000),
   );
+}
+
+void addDummyEmblem() {
+  EmblemClient.createEmblem(Emblem(
+      name: "Rupture",
+      iconDirectory: "asset/emblems/rupture-emblem-mlbb.png",
+      description: "Gain 5 Adaptive Penetration",
+      tier: "Tier 1",
+      statModifier: {"Adaptive Penetration": 5}));
 }
