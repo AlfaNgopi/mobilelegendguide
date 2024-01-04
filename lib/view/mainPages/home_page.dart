@@ -138,7 +138,7 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.blue,
                       child: InkWell(
                         onTap: () {
-                          Navigator.pushNamed(context, "/strategy");
+                          Navigator.pushNamed(context, "/analytics");
                         },
                         child: Column(
                           children: [

@@ -11,7 +11,6 @@ class ItemPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //this variable
-    double cardsWidth = MediaQuery.of(context).size.width - 20;
     const EdgeInsetsGeometry cardsMargin =
         EdgeInsets.symmetric(vertical: 10, horizontal: 10);
 

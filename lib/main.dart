@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:mobilelegendguide/debuggingneeds.dart';
 import 'package:mobilelegendguide/static_data.dart';
+import 'package:mobilelegendguide/view/components/analyticsPages/analytics_page.dart';
 import 'package:mobilelegendguide/view/emblemPages/emblem_page.dart';
 import 'package:mobilelegendguide/view/heroPages/championselect_page.dart';
 import 'package:mobilelegendguide/view/itemPages/itemselect_page.dart';
@@ -39,6 +40,7 @@ class MainApp extends StatelessWidget {
         "/champions": (context) => const ChampionSelectPage(),
         "/items": (context) => const ItemSelectPage(),
         "/emblems": (context) => const EmblemPage(),
+        "/analytics": (context) => const AnalyticsPage(),
       },
     );
   }
