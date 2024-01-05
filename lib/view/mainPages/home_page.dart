@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:mobilelegendguide/debuggingneeds.dart';
 import 'package:mobilelegendguide/static_data.dart';
 
 class HomePage extends StatefulWidget {

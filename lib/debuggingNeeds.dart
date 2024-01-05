@@ -134,3 +134,7 @@ void addDummyEmblem() {
       tier: "Tier 1",
       statModifier: {"Adaptive Penetration": 5}));
 }
+
+void uploadDataWinrate() {
+  ChampionClient.updateDataWinrate();
+}

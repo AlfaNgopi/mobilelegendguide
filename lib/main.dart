@@ -17,10 +17,11 @@ Future main() async {
 
   StaticData.loadData().then((value) {
     print("Data loaded");
-    // addDummyChampion();
+    addDummyChampion();
     // addDummyEmblem();
+    // uploadDataWinrate();
 
-    runApp(const MainApp());
+    // runApp(const MainApp());
   }).catchError((error) {
     print("Error loading data: $error");
   });
