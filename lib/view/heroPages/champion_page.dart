@@ -319,8 +319,24 @@ class ChampionPage extends StatelessWidget {
                   ],
                 ),
               ),
+              FittedBox(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    champion.builds[0].battleSpell.icon,
+                  ],
+                ),
+              ),
             ],
           ),
+        ),
+
+        //Emblem
+        Container(
+          margin: cardsMargin,
+          color: cardsColor,
+          padding: const EdgeInsets.all(8.0),
+          child: EmblemShow(cardsWidth, champion.emblem),
         ),
 
         //Strong against
@@ -362,14 +378,6 @@ class ChampionPage extends StatelessWidget {
             ],
           ),
         ),
-
-        //Emblem
-        Container(
-          margin: cardsMargin,
-          color: cardsColor,
-          padding: const EdgeInsets.all(8.0),
-          child: EmblemShow(cardsWidth, champion.emblem),
-        )
       ]),
     );
   }

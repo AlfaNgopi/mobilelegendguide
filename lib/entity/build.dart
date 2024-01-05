@@ -1,5 +1,7 @@
 import 'package:mobilelegendguide/client/item_client.dart';
+import 'package:mobilelegendguide/client/spell_client.dart';
 import 'package:mobilelegendguide/entity/item.dart';
+import 'package:mobilelegendguide/entity/spell.dart';
 import 'package:mobilelegendguide/static_data.dart';
 
 class Build {
@@ -13,12 +15,16 @@ class Build {
   late Item item5;
   late Item item6;
 
+  late Spell battleSpell;
+
   String? _itemName1;
   String? _itemName2;
   String? _itemName3;
   String? _itemName4;
   String? _itemName5;
   String? _itemName6;
+
+  String? _battleSpellName;
 
   Build({
     required this.name,
@@ -29,6 +35,7 @@ class Build {
     required String itemName4,
     required String itemName5,
     required String itemName6,
+    required String battleSpellName,
   }) {
     _itemName1 = itemName1;
     _itemName2 = itemName2;
@@ -36,9 +43,12 @@ class Build {
     _itemName4 = itemName4;
     _itemName5 = itemName5;
     _itemName6 = itemName6;
+    _battleSpellName = battleSpellName;
 
     setItemsFromStaticData(
         itemName1, itemName2, itemName3, itemName4, itemName5, itemName6);
+
+    setBattleSpellFromStaticData(battleSpellName);
   }
 
   setItems(String itemName1, String itemName2, String itemName3,
@@ -61,6 +71,15 @@ class Build {
     item6 = StaticData.items.firstWhere((item) => item.name == itemName6);
   }
 
+  setBattleSpell(String battleSpellName) async {
+    battleSpell = await SpellClient.fetchSpell(battleSpellName);
+  }
+
+  setBattleSpellFromStaticData(String battleSpellName) {
+    battleSpell =
+        StaticData.spells.firstWhere((spell) => spell.name == battleSpellName);
+  }
+
   Map<String, dynamic> toJson() => {
         'name': name,
         'desc': description,
@@ -70,6 +89,7 @@ class Build {
         'item4': _itemName4,
         'item5': _itemName5,
         'item6': _itemName6,
+        'battleSpell': _battleSpellName,
       };
 
   static Build fromJson(Map<String, dynamic> json) => Build(
@@ -81,5 +101,6 @@ class Build {
         itemName4: json['item4'],
         itemName5: json['item5'],
         itemName6: json['item6'],
+        battleSpellName: json['battleSpell'],
       );
 }
