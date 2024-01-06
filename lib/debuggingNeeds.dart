@@ -10,6 +10,7 @@ import 'package:mobilelegendguide/entity/influence.dart';
 import 'package:mobilelegendguide/entity/item.dart';
 import 'package:mobilelegendguide/entity/skill.dart';
 import 'package:mobilelegendguide/entity/stats.dart';
+import 'package:mobilelegendguide/entity/tier.dart';
 
 void addDummyChampion() {
   ChampionClient.createChampion(
@@ -102,6 +103,7 @@ void addDummyChampion() {
       ],
       influence: Influence(
           earlytomidgame: 9, lategame: 7, teamfight: 3, pickoff: 6, push: 6),
+      tier: Tier(tier: "S", winrate: 50, pickrate: 2.2, banrate: 13),
     ),
   );
 }

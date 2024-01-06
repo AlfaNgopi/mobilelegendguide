@@ -1,9 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'dart:convert';
-import 'dart:io';
 import 'package:flutter/services.dart';
-import 'package:open_file_plus/open_file_plus.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:mobilelegendguide/entity/champion.dart';

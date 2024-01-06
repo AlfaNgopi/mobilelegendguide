@@ -1,6 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:mobilelegendguide/debuggingneeds.dart';
 import 'package:mobilelegendguide/static_data.dart';
 
 class HomePage extends StatefulWidget {
@@ -107,13 +106,13 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.blue,
                       child: InkWell(
                         onTap: () {
-                          Navigator.pushNamed(context, "/lanes");
+                          Navigator.pushNamed(context, "/tierlist");
                         },
                         child: Column(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                                 height: 100,
-                                child: Image.asset("asset/other/laneIcon.png")),
+                                child: Icon(Icons.format_list_numbered)),
                             Text("Lanes", style: StaticData.menuTextStyle),
                           ],
                         ),
@@ -123,13 +122,12 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.blue,
                       child: InkWell(
                         onTap: () {
-                          Navigator.pushNamed(context, "/types");
+                          Navigator.pushNamed(context, "/winrate");
                         },
                         child: Column(
                           children: [
-                            SizedBox(
-                                height: 100,
-                                child: Image.asset("asset/other/typeIcon.png")),
+                            const SizedBox(
+                                height: 100, child: Icon(Icons.calculate)),
                             Text("Types", style: StaticData.menuTextStyle),
                           ],
                         ),

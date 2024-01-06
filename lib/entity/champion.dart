@@ -7,6 +7,7 @@ import 'package:mobilelegendguide/entity/influence.dart';
 import 'package:mobilelegendguide/entity/lane.dart';
 import 'package:mobilelegendguide/entity/skill.dart';
 import 'package:mobilelegendguide/entity/stats.dart';
+import 'package:mobilelegendguide/entity/tier.dart';
 import 'package:mobilelegendguide/entity/type.dart';
 import 'package:mobilelegendguide/static_data.dart';
 
@@ -25,6 +26,8 @@ class Champion {
   List<Build> builds;
   late List<Champion> strongAgainst = [];
   late List<Champion> weakAgainst = [];
+
+  Tier tier;
 
   String? _laneName;
   List<dynamic>? _typeName;
@@ -45,6 +48,7 @@ class Champion {
     required this.builds,
     required List<dynamic> strongAgainstNames,
     required List<dynamic> weakAgainstNames,
+    required this.tier,
   }) {
     _laneName = laneName;
     _typeName = typeName;
@@ -120,7 +124,8 @@ class Champion {
         'emblem': emblem.toJson(),
         'builds': builds.map((build) => build.toJson()).toList(),
         'strongAgainst': _strongAgainstNames,
-        'weakAgainst': _weakAgainstNames
+        'weakAgainst': _weakAgainstNames,
+        'tier': tier.toJson()
       };
 
   static Champion fromJson(Map<String, dynamic> json) => Champion(
@@ -141,5 +146,6 @@ class Champion {
             .toList(),
         strongAgainstNames: json['strongAgainst'],
         weakAgainstNames: json['weakAgainst'],
+        tier: Tier.fromJson(json['tier']),
       );
 }

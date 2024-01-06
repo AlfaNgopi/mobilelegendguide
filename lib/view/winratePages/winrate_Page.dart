@@ -11,9 +11,14 @@ class WinratePage extends StatefulWidget {
 class _WinratePageState extends State<WinratePage> {
   final Color cardsColor = Colors.blue;
 
-  TextEditingController totalMatchesController = TextEditingController();
-  TextEditingController currentWinRateController = TextEditingController();
-  TextEditingController desiredWinRateController = TextEditingController();
+  TextEditingController totalMatchesController =
+      TextEditingController(text: "");
+  TextEditingController currentWinRateController =
+      TextEditingController(text: "");
+  TextEditingController desiredWinRateController =
+      TextEditingController(text: "");
+
+  bool readyToCalculate = false;
 
   @override
   Widget build(BuildContext context) {
@@ -58,29 +63,30 @@ class _WinratePageState extends State<WinratePage> {
                   ),
                   Container(
                     margin: const EdgeInsets.only(top: 10),
-                    child: Column(
-                      children: [
-                        Text(
-                          "Current Win Matches : ${calculateCurrentWinMathces()}",
-                        ),
-                        Text(
-                          "Current Lose Matches : ${calculateCurrentLoseMatches()}",
-                        ),
-                      ],
-                    ),
+                    child: readyToCalculate == true
+                        ? Column(
+                            children: [
+                              Text(
+                                "Current Win Matches : ${calculateCurrentWinMathces()}",
+                              ),
+                              Text(
+                                "Current Lose Matches : ${calculateCurrentLoseMatches()}",
+                              ),
+                            ],
+                          )
+                        : const Text(""),
                   ),
                   TextFormField(
-                    controller: desiredWinRateController,
-                    keyboardType: TextInputType.number,
-                    decoration: const InputDecoration(
-                      labelText: "Desired Win Rate",
-                      hintText: "Enter your desired win rate",
-                      border: OutlineInputBorder(),
-                    ),
-                    onChanged: (value) {
-                      setState(() {});
-                    },
-                  ),
+                      controller: desiredWinRateController,
+                      keyboardType: TextInputType.number,
+                      decoration: const InputDecoration(
+                        labelText: "Desired Win Rate",
+                        hintText: "Enter your desired win rate",
+                        border: OutlineInputBorder(),
+                      ),
+                      onChanged: (asdf) {
+                        refresh();
+                      }),
                 ],
               )),
         ),
@@ -91,17 +97,30 @@ class _WinratePageState extends State<WinratePage> {
           margin: StaticData.cardsMargin,
           child: Padding(
             padding: StaticData.cardsPadding,
-            child: Text(
-              "You need to win ${calculateWinRate().toString()} matches to get ${desiredWinRateController.text} win rate",
-              style: const TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+            child: readyToCalculate
+                ? Text(
+                    "You need to win ${calculateWinRate().toString()} matches to get ${desiredWinRateController.text} win rate",
+                    style: const TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                : const Text(""),
           ),
         ),
       ]),
     );
+  }
+
+  void refresh() {
+    setState(() {
+      if (totalMatchesController.text == "" ||
+          currentWinRateController.text == "" ||
+          desiredWinRateController.text == "") {
+      } else {
+        readyToCalculate = true;
+      }
+    });
   }
 
   int calculateCurrentWinMathces() {

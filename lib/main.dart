@@ -10,6 +10,8 @@ import 'package:mobilelegendguide/view/emblemPages/emblem_page.dart';
 import 'package:mobilelegendguide/view/heroPages/championselect_page.dart';
 import 'package:mobilelegendguide/view/itemPages/itemselect_page.dart';
 import 'package:mobilelegendguide/view/mainPages/home_page.dart';
+import 'package:mobilelegendguide/view/tierPages/tierlist_page.dart';
+import 'package:mobilelegendguide/view/winratePages/winrate_Page.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,11 +19,11 @@ Future main() async {
 
   StaticData.loadData().then((value) {
     print("Data loaded");
-    addDummyChampion();
+    // addDummyChampion();
     // addDummyEmblem();
     // uploadDataWinrate();
 
-    // runApp(const MainApp());
+    runApp(const MainApp());
   }).catchError((error) {
     print("Error loading data: $error");
   });
@@ -42,6 +44,8 @@ class MainApp extends StatelessWidget {
         "/items": (context) => const ItemSelectPage(),
         "/emblems": (context) => const EmblemPage(),
         "/analytics": (context) => const AnalyticsPage(),
+        "/tierlist": (context) => const TierListPage(),
+        "/winrate": (context) => const WinratePage(),
       },
     );
   }
