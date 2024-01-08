@@ -32,10 +32,10 @@ class Influence {
       };
 
   static Influence fromJson(Map<String, dynamic> json) => Influence(
-        earlytomidgame: json['earlytomidgame'],
-        lategame: json['lategame'],
-        teamfight: json['teamfight'],
-        pickoff: json['pickoff'],
-        push: json['push'],
+        earlytomidgame: json['earlytomidgame'].toDouble(),
+        lategame: json['lategame'].toDouble(),
+        teamfight: json['teamfight'].toDouble(),
+        pickoff: json['pickoff'].toDouble(),
+        push: json['push'].toDouble(),
       );
 }

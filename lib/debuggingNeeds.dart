@@ -15,7 +15,6 @@ import 'package:mobilelegendguide/entity/tier.dart';
 void addDummyChampion() {
   ChampionClient.createChampion(
     Champion(
-      championId: 1,
       profileDirectory: "asset/alucard.png",
       name: "Alucard",
       laneName: "EXP",
@@ -30,7 +29,6 @@ void addDummyChampion() {
           physicalDef: 100,
           magicDef: 100,
           atkSpeed: 100,
-          atkSpeedRatio: 90,
           movementSpeed: 100),
       emblem: EmblemSet(
         roleEmblemName: "Assassin",
@@ -139,4 +137,12 @@ void addDummyEmblem() {
 
 void uploadDataWinrate() {
   ChampionClient.updateDataWinrate();
+}
+
+void uploadDataChampion() {
+  ChampionClient.createChampionFromJson();
+}
+
+void uploadDataItem() {
+  ItemClient.createItemFromJson();
 }

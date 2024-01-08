@@ -1,15 +1,14 @@
 class Stats {
   int hp;
   int mana;
-  double hpRegen;
-  double manaRegen;
+  int hpRegen;
+  int manaRegen;
   int physicalAtk;
   int magicAtk;
   int physicalDef;
   int magicDef;
   double atkSpeed;
   int movementSpeed;
-  double atkSpeedRatio;
 
   Stats({
     required this.hp,
@@ -22,7 +21,6 @@ class Stats {
     required this.magicDef,
     required this.atkSpeed,
     required this.movementSpeed,
-    required this.atkSpeedRatio,
   });
 
   Map<String, dynamic> toJson() => {
@@ -36,7 +34,6 @@ class Stats {
         'magicDef': magicDef,
         'atkSpeed': atkSpeed,
         'movementSpeed': movementSpeed,
-        'atkSpeedRatio': atkSpeedRatio,
       };
 
   static Stats fromJson(Map<String, dynamic> json) => Stats(
@@ -48,8 +45,7 @@ class Stats {
         magicAtk: json['magicAtk'],
         physicalDef: json['physicalDef'],
         magicDef: json['magicDef'],
-        atkSpeed: json['atkSpeed'],
+        atkSpeed: json['atkSpeed'].toDouble(),
         movementSpeed: json['movementSpeed'],
-        atkSpeedRatio: json['atkSpeedRatio'],
       );
 }

@@ -104,8 +104,10 @@ class _ItemSelectPageState extends State<ItemSelectPage> {
               padding: StaticData.cardsPadding,
               child: GridView.count(
                   crossAxisCount: 4,
-                  mainAxisSpacing: 2,
-                  crossAxisSpacing: 2,
+                  mainAxisSpacing: 10,
+                  crossAxisSpacing: 10,
+                  scrollDirection: Axis.vertical,
+                  physics: const ScrollPhysics(),
                   shrinkWrap: true,
                   children: [
                     for (var item in items) buildItemList(item),
@@ -153,18 +155,16 @@ class _ItemSelectPageState extends State<ItemSelectPage> {
   }
 
   Widget buildItemList(Item item) => InkWell(
-      onTap: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => ItemPage(
-                      item: item,
-                    )));
-      },
-      child: Image.asset(
-        item.iconDirectory,
-        fit: BoxFit.cover,
-      ));
+        child: FittedBox(child: item.icon),
+        onTap: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => ItemPage(
+                        item: item,
+                      )));
+        },
+      );
 
   Widget buildTextButtonList(String itemName, double cardsWidth) => TextButton(
         onPressed: () {

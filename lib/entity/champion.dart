@@ -13,7 +13,7 @@ import 'package:mobilelegendguide/static_data.dart';
 
 class Champion {
   late Image icon;
-  int championId;
+
   String name;
   List<Type> type = [];
   late Lane lane;
@@ -35,7 +35,6 @@ class Champion {
   late List<dynamic> _weakAgainstNames;
 
   Champion({
-    required this.championId,
     required this.name,
     required String laneName,
     required List<dynamic> typeName,
@@ -112,7 +111,6 @@ class Champion {
   }
 
   Map<String, dynamic> toJson() => {
-        'championId': championId,
         'name': name,
         'type': _typeName,
         'lane': _laneName,
@@ -129,7 +127,6 @@ class Champion {
       };
 
   static Champion fromJson(Map<String, dynamic> json) => Champion(
-        championId: json['championId'],
         name: json['name'],
         typeName: json['type'],
         laneName: json['lane'],

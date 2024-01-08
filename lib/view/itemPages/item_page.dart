@@ -47,14 +47,17 @@ class ItemPage extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
-                            item.name,
-                            style: StaticData.itemTitleStyle,
-                            overflow: TextOverflow.ellipsis,
+                          SizedBox(
+                            width: 100,
+                            child: Text(
+                              item.name,
+                              style: StaticData.itemTitleStyle,
+                              // overflow: TextOverflow.ellipsis,
+                            ),
                           ),
                           Row(
                             children: [
-                              Image.asset("asset/bp.png"),
+                              Image.asset("asset/other/bp.png"),
                               Text(
                                 item.price.toString(),
                                 style: StaticData.priceTextStyle,

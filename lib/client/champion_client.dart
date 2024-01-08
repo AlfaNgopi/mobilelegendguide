@@ -36,6 +36,26 @@ class ChampionClient {
     }
   }
 
+  static createChampionFromJson() async {
+    try {
+      final file = await rootBundle.loadString('asset/alice.json');
+
+      List<String> lines = file.split('\n');
+
+      for (var line in lines) {
+        final json = jsonDecode(line);
+        final docChampion = FirebaseFirestore.instance
+            .collection('champion')
+            .doc(json['name'].toString());
+
+        await docChampion.set(json);
+      }
+      print("Champion Client : createChampion success");
+    } catch (e) {
+      print("Champion Client : createChampion $e");
+    }
+  }
+
   static updateDataWinrate() async {
     try {
       final file = await rootBundle.loadString('asset/sample.txt');

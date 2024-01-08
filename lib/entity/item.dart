@@ -39,7 +39,9 @@ class Item {
         'price': price,
       };
 
-  static Item fromJson(Map<String, dynamic> json) => Item(
+  static Item fromJson(Map<String, dynamic> json) {
+    try {
+      return Item(
         name: json['name'],
         iconDirectory: json['iconDirectory'],
         tips: json['description'],
@@ -54,4 +56,19 @@ class Item {
         subname: json['subname'],
         price: json['price'],
       );
+    } catch (e) {
+      print(json['name']);
+      print(e);
+    }
+    return Item(
+      name: "null",
+      iconDirectory: "iconDirectory",
+      tips: "description",
+      type: "type",
+      passives: [],
+      statModifier: {},
+      subname: "subname",
+      price: 0,
+    );
+  }
 }
