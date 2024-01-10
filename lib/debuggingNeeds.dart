@@ -146,3 +146,7 @@ void uploadDataChampion() {
 void uploadDataItem() {
   ItemClient.createItemFromJson();
 }
+
+void uploadDataEmblem() {
+  EmblemClient.createEmblemFromJson();
+}

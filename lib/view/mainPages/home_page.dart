@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
           textAlign: TextAlign.center,
         ),
       ),
-      body: Column(children: [
+      body: ListView(children: [
         SizedBox(
           child: CarouselSlider(
             items: StaticData.carrouselImages
@@ -36,122 +36,123 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
         ),
-        Expanded(
-          child: Card(
-            margin: StaticData.cardsMargin,
-            color: Colors.blue,
-            child: Padding(
-              padding: StaticData.cardsPadding,
-              child: GridView.count(
-                  scrollDirection: Axis.vertical,
-                  shrinkWrap: true,
-                  crossAxisCount: 2,
-                  mainAxisSpacing: 10,
-                  crossAxisSpacing: 30,
-                  children: [
-                    Card(
-                      color: Colors.blue,
-                      child: InkWell(
-                        onTap: () {
-                          Navigator.pushNamed(context, "/champions");
-                        },
-                        child: Column(
-                          children: [
-                            SizedBox(
-                                height: 100,
-                                child:
-                                    Image.asset("asset/other/champIcon.png")),
-                            Text(
-                              "Heroes",
-                              style: StaticData.menuTextStyle,
-                            ),
-                          ],
-                        ),
+        Card(
+          margin: StaticData.cardsMargin,
+          color: Colors.blue,
+          child: Padding(
+            padding: StaticData.cardsPadding,
+            child: GridView.count(
+                scrollDirection: Axis.vertical,
+                shrinkWrap: true,
+                crossAxisCount: 2,
+                mainAxisSpacing: 10,
+                crossAxisSpacing: 30,
+                children: [
+                  Card(
+                    color: Colors.blue,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, "/champions");
+                      },
+                      child: Column(
+                        children: [
+                          SizedBox(
+                              height: 100,
+                              child: Image.asset("asset/other/champIcon.png")),
+                          Text(
+                            "Heroes",
+                            style: StaticData.menuTextStyle,
+                          ),
+                        ],
                       ),
                     ),
-                    Card(
-                      color: Colors.blue,
-                      child: InkWell(
-                        onTap: () {
-                          Navigator.pushNamed(context, "/items");
-                        },
-                        child: Column(
-                          children: [
-                            SizedBox(
-                                height: 100,
-                                child: Image.asset("asset/other/itemIcon.png")),
-                            Text("Items", style: StaticData.menuTextStyle),
-                          ],
-                        ),
+                  ),
+                  Card(
+                    color: Colors.blue,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, "/items");
+                      },
+                      child: Column(
+                        children: [
+                          SizedBox(
+                              height: 100,
+                              child: Image.asset("asset/other/itemIcon.png")),
+                          Text("Items", style: StaticData.menuTextStyle),
+                        ],
                       ),
                     ),
-                    Card(
-                      color: Colors.blue,
-                      child: InkWell(
-                        onTap: () {
-                          Navigator.pushNamed(context, "/emblems");
-                        },
-                        child: Column(
-                          children: [
-                            SizedBox(
-                                height: 100,
-                                child:
-                                    Image.asset("asset/other/emblemIcon.png")),
-                            Text("Emblems", style: StaticData.menuTextStyle),
-                          ],
-                        ),
+                  ),
+                  Card(
+                    color: Colors.blue,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, "/emblems");
+                      },
+                      child: Column(
+                        children: [
+                          SizedBox(
+                              height: 100,
+                              child: Image.asset("asset/other/emblemIcon.png")),
+                          Text("Emblems", style: StaticData.menuTextStyle),
+                        ],
                       ),
                     ),
-                    Card(
-                      color: Colors.blue,
-                      child: InkWell(
-                        onTap: () {
-                          Navigator.pushNamed(context, "/tierlist");
-                        },
-                        child: Column(
-                          children: [
-                            const SizedBox(
-                                height: 100,
-                                child: Icon(Icons.format_list_numbered)),
-                            Text("Lanes", style: StaticData.menuTextStyle),
-                          ],
-                        ),
+                  ),
+                  Card(
+                    color: Colors.blue,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, "/tierlist");
+                      },
+                      child: Column(
+                        children: [
+                          const SizedBox(
+                              height: 100,
+                              child:
+                                  Icon(Icons.format_list_numbered, size: 100)),
+                          Text("Tier List", style: StaticData.menuTextStyle),
+                        ],
                       ),
                     ),
-                    Card(
-                      color: Colors.blue,
-                      child: InkWell(
-                        onTap: () {
-                          Navigator.pushNamed(context, "/winrate");
-                        },
-                        child: Column(
-                          children: [
-                            const SizedBox(
-                                height: 100, child: Icon(Icons.calculate)),
-                            Text("Types", style: StaticData.menuTextStyle),
-                          ],
-                        ),
+                  ),
+                  Card(
+                    color: Colors.blue,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, "/winrate");
+                      },
+                      child: Column(
+                        children: [
+                          const SizedBox(
+                              height: 100,
+                              child: Icon(Icons.calculate, size: 100)),
+                          FittedBox(
+                            child: Text("Calculate Winrate",
+                                style: StaticData.menuTextStyle),
+                          ),
+                        ],
                       ),
                     ),
-                    Card(
-                      color: Colors.blue,
-                      child: InkWell(
-                        onTap: () {
-                          Navigator.pushNamed(context, "/analytics");
-                        },
-                        child: Column(
-                          children: [
-                            SizedBox(
-                                height: 100,
-                                child: Image.asset(
-                                    "asset/other/strategyIcon.png")),
-                            Text("Strategy", style: StaticData.menuTextStyle),
-                          ],
-                        ),
+                  ),
+                  Card(
+                    color: Colors.blue,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, "/analytics");
+                      },
+                      child: Column(
+                        children: [
+                          SizedBox(
+                              height: 100,
+                              child:
+                                  Image.asset("asset/other/strategyIcon.png")),
+                          Text("Strategy", style: StaticData.menuTextStyle),
+                        ],
                       ),
                     ),
-                  ]),
-            ),
+                  ),
+                ]),
           ),
         ),
       ]),

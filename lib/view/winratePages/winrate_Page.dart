@@ -49,6 +49,10 @@ class _WinratePageState extends State<WinratePage> {
                       setState(() {});
                     },
                   ),
+                  const Divider(
+                    color: Colors.transparent,
+                    height: 10,
+                  ),
                   TextFormField(
                     controller: currentWinRateController,
                     keyboardType: TextInputType.number,
@@ -98,13 +102,15 @@ class _WinratePageState extends State<WinratePage> {
           child: Padding(
             padding: StaticData.cardsPadding,
             child: readyToCalculate
-                ? Text(
-                    "You need to win ${calculateWinRate().toString()} matches to get ${desiredWinRateController.text} win rate",
-                    style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  )
+                ? isNuruninWinrate()
+                    ? Text(
+                        "You need to win ${calculateWinRate().toString()} matches to get ${desiredWinRateController.text} win rate",
+                        style: const TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      )
+                    : const Text("Ngapin Nurunin Winrate !!!")
                 : const Text(""),
           ),
         ),
@@ -117,6 +123,7 @@ class _WinratePageState extends State<WinratePage> {
       if (totalMatchesController.text == "" ||
           currentWinRateController.text == "" ||
           desiredWinRateController.text == "") {
+        readyToCalculate = false;
       } else {
         readyToCalculate = true;
       }
@@ -151,6 +158,20 @@ class _WinratePageState extends State<WinratePage> {
     var wrResult = 100 / sWr;
     var sPersen = mLose * wrResult;
     double hasil = sPersen - mWin;
+    if (hasil.isNaN || hasil.isInfinite) {
+      hasil = 0;
+    }
     return hasil.ceil();
+  }
+
+  bool isNuruninWinrate() {
+    double currentWinRate = double.parse(currentWinRateController.text);
+    double desiredWinRate = double.parse(desiredWinRateController.text);
+
+    if (currentWinRate <= desiredWinRate) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }

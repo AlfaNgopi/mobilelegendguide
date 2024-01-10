@@ -1,0 +1,274 @@
+{
+    "Common": {
+        "name": "Common",
+        "description": "High Mana Regen. Best for mana hungry heroes.",
+        "iconDirectory" : "asset/emblems/common-emblem.png",
+        "tier" : "Role",
+        "statModifier" : {
+            "Hybrid Regen" : 15.00,
+            "HP" : 275.00,
+            "Adaptive Attack" : 22.00
+        }
+    },
+    "Tank": {
+        "name": "Tank",
+        "description": "High HP at the start of the game. Best Emblem for tanks.",
+        "iconDirectory" : "asset/emblems/tank-emblem.png",
+        "tier" : "Role",
+        "statModifier" : {
+            "Hybrid Defense" : 10.00,
+            "HP" : 500.00,
+            "HP Regen" : 4.00
+        }
+    },
+    "Mage": {
+        "name": "Mage",
+        "description": "Huge magic power at the start of the game. Only for magic damage heroes.",
+        "iconDirectory" : "asset/emblems/mage-emblem.png",
+        "tier" : "Role",
+        "statModifier" : {
+            "Cooldown Reduction" : 5.00,
+            "Magic Power" : 30.00,
+            "Magic Penetration" : 8.00
+        }
+    },
+    "Assassin": {
+        "name": "Assassin",
+        "description": "High Penetration. Suitable for burst assasin heroes.",
+        "iconDirectory" : "asset/emblems/assassin-emblem.png",
+        "tier" : "Role",
+        "statModifier" : {
+            "Adaptive Penetration" : 16.00,
+            "Physical Attack" : 10.00,
+            "Movement Speed" : 3.00
+        }
+    },
+    "Fighter": {
+        "name": "Fighter",
+        "description": "High Spell Vamp. Suitable for frontlaner sustain heroes.",
+        "iconDirectory" : "asset/emblems/fighter-emblem.png",
+        "tier" : "Role",
+        "statModifier" : {
+            "Adaptive Attack" : 22.00,
+            "Spell Vamp" : 10.00,
+            "Hybrid Defense" : 6.00
+        }
+    },
+    "Marksman": {
+        "name": "Marksman",
+        "description": "High Attack Speed. Suitable for basic attack rely heroes.",
+        "iconDirectory" : "asset/emblems/marksman-emblem.png",
+        "tier" : "Role",
+        "statModifier" : {
+            "Adaptive Attack" : 5.00,
+            "Attack Speed" : 15.00,
+            "Life Steal" : 5.00
+        }
+    },
+    "Support": {
+        "name": "Support",
+        "description": "Emblem With Healing Effect Boost. Suitable for support heroes that can heal.",
+        "iconDirectory" : "asset/emblems/support-emblem.png",
+        "tier" : "Role",
+        "statModifier" : {
+            "Healing Effect" : 15.00,
+            "Cooldown Reduction" : 10.00,
+            "Movement Speed" : 6.00
+        }
+    },
+    "Thrill": {
+        "name": "Thrill",
+        "description": "Gain 16 Adaptive Attack",
+        "iconDirectory" : "asset/emblems/thrill-emblem-mlbb.png",
+        "tier" : "Tier 1",
+        "statModifier" : {
+            "Adaptive Attack" : 16.00
+        }
+    },
+    "Swift": {
+        "name": "Swift",
+        "description": "Gain 10% Attack Speed",
+        "iconDirectory" : "asset/emblems/swift-emblem-mlbb.png",
+        "tier" : "Tier 1",
+        "statModifier" : {
+            "Attack Speed" : 10.00
+        }
+    },
+    "Vitality": {
+        "name": "Vitality",
+        "description": "Gain 225 HP",
+        "iconDirectory" : "asset/emblems/vitality-emblem-mlbb.png",
+        "tier" : "Tier 1",
+        "statModifier" : {
+            "HP" : 225.00
+        }
+    },
+    "Rupture": {
+        "name": "Rupture",
+        "description": "Gain 5 Adaptive Penetration",
+        "iconDirectory" : "asset/emblems/rupture-emblem-mlbb.png",
+        "tier" : "Tier 1",
+        "statModifier" : {
+            "Adaptive Penetration" : 3.00
+        }
+    },
+    "Inspire": {
+        "name": "Inspire",
+        "description": "Gain 5% Cooldown Reduction",
+        "iconDirectory" : "asset/emblems/inspire-emblem-mlbb.png",
+        "tier" : "Tier 1",
+        "statModifier" : {
+            "Cooldown Reduction" : 5.00
+        }
+    },
+    "Firmness": {
+        "name": "Firmness",
+        "description": "Gain 6 Physical Defense and 6 Magic Defense",
+        "iconDirectory" : "asset/emblems/firmness-emblem-mlbb.png",
+        "tier" : "Tier 1",
+        "statModifier" : {
+            "Physical Defense" : 5.00,
+            "Magic Defense" : 5.00
+        }
+    },
+    "Agility": {
+        "name": "Agility",
+        "description": "Gain 5% Movement Speed",
+        "iconDirectory" : "asset/emblems/agility-emblem-mlbb.png",
+        "tier" : "Tier 1",
+        "statModifier" : {
+            "Movement Speed" : 5.00
+        }
+    },
+    "Fatal": {
+        "name": "Fatal",
+        "description": "Gain 5% extra Crit Chance and 10% extra Crit Damage",
+        "iconDirectory" : "asset/emblems/fatal-emblem-mlbb.png",
+        "tier" : "Tier 1",
+        "statModifier" : {
+            "Crit Chance" : 5.00,
+            "Crit Damage" : 10.00
+        }
+    },
+    "Life Drain": {
+        "name": "Life Drain",
+        "description": "Minion Kills Grant HP Regen, Getting a kill or assist on an enemy restores 3% HP and 1.5% Mana",
+        "iconDirectory" : "asset/emblems/life-drain-emblem-mlbb.png",
+        "tier" : "Tier 2",
+        "statModifier" : {}
+    },
+    "Seasoned Hunter": {
+        "name": "Seasoned Hunter",
+        "description": "Increase Jungling Speed, Damage against Lord and Turtle is increased by 15%. This bonus is halved against regular Creeps and doesn't affect the damage of Retribution",
+        "iconDirectory" : "asset/emblems/seasoned-hunter-emblem-mlbb.png",
+        "tier" : "Tier 2",
+        "statModifier" : {}
+    },
+    "Tenacity": {
+        "name": "Tenacity",
+        "description": "Increase Defense at Low HP, When HP is below 50%, Physical & Magical Defense are increased by 18.",
+        "iconDirectory" : "asset/emblems/tenacity-emblem-mlbb.png",
+        "tier" : "Tier 2",
+        "statModifier" : {}
+    },
+    "Master Assassin": {
+        "name": "Master Assassin",
+        "description": "Increase Damage to Lone Heroes, If there is only one enemy hero nearby, damage dealt to them is increased by 4%.",
+        "iconDirectory" : "asset/emblems/master-assassin-emblem-mlbb.png",
+        "tier" : "Tier 2",
+        "statModifier" : {}
+    },
+    "Bargain Hunter": {
+        "name": "Bargain Hunter",
+        "description": "Reduce Equipment Cost, Equipment can be purchased at 95% of their base price.",
+        "iconDirectory" : "asset/emblems/bargain-hunter-emblem-mlbb.png",
+        "tier" : "Tier 2",
+        "statModifier" : {}
+    },
+    "Festival of Blood": {
+        "name": "Festival of Blood",
+        "description": "Get Extra Spell Vamp, Gain 6% Spell Vamp. Each hero kill or assist grants an additional 0.5% Spell Vamp, up to 8 stacks.",
+        "iconDirectory" : "asset/emblems/festival-of-blood-emblem-mlbb.png",
+        "tier" : "Tier 2",
+        "statModifier" : {}
+    },
+    "Pull Yourself Together": {
+        "name": "Pull Yourself Together",
+        "description": "Reduce CD of Battle Spells & Equipment skill, Cooldowns of Batlle Spells and equipments active skills are reduced by 15%.",
+        "iconDirectory" : "asset/emblems/pull-yourself-together-emblem-mlbb.png",
+        "tier" : "Tier 2",
+        "statModifier" : {}
+    },
+    "Weapon Master": {
+        "name": "Weapon Master",
+        "description": "Gains Bonus Attack from Equipments, Physical Attack and Magic Power gained from equipment, emblem, talents, and skills are increased by 5%.",
+        "iconDirectory" : "asset/emblems/weapon-master-emblem-mlbb.png",
+        "tier" : "Tier 2",
+        "statModifier" : {}
+    },
+    "Wilderness Blessing": {
+        "name": "Wilderness Blessing",
+        "description": "Extra Movement Speed in Jungle and River., Movement Speed in the Jungle and River is Increased by 15%. This bonus is halved when in combat with enemy heroes, Lord or Turtle.",
+        "iconDirectory" : "asset/emblems/wilderness-blessing-emblem-mlbb.png",
+        "tier" : "Tier 2",
+        "statModifier" : {}
+    },
+    "Impure Rage": {
+        "name": "Impure Rage",
+        "description": "Extra Skill Damage & Restore Mana on Hit, Dealing damage with skills deals an extra 50-250 Adaptive Damage (scales with level) and restores 2% Mana on hit.",
+        "iconDirectory" : "asset/emblems/impure-rage-emblem-mlbb.png",
+        "tier" : "Tier 3",
+        "statModifier" : {}
+    },
+    "Quantum Charge": {
+        "name": "Quantum Charge",
+        "description": "Basic Attacks Grant HP Regen & Speed Up, Dealing damage with Basic Attacks increases Movement Speed by 40% for 1.5s and restores 75-180HP (scales with level)",
+        "iconDirectory" : "asset/emblems/quantum-charge-emblem-mlbb.png",
+        "tier" : "Tier 3",
+        "statModifier" : {}
+    },
+    "Concussive Blast": {
+        "name": "Concussive Blast",
+        "description": "HP-Based AOE Damage, after the next Basic Attack, deal 100(+7% Total HP) Magic Damage to nearby enemies. ",
+        "iconDirectory" : "asset/emblems/concussive-blast-emblem-mlbb.png",
+        "tier" : "Tier 3",
+        "statModifier" : {}
+    },
+    "Killing Spree": {
+        "name": "Killing Spree",
+        "description": "Regen and Speed Up After Kill, After killing an enemy hero, instantly recover 8% Max HP and gain 15% Movement Speed for 3s.",
+        "iconDirectory" : "asset/emblems/killing-spree-emblem-mlbb.png",
+        "tier" : "Tier 3",
+        "statModifier" : {}
+    },
+    "Lethal Ignition": {
+        "name": "Lethal Ignition",
+        "description": "Extra Damage on Multi-Hits, Dealing damage greater than 7% of an enemy hero's Max HP 3 times within 5s will scorch the target for an additional 162-750 Adaptive Damage (scales with level)",
+        "iconDirectory" : "asset/emblems/lethal-ignition-emblem-mlbb.png",
+        "tier" : "Tier 3",
+        "statModifier" : {}
+    },
+    "Brave Smite": {
+        "name": "Brave Smite",
+        "description": "Skill Damage Grants HP Regen, Dealing skill damage to an enemy restores 5% Max HP.",
+        "iconDirectory" : "asset/emblems/brave-smite-emblem-mlbb.png",
+        "tier" : "Tier 3",
+        "statModifier" : {}
+    },
+    "Focusing Mark": {
+        "name": "Focusing Mark",
+        "description": "Enhance Ally Damage, Dealing damage to an enemy hero increases allied heroes' damage to them by 6% for 3s.",
+        "iconDirectory" : "asset/emblems/focusing-mark-emblem-mlbb.png",
+        "tier" : "Tier 3",
+        "statModifier" : {}
+    },
+    "Weakness Finder": {
+        "name": "Weakness Finder",
+        "description": "Basic Attacks Slow Enemies, Basic Attacks have a 20% chance to reduce the enemy hero's Movement Speed by 90% and Attack Speed by 50% for 0.5s.",
+        "iconDirectory" : "asset/emblems/weakness-finder-emblem-mlbb.png",
+        "tier" : "Tier 3",
+        "statModifier" : {}
+    }
+    
+
+}

@@ -39,21 +39,25 @@ class _EmblemPageState extends State<EmblemPage> {
                   StaticData.emblems
                       .where((element) => element.tier == "Role")
                       .length,
-                  (index) => InkWell(
-                    child: Image.asset(
-                      StaticData.emblems
-                          .where((element) => element.tier == "Role")
-                          .elementAt(index)
-                          .iconDirectory,
-                      width: 50,
+                  (index) => Expanded(
+                    child: Container(
+                      constraints: const BoxConstraints(maxHeight: 40),
+                      child: InkWell(
+                        child: Image.asset(
+                          StaticData.emblems
+                              .where((element) => element.tier == "Role")
+                              .elementAt(index)
+                              .iconDirectory,
+                        ),
+                        onTap: () {
+                          setState(() {
+                            roleEmblemSelected = StaticData.emblems
+                                .where((element) => element.tier == "Role")
+                                .elementAt(index);
+                          });
+                        },
+                      ),
                     ),
-                    onTap: () {
-                      setState(() {
-                        roleEmblemSelected = StaticData.emblems
-                            .where((element) => element.tier == "Role")
-                            .elementAt(index);
-                      });
-                    },
                   ),
                 ),
               )
@@ -72,21 +76,25 @@ class _EmblemPageState extends State<EmblemPage> {
                   StaticData.emblems
                       .where((element) => element.tier == "Tier 1")
                       .length,
-                  (index) => InkWell(
-                      child: Image.asset(
-                        StaticData.emblems
-                            .where((element) => element.tier == "Tier 1")
-                            .elementAt(index)
-                            .iconDirectory,
-                        width: 50,
-                      ),
-                      onTap: () {
-                        setState(() {
-                          talent1Selected = StaticData.emblems
-                              .where((element) => element.tier == "Tier 1")
-                              .elementAt(index);
-                        });
-                      }),
+                  (index) => Expanded(
+                    child: Container(
+                      constraints: const BoxConstraints(maxHeight: 40),
+                      child: InkWell(
+                          child: Image.asset(
+                            StaticData.emblems
+                                .where((element) => element.tier == "Tier 1")
+                                .elementAt(index)
+                                .iconDirectory,
+                          ),
+                          onTap: () {
+                            setState(() {
+                              talent1Selected = StaticData.emblems
+                                  .where((element) => element.tier == "Tier 1")
+                                  .elementAt(index);
+                            });
+                          }),
+                    ),
+                  ),
                 ),
               )
             ],
@@ -104,21 +112,25 @@ class _EmblemPageState extends State<EmblemPage> {
                   StaticData.emblems
                       .where((element) => element.tier == "Tier 2")
                       .length,
-                  (index) => InkWell(
-                    child: Image.asset(
-                      StaticData.emblems
-                          .where((element) => element.tier == "Tier 2")
-                          .elementAt(index)
-                          .iconDirectory,
-                      width: 50,
+                  (index) => Expanded(
+                    child: Container(
+                      constraints: const BoxConstraints(maxHeight: 40),
+                      child: InkWell(
+                        child: Image.asset(
+                          StaticData.emblems
+                              .where((element) => element.tier == "Tier 2")
+                              .elementAt(index)
+                              .iconDirectory,
+                        ),
+                        onTap: () {
+                          setState(() {
+                            talent2Selected = StaticData.emblems
+                                .where((element) => element.tier == "Tier 2")
+                                .elementAt(index);
+                          });
+                        },
+                      ),
                     ),
-                    onTap: () {
-                      setState(() {
-                        talent2Selected = StaticData.emblems
-                            .where((element) => element.tier == "Tier 2")
-                            .elementAt(index);
-                      });
-                    },
                   ),
                 ),
               )
@@ -137,21 +149,23 @@ class _EmblemPageState extends State<EmblemPage> {
                   StaticData.emblems
                       .where((element) => element.tier == "Tier 3")
                       .length,
-                  (index) => InkWell(
-                    child: Image.asset(
-                      StaticData.emblems
-                          .where((element) => element.tier == "Tier 3")
-                          .elementAt(index)
-                          .iconDirectory,
-                      width: 50,
-                    ),
-                    onTap: () {
-                      setState(() {
-                        talent3Selected = StaticData.emblems
+                  (index) => Container(
+                    constraints: const BoxConstraints(maxHeight: 40),
+                    child: InkWell(
+                      child: Image.asset(
+                        StaticData.emblems
                             .where((element) => element.tier == "Tier 3")
-                            .elementAt(index);
-                      });
-                    },
+                            .elementAt(index)
+                            .iconDirectory,
+                      ),
+                      onTap: () {
+                        setState(() {
+                          talent3Selected = StaticData.emblems
+                              .where((element) => element.tier == "Tier 3")
+                              .elementAt(index);
+                        });
+                      },
+                    ),
                   ),
                 ),
               )

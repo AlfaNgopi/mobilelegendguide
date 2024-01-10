@@ -1,6 +1,9 @@
 // ignore_for_file: avoid_print
 
+import 'dart:convert';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/services.dart';
 import 'package:mobilelegendguide/entity/emblem.dart';
 
 class EmblemClient {
@@ -45,6 +48,26 @@ class EmblemClient {
     } catch (e) {
       print("emblem Client : $e");
       return Future.error(e);
+    }
+  }
+
+  static createEmblemFromJson() async {
+    try {
+      final file = await rootBundle.loadString('asset/emblems.json');
+
+      Map<String, dynamic> jsonfile = jsonDecode(file);
+
+      for (var line in jsonfile.values) {
+        final docChampion = FirebaseFirestore.instance
+            .collection('emblem')
+            .doc(line['name'].toString());
+
+        await docChampion.set(line);
+      }
+
+      print("emblem Client : createemblem success");
+    } catch (e) {
+      print("emblem Client : $e");
     }
   }
 }

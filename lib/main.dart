@@ -24,6 +24,7 @@ Future main() async {
     // uploadDataWinrate();
     // uploadDataChampion();
     // uploadDataItem();
+    // uploadDataEmblem();
 
     runApp(const MainApp());
   }).catchError((error) {

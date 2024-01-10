@@ -26,7 +26,7 @@ class StaticData {
     await _loadSpeels();
     await _loadEmblems();
     await _loadItems();
-    // await _loadChampions();
+    await _loadChampions();
   }
 
   static _loadChampions() async {

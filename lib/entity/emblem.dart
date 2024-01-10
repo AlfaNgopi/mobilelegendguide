@@ -31,6 +31,6 @@ class Emblem {
         iconDirectory: json['iconDirectory'],
         description: json['description'],
         tier: json['tier'],
-        statModifier: {},
+        statModifier: json['statModifier'],
       );
 }
