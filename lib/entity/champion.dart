@@ -137,12 +137,12 @@ class Champion {
             .map((skill) => Skill.fromJson(skill))
             .toList(),
         influence: Influence.fromJson(json['influence']),
-        emblem: EmblemSet.fromJson(json['emblem']),
+        emblem: EmblemSet.fromJson(json['emblems']),
         builds: (json['builds'] as List<dynamic>)
             .map((build) => Build.fromJson(build))
             .toList(),
-        strongAgainstNames: json['strongAgainst'],
-        weakAgainstNames: json['weakAgainst'],
+        strongAgainstNames: json['strongAgainsts'],
+        weakAgainstNames: json['weakAgainsts'],
         tier: Tier.fromJson(json['tier']),
       );
 }

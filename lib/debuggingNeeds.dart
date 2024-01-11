@@ -2,6 +2,7 @@
 import 'package:mobilelegendguide/client/champion_client.dart';
 import 'package:mobilelegendguide/client/emblem_client.dart';
 import 'package:mobilelegendguide/client/item_client.dart';
+import 'package:mobilelegendguide/client/spell_client.dart';
 import 'package:mobilelegendguide/entity/build.dart';
 import 'package:mobilelegendguide/entity/champion.dart';
 import 'package:mobilelegendguide/entity/emblem.dart';
@@ -39,7 +40,7 @@ void addDummyChampion() {
       speciality: "desckosong",
       builds: [
         Build(
-            name: "Build 1",
+            author: "Build 1",
             itemName1: "Holy_Crystal",
             itemName2: "Holy_Crystal",
             itemName3: "Holy_Crystal",
@@ -49,7 +50,7 @@ void addDummyChampion() {
             description: "desckosong",
             battleSpellName: "Sprint"),
         Build(
-            name: "Build 2",
+            author: "Build 2",
             itemName1: "Holy_Crystal",
             itemName2: "Holy_Crystal",
             itemName3: "Holy_Crystal",
@@ -59,7 +60,7 @@ void addDummyChampion() {
             description: "desckosong",
             battleSpellName: "Sprint"),
         Build(
-            name: "Build 3",
+            author: "Build 3",
             itemName1: "Holy_Crystal",
             itemName2: "Holy_Crystal",
             itemName3: "Holy_Crystal",
@@ -101,7 +102,8 @@ void addDummyChampion() {
       ],
       influence: Influence(
           earlytomidgame: 9, lategame: 7, teamfight: 3, pickoff: 6, push: 6),
-      tier: Tier(tier: "S", winrate: 50, pickrate: 2.2, banrate: 13),
+      tier:
+          Tier(tier: "S", poin: 4.65, winrate: 50, pickrate: 2.2, banrate: 13),
     ),
   );
 }
@@ -149,4 +151,8 @@ void uploadDataItem() {
 
 void uploadDataEmblem() {
   EmblemClient.createEmblemFromJson();
+}
+
+void uploadDataSpell() {
+  SpellClient.createSpellFromJson();
 }

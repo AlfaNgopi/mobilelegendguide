@@ -1,6 +1,9 @@
 // ignore_for_file: avoid_print
 
+import 'dart:convert';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/services.dart';
 import 'package:mobilelegendguide/entity/spell.dart';
 
 class SpellClient {
@@ -33,6 +36,38 @@ class SpellClient {
     } catch (e) {
       print("spell Client : $e");
       return Future.error(e);
+    }
+  }
+
+  static createSpell(Spell spell) async {
+    try {
+      final docChampion =
+          FirebaseFirestore.instance.collection('battlespell').doc();
+      final json = spell.toJson();
+
+      await docChampion.set(json);
+      print("spell Client : createSpell success");
+    } catch (e) {
+      print("spell Client : createSpell $e");
+    }
+  }
+
+  static createSpellFromJson() async {
+    try {
+      final file = await rootBundle.loadString('asset/spell.json');
+
+      Map<String, dynamic> jsonfile = jsonDecode(file);
+
+      for (var line in jsonfile.values) {
+        final docChampion = FirebaseFirestore.instance
+            .collection('battlespell')
+            .doc(line['name'].toString());
+
+        await docChampion.set(line);
+      }
+      print("spell Client : createSpell success");
+    } catch (e) {
+      print("spell Client : createSpell $e");
     }
   }
 }

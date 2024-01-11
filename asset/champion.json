@@ -46,7 +46,7 @@
       },
       {
         "name": "Endless Shards",
-        "description": "Aamon throws all shards at a designated enemy and slows them by 30% for 1.5s.After a short delay, the shards will fly to the enemy's location again, each dealing 90 / 100 / 110 (+24% Total Magic Power)â€“150 / 165 / 180 (+40% Total Magic Power) Magic Damage.\nThe number of shards increases with Aamon's armor charges and the shards on the ground (8-25).The damage dealt increases with the target's lost HP, to the maximum when the target's HP  is below 30%.The same target takes less damage from subsequent attacks.",
+        "description": "Aamon throws all shards at a designated enemy and slows them by 30% for 1.5s.After a short delay, the shards will fly to the enemy's location again, each dealing 90 / 100 / 110 (+24% Total Magic Power)–150 / 165 / 180 (+40% Total Magic Power) Magic Damage.\nThe number of shards increases with Aamon's armor charges and the shards on the ground (8-25).The damage dealt increases with the target's lost HP, to the maximum when the target's HP  is below 30%.The same target takes less damage from subsequent attacks.",
         "passive": false,
         "manaCost": "150/170/190",
         "cooldown": "55.0/50.0/45.0",
@@ -87,17 +87,17 @@
     "weakAgainsts": [
       "Natan",
       "Paquito",
-      "X.borg",
+      "X-Borg",
       "Beatrix",
       "Sun"
     ],
     "profileDirectory": "asset/champions/aamon.png",
     "influence": {
       "earlytomidgame": 1,
-      "lategame": 9,
+      "lategame": 3,
       "pickoff": 2,
-      "teamfight": 3,
-      "push": 5
+      "teamfight": 8,
+      "push": 6
     },
     "tier": {
       "winrate": 52.81,
@@ -208,11 +208,11 @@
     ],
     "profileDirectory": "asset/champions/akai.png",
     "influence": {
-      "earlytomidgame": 9,
-      "lategame": 1,
-      "pickoff": 2,
-      "teamfight": 3,
-      "push": 5
+      "earlytomidgame": 6,
+      "lategame": 3,
+      "pickoff": 1,
+      "teamfight": 8,
+      "push": 2
     },
     "tier": {
       "winrate": 45.62,
@@ -267,7 +267,7 @@
       },
       {
         "name": "Contract : Explosion",
-        "description": "Aldous assumes a defensive stance, gaining 30% Damage Reduction and 20% extra Movement Speed for 2s or until manual cancellation.He then deals 100 / 120 / 140 / 160 / 180 / 200 (+20% Total Physical Attack)â€“200 / 240 / 280 / 320 / 360 / 400 (+40% Total Physical Attack) Physical Damage to nearby enemies and stuns them for 0.5-1s (scales with defensive stance duration).",
+        "description": "Aldous assumes a defensive stance, gaining 30% Damage Reduction and 20% extra Movement Speed for 2s or until manual cancellation.He then deals 100 / 120 / 140 / 160 / 180 / 200 (+20% Total Physical Attack)–200 / 240 / 280 / 320 / 360 / 400 (+40% Total Physical Attack) Physical Damage to nearby enemies and stuns them for 0.5-1s (scales with defensive stance duration).",
         "passive": false,
         "manaCost": "80/90/100/110/120/130",
         "cooldown": "12.0/11.5/11.0/10.5/10.0/9.5",
@@ -322,11 +322,11 @@
     ],
     "profileDirectory": "asset/champions/aldous.png",
     "influence": {
-      "earlytomidgame": 7,
-      "lategame": 2,
-      "pickoff": 4,
-      "teamfight": 6,
-      "push": 1
+      "earlytomidgame": 10,
+      "lategame": 3,
+      "pickoff": 2,
+      "teamfight": 1,
+      "push": 4
     },
     "tier": {
       "winrate": 51.26,
@@ -437,11 +437,11 @@
     ],
     "profileDirectory": "asset/champions/alice.png",
     "influence": {
-      "earlytomidgame": 2,
-      "lategame": 1,
-      "pickoff": 5,
-      "teamfight": 4,
-      "push": 8
+      "earlytomidgame": 3,
+      "lategame": 5,
+      "pickoff": 4,
+      "teamfight": 6,
+      "push": 2
     },
     "tier": {
       "winrate": 59.83,
@@ -551,11 +551,11 @@
     ],
     "profileDirectory": "asset/champions/alpha.png",
     "influence": {
-      "earlytomidgame": 9,
+      "earlytomidgame": 2,
       "lategame": 1,
-      "pickoff": 3,
-      "teamfight": 5,
-      "push": 2
+      "pickoff": 10,
+      "teamfight": 4,
+      "push": 3
     },
     "tier": {
       "winrate": 50.62,
@@ -653,7 +653,7 @@
     "strongAgainsts": [
       "Layla",
       "Zilong",
-      "YiSunShin",
+      "Yi Sun Shin",
       "Sun",
       "Lancelot"
     ],
@@ -667,9 +667,9 @@
     "profileDirectory": "asset/champions/alucard.png",
     "influence": {
       "earlytomidgame": 2,
-      "lategame": 3,
+      "lategame": 4,
       "pickoff": 1,
-      "teamfight": 4,
+      "teamfight": 3,
       "push": 10
     },
     "tier": {
@@ -781,10 +781,10 @@
     "profileDirectory": "asset/champions/angela.png",
     "influence": {
       "earlytomidgame": 6,
-      "lategame": 2,
-      "pickoff": 5,
-      "teamfight": 3,
-      "push": 4
+      "lategame": 3,
+      "pickoff": 2,
+      "teamfight": 8,
+      "push": 1
     },
     "tier": {
       "winrate": 51.69,
@@ -894,11 +894,11 @@
     ],
     "profileDirectory": "asset/champions/argus.png",
     "influence": {
-      "earlytomidgame": 2,
-      "lategame": 7,
-      "pickoff": 4,
-      "teamfight": 6,
-      "push": 1
+      "earlytomidgame": 3,
+      "lategame": 1,
+      "pickoff": 10,
+      "teamfight": 2,
+      "push": 4
     },
     "tier": {
       "winrate": 52.26,
@@ -999,17 +999,17 @@
       "Argus"
     ],
     "weakAgainsts": [
-      "Alucard",
       "Zilong",
+      "Alucard",
       "Badang"
     ],
     "profileDirectory": "asset/champions/arlott.png",
     "influence": {
-      "earlytomidgame": 2,
-      "lategame": 8,
-      "pickoff": 1,
-      "teamfight": 5,
-      "push": 4
+      "earlytomidgame": 7,
+      "lategame": 4,
+      "pickoff": 6,
+      "teamfight": 2,
+      "push": 1
     },
     "tier": {
       "winrate": 52.4,
@@ -1121,9 +1121,9 @@
     "profileDirectory": "asset/champions/atlas.png",
     "influence": {
       "earlytomidgame": 6,
-      "lategame": 2,
-      "pickoff": 1,
-      "teamfight": 7,
+      "lategame": 3,
+      "pickoff": 5,
+      "teamfight": 2,
       "push": 4
     },
     "tier": {
@@ -1163,7 +1163,7 @@
     "skills": [
       {
         "name": "Fighting Spirit",
-        "description": "Aulus's Basic Attack adds a stack of Fighting Spirit to his axe per second for 3s after dealing damage to any enemy (up to 4 stacks). Each stack grants 3-12 extra Physical Attack and 1â€“4 Physical Penetration (scales with Undying Fury level).Aulus also gains 10% extra Movement Speed and 27â€“125 Basic Attack Damage at max Fighting Spirit stacks (scale with level).",
+        "description": "Aulus's Basic Attack adds a stack of Fighting Spirit to his axe per second for 3s after dealing damage to any enemy (up to 4 stacks). Each stack grants 3-12 extra Physical Attack and 1–4 Physical Penetration (scales with Undying Fury level).Aulus also gains 10% extra Movement Speed and 27–125 Basic Attack Damage at max Fighting Spirit stacks (scale with level).",
         "passive": true,
         "manaCost": null,
         "cooldown": null,
@@ -1222,7 +1222,7 @@
       "Yve",
       "Mathilda",
       "Barats",
-      "YuZhong",
+      "Yu Zhong",
       "Esmeralda"
     ],
     "weakAgainsts": [
@@ -1234,11 +1234,11 @@
     ],
     "profileDirectory": "asset/champions/aulus.png",
     "influence": {
-      "earlytomidgame": 3,
-      "lategame": 1,
-      "pickoff": 4,
+      "earlytomidgame": 5,
+      "lategame": 3,
+      "pickoff": 1,
       "teamfight": 7,
-      "push": 5
+      "push": 4
     },
     "tier": {
       "winrate": 50.28,
@@ -1336,7 +1336,7 @@
       "Moskov",
       "Miya",
       "Layla",
-      "YiSunShin",
+      "Yi Sun Shin",
       "Tigreal"
     ],
     "weakAgainsts": [
@@ -1349,9 +1349,9 @@
     "profileDirectory": "asset/champions/aurora.png",
     "influence": {
       "earlytomidgame": 5,
-      "lategame": 4,
-      "pickoff": 1,
-      "teamfight": 8,
+      "lategame": 1,
+      "pickoff": 8,
+      "teamfight": 4,
       "push": 2
     },
     "tier": {
@@ -1463,10 +1463,10 @@
     "profileDirectory": "asset/champions/badang.png",
     "influence": {
       "earlytomidgame": 6,
-      "lategame": 4,
-      "pickoff": 3,
-      "teamfight": 5,
-      "push": 2
+      "lategame": 1,
+      "pickoff": 2,
+      "teamfight": 8,
+      "push": 3
     },
     "tier": {
       "winrate": 48.25,
@@ -1577,11 +1577,11 @@
     ],
     "profileDirectory": "asset/champions/balmond.png",
     "influence": {
-      "earlytomidgame": 4,
-      "lategame": 5,
-      "pickoff": 1,
-      "teamfight": 7,
-      "push": 3
+      "earlytomidgame": 10,
+      "lategame": 1,
+      "pickoff": 3,
+      "teamfight": 4,
+      "push": 2
     },
     "tier": {
       "winrate": 44.48,
@@ -1621,7 +1621,7 @@
     "skills": [
       {
         "name": "Shark Bite",
-        "description": "Bane infuses his weapon with a stack of Tidal Energy each time he uses a skill (up to 2 stacks). Each of his subsequent Basic Attacks consumes a stack to deal Physical Damage equal to (+100% Total Physical Attack) plus 3.5 (+0.3 Ã— Hero Level)% of the targets Max HP to nearby enemies.",
+        "description": "Bane infuses his weapon with a stack of Tidal Energy each time he uses a skill (up to 2 stacks). Each of his subsequent Basic Attacks consumes a stack to deal Physical Damage equal to (+100% Total Physical Attack) plus 3.5 (+0.3 × Hero Level)% of the targets Max HP to nearby enemies.",
         "passive": true,
         "manaCost": null,
         "cooldown": null,
@@ -1692,11 +1692,11 @@
     ],
     "profileDirectory": "asset/champions/bane.png",
     "influence": {
-      "earlytomidgame": 8,
-      "lategame": 2,
-      "pickoff": 6,
-      "teamfight": 3,
-      "push": 1
+      "earlytomidgame": 2,
+      "lategame": 1,
+      "pickoff": 8,
+      "teamfight": 5,
+      "push": 4
     },
     "tier": {
       "winrate": 52.23,
@@ -1793,7 +1793,7 @@
     ],
     "strongAgainsts": [
       "Khaleed",
-      "Luoyi",
+      "Luo Yi",
       "Badang",
       "Natalia",
       "Zhask"
@@ -1807,10 +1807,10 @@
     ],
     "profileDirectory": "asset/champions/barats.png",
     "influence": {
-      "earlytomidgame": 6,
-      "lategame": 3,
-      "pickoff": 2,
-      "teamfight": 5,
+      "earlytomidgame": 1,
+      "lategame": 7,
+      "pickoff": 5,
+      "teamfight": 3,
       "push": 4
     },
     "tier": {
@@ -1962,10 +1962,10 @@
       }
     ],
     "strongAgainsts": [
-      "Popol",
+      "Popol and Kupa",
       "Brody",
       "Mathilda",
-      "Luoyi",
+      "Luo Yi",
       "Clint"
     ],
     "weakAgainsts": [
@@ -1973,15 +1973,15 @@
       "Benedetta",
       "Yve",
       "Barats",
-      "YuZhong"
+      "Yu Zhong"
     ],
     "profileDirectory": "asset/champions/beatrix.png",
     "influence": {
-      "earlytomidgame": 5,
+      "earlytomidgame": 8,
       "lategame": 2,
-      "pickoff": 6,
-      "teamfight": 4,
-      "push": 3
+      "pickoff": 4,
+      "teamfight": 1,
+      "push": 5
     },
     "tier": {
       "winrate": 44.4,
@@ -2020,7 +2020,7 @@
     "skills": [
       {
         "name": "Deadly Thorns",
-        "description": "For every 50 damage inflicted upon Belerick, he has a 25% chance to shoot the nearest enemy unit, dealing Magic Damage equal to 55 (+5 Ã— Hero Level) plus 1.8% of his Max HP (scales with level).This attack can be triggered once every 0.4s.His HP obtained from Equipment and Emblems is increased by 30%.",
+        "description": "For every 50 damage inflicted upon Belerick, he has a 25% chance to shoot the nearest enemy unit, dealing Magic Damage equal to 55 (+5 × Hero Level) plus 1.8% of his Max HP (scales with level).This attack can be triggered once every 0.4s.His HP obtained from Equipment and Emblems is increased by 30%.",
         "passive": true,
         "manaCost": null,
         "cooldown": null,
@@ -2086,16 +2086,16 @@
       "Gusion",
       "Karrie",
       "Lancelot",
-      "X.borg",
+      "X-Borg",
       "Martis"
     ],
     "profileDirectory": "asset/champions/belerick.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 3,
-      "pickoff": 2,
-      "teamfight": 9,
-      "push": 5
+      "earlytomidgame": 2,
+      "lategame": 5,
+      "pickoff": 1,
+      "teamfight": 4,
+      "push": 8
     },
     "tier": {
       "winrate": 46.97,
@@ -2109,6 +2109,121 @@
       "talent1": "Vitality",
       "talent2": "Tenacity",
       "talent3": "Brave Smite"
+    }
+  },
+  "Benedetta": {
+    "name": "Benedetta",
+    "type": [
+      "Assassin",
+      "Fighter"
+    ],
+    "lane": "EXP",
+    "description": "Ever since Benedetta and her team started their campaign in the Rantha region. Whenever she draws “Alecto”, the rampaging monsters will scatter in fear of this long sharpened sword infused with unstoppable power. People call her the Ranger Leader who walks in the shadow, Protector of the Despair Place. She has earned everyone’s admiration of respect in this desolate wasteland.Shadow Ranger ",
+    "speciality": "Chase,Burst",
+    "stats": {
+      "hp": 2569,
+      "hpRegen": 66,
+      "mana": 460,
+      "manaRegen": 16,
+      "movementSpeed": 255,
+      "physicalAtk": 113,
+      "physicalDef": 18,
+      "magicAtk": 0,
+      "magicDef": 0,
+      "atkSpeed": 11
+    },
+    "skills": [
+      {
+        "name": "Elapsed Daytime",
+        "description": "When holding down the Basic Attack button, Benedetta enters the Swordout state and keeps gathering the Sword Intent.If releasing the Basic Attack button after the Sword Intent is fully charged, Benedetta will use Swordout Slash in the direction she's facing and dash forward, dealing (+215% Total Physical Attack) Physical Damage to enemies on the path (counts as Skill Damage and is reduced to 50% on Minion and Creeps).Only when Benedetta is in Swordout state and her Sword Intent is fully charged and she is in Swordout Slash state by holding down the Basic Attack button.Benedetta can also gain Sword Intent when dealing damage via Basic Attack and Skills.",
+        "passive": false,
+        "manaCost": null,
+        "cooldown": null,
+        "iconDirectory": "Elapsed_Daytime.png"
+      },
+      {
+        "name": "Phantom Slash",
+        "description": "Benedetta withdraws swiftly and leaves a shadow in front. After a short delay, her shadow slashes forward in a fan-shaped area, dealing 200 / 240 / 280 / 320 / 360 / 400 (+75% Total Physical Attack) Physical Damage and slowing the enemies by 60% for 0.5s.Meanwhile, Benedetta dashes forward to slash, dealing 75 / 100 / 125 / 150 / 175 / 200 (+100% Total Physical Attack) Physical Damage. (If the target is hit by her shadow, damage caused by Benedetta herself will increase to 200%.)",
+        "passive": false,
+        "manaCost": "55/61/67/73/79/85",
+        "cooldown": "10.0/9.3/8.6/7.9/7.2/6.5",
+        "iconDirectory": "Phantom_Slash.png"
+      },
+      {
+        "name": "An Eye for An Eye",
+        "description": "Benedetta raises her weapon to defend, gaining Control Immunity and blocking damage from any source for 0.8s. After this, she stabs in the designated direction, dealing 300 / 330 / 360 / 390 / 420 / 450 (+80% Total Physical Attack) Physical Damage.If Benedetta successfully fends off any damage while defending, she will gain full Sword Intent. If she fends off any control effects, her subsequent stab stuns the target for 1.5s.",
+        "passive": false,
+        "manaCost": "100/105/110/115/120/125",
+        "cooldown": "15.0/14.4/13.8/13.2/12.6/12.0",
+        "iconDirectory": "An_Eye_for_An_Eye.png"
+      },
+      {
+        "name": "Alecto: Final Blow",
+        "description": "Benedetta clenches Alecto and dashes forward (Benedetta is untargetable during the dash) and perform a slash after a short delay, detonating the Sword Intent along the path.For 2.5s, the Sword Intent deals up to a total of 1560 / 1820 / 2080 (+1105% Extra Physical Attack) Physical Damage to enemies within and slow them by 50%.",
+        "passive": false,
+        "manaCost": "110/135/160",
+        "cooldown": "45.0/40.0/35.0",
+        "iconDirectory": "Alecto_Final_Blow.png"
+      }
+    ],
+    "builds": [
+      {
+        "author": "Pro Player : SMG.Smooth",
+        "description": "Exp Lane: Powerful burst & Lifesteal. Great for finishing enemies. #BenedettaBuild",
+        "battleSpell": "Flicker",
+        "item1": "Warrior Boots",
+        "item2": "Bloodlust Axe",
+        "item3": "Brute Force Breastplate",
+        "item4": "Hunter Strike",
+        "item5": "Athena's Shield",
+        "item6": "Immortality"
+      },
+      {
+        "author": "No.1 Cuz.",
+        "description": "#BenedettaBuild",
+        "battleSpell": "Flicker",
+        "item1": "Tough Boots",
+        "item2": "Blade of the Heptaseas",
+        "item3": "Blade of Despair",
+        "item4": "Endless Battle",
+        "item5": "Malefic Roar",
+        "item6": "Rose Gold Meteor"
+      }
+    ],
+    "strongAgainsts": [
+      "Luo Yi",
+      "Popol and Kupa",
+      "Carmilla",
+      "Kimmy",
+      "Vale"
+    ],
+    "weakAgainsts": [
+      "Atlas",
+      "Barats",
+      "Ling",
+      "Gusion",
+      "Khaleed"
+    ],
+    "profileDirectory": "asset/champions/benedetta.png",
+    "influence": {
+      "earlytomidgame": 4,
+      "lategame": 1,
+      "pickoff": 2,
+      "teamfight": 8,
+      "push": 5
+    },
+    "tier": {
+      "winrate": 52.12,
+      "pickrate": 0.71,
+      "banrate": 0.07,
+      "poin": 5.64,
+      "tier": "B"
+    },
+    "emblems": {
+      "roleEmblem": "Fighter",
+      "talent1": "Rupture",
+      "talent2": "Festival of Blood",
+      "talent3": "Killing Spree"
     }
   },
   "Brody": {
@@ -2134,7 +2249,7 @@
     "skills": [
       {
         "name": "Abyss Corrosion",
-        "description": "With his Basic Attacks resonated with the Abyss Power within his body, Brody is able to move while winding up his Basic Attacks (which will be interrupted when casting skills), at the cost of having longer Basic Attack Animation and lower Attack Speed Bonus.Each Basic Attack deals (140% Total Physical Attack)(+45 Ã— Hero Level) Physical Damage (of which the damage scaling with level cannot be critical), increases Movement Speed by 30% (which will decay rapidly in 1.2s), and inflicts 1 stack of Abyss Mark on the enemy, capped at 4 stacks.Each stack of Abyss Mark increases Brody's damage against the target by 5% and his Movement Speed by 5%.",
+        "description": "With his Basic Attacks resonated with the Abyss Power within his body, Brody is able to move while winding up his Basic Attacks (which will be interrupted when casting skills), at the cost of having longer Basic Attack Animation and lower Attack Speed Bonus.Each Basic Attack deals (140% Total Physical Attack)(+45 × Hero Level) Physical Damage (of which the damage scaling with level cannot be critical), increases Movement Speed by 30% (which will decay rapidly in 1.2s), and inflicts 1 stack of Abyss Mark on the enemy, capped at 4 stacks.Each stack of Abyss Mark increases Brody's damage against the target by 5% and his Movement Speed by 5%.",
         "passive": true,
         "manaCost": null,
         "cooldown": null,
@@ -2198,7 +2313,7 @@
     ],
     "weakAgainsts": [
       "Ling",
-      "YuZhong",
+      "Yu Zhong",
       "Khufra",
       "Gusion",
       "Esmeralda"
@@ -2206,10 +2321,10 @@
     "profileDirectory": "asset/champions/brody.png",
     "influence": {
       "earlytomidgame": 8,
-      "lategame": 5,
-      "pickoff": 2,
+      "lategame": 3,
+      "pickoff": 6,
       "teamfight": 1,
-      "push": 4
+      "push": 2
     },
     "tier": {
       "winrate": 52.18,
@@ -2272,7 +2387,7 @@
       },
       {
         "name": "Worldie",
-        "description": "Bruno kicks his Energy Ball at the target enemy hero, 250 / 350 / 450 (+83% Total Physical Attack) Physical Damage and knocking them back.The Energy Ball then bounces between nearby enemies up to 10 times, each time dealing 150 / 210 / 270 (+50% Total Physical Attack) Physical Damage.Each hit also reduces the enemy's Physical Defense by 4%â€“8% for 8s (up to 3 stacks).",
+        "description": "Bruno kicks his Energy Ball at the target enemy hero, 250 / 350 / 450 (+83% Total Physical Attack) Physical Damage and knocking them back.The Energy Ball then bounces between nearby enemies up to 10 times, each time dealing 150 / 210 / 270 (+50% Total Physical Attack) Physical Damage.Each hit also reduces the enemy's Physical Defense by 4%–8% for 8s (up to 3 stacks).",
         "passive": false,
         "manaCost": "140/160/180",
         "cooldown": "38.0/33.0/28.0",
@@ -2306,7 +2421,7 @@
     "strongAgainsts": [
       "Zilong",
       "Diggie",
-      "YiSunShin",
+      "Yi Sun Shin",
       "Kagura",
       "Layla"
     ],
@@ -2319,11 +2434,11 @@
     ],
     "profileDirectory": "asset/champions/bruno.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 2,
-      "pickoff": 4,
-      "teamfight": 10,
-      "push": 3
+      "earlytomidgame": 8,
+      "lategame": 1,
+      "pickoff": 5,
+      "teamfight": 4,
+      "push": 2
     },
     "tier": {
       "winrate": 50.51,
@@ -2394,7 +2509,7 @@
       },
       {
         "name": "Vermeil Shadow",
-        "description": "Cecilion summons Carmilla to become a Vermil Shadow to possess him, providing a 200 (+20 Ã— Hero Level) shield.Use Again: Carmilla charges toward a designated location, gaining an equal shield, dealing 200 (+20 Ã— Hero Level) Magic Damage to enemies within the area of effect. and slowing them by 30% for 1s. Meanwhile, she resets the cooldowns of her Crimson Flower Crimson Flower and Bloodbath Bloodbath.",
+        "description": "Cecilion summons Carmilla to become a Vermil Shadow to possess him, providing a 200 (+20 × Hero Level) shield.Use Again: Carmilla charges toward a designated location, gaining an equal shield, dealing 200 (+20 × Hero Level) Magic Damage to enemies within the area of effect. and slowing them by 30% for 1s. Meanwhile, she resets the cooldowns of her Crimson Flower Crimson Flower and Bloodbath Bloodbath.",
         "passive": false,
         "manaCost": null,
         "cooldown": null,
@@ -2441,11 +2556,11 @@
     ],
     "profileDirectory": "asset/champions/carmilla.png",
     "influence": {
-      "earlytomidgame": 6,
-      "lategame": 1,
-      "pickoff": 2,
-      "teamfight": 3,
-      "push": 8
+      "earlytomidgame": 1,
+      "lategame": 6,
+      "pickoff": 4,
+      "teamfight": 2,
+      "push": 7
     },
     "tier": {
       "winrate": 49.32,
@@ -2559,15 +2674,15 @@
       "Wanwan",
       "Silvanna",
       "Ling",
-      "X.borg"
+      "X-Borg"
     ],
     "profileDirectory": "asset/champions/cecilion.png",
     "influence": {
-      "earlytomidgame": 4,
-      "lategame": 5,
-      "pickoff": 1,
-      "teamfight": 7,
-      "push": 3
+      "earlytomidgame": 1,
+      "lategame": 8,
+      "pickoff": 5,
+      "teamfight": 4,
+      "push": 2
     },
     "tier": {
       "winrate": 48.19,
@@ -2589,7 +2704,7 @@
       "Mage"
     ],
     "lane": "MID",
-    "description": "The Great Dragon's youngest disciple. Because she was mischievous, the Great Dragon handed her over to Zilong for discipline. After Zilong took on the huge responsibility of protecting the Cadia Riverlands and left the Dragon Altar, Chang'e regained her willful nature. the Great Dragon was unable to bear it and drove her out of the Dragon Altar and ask her to help Zilong to make up for her mistake.Naughty and cute disciple of the Great Dragon",
+    "description": "The Great Dragon's youngest disciple. Because she was mischievous, the Great Dragon handed her over to Zilong for discipline. After Zilong took on the huge responsibility of protecting the Cadia Riverlands and left the Dragon Altar, Chang-e regained her willful nature. the Great Dragon was unable to bear it and drove her out of the Dragon Altar and ask her to help Zilong to make up for her mistake.Naughty and cute disciple of the Great Dragon",
     "speciality": "Poke,Burst",
     "stats": {
       "hp": 2301,
@@ -2606,7 +2721,7 @@
     "skills": [
       {
         "name": "Trouble Maker",
-        "description": "Each time Chang'e deals damage to an enemy, she leaves a mark on them. Each mark reduces the target Movement Speed by 1%, staking up to 20%.",
+        "description": "Each time Chang-e deals damage to an enemy, she leaves a mark on them. Each mark reduces the target Movement Speed by 1%, staking up to 20%.",
         "passive": true,
         "manaCost": null,
         "cooldown": null,
@@ -2614,7 +2729,7 @@
       },
       {
         "name": "Starmoon Shockwave",
-        "description": "Chang'e sends an energy sphere in the target direction, dealing 350 / 380 / 410 / 440 / 470 / 500 (+130% Total Magic Power) Magic Damage to enemies and slows them by 10% for 1.5s.Crescent Moon: The Crescent Moon will send 4 extra energy sphere along with Chang'e, each dealing 20% damage and slowing enemies hit. The slow effect can stack (up to 20%).",
+        "description": "Chang-e sends an energy sphere in the target direction, dealing 350 / 380 / 410 / 440 / 470 / 500 (+130% Total Magic Power) Magic Damage to enemies and slows them by 10% for 1.5s.Crescent Moon: The Crescent Moon will send 4 extra energy sphere along with Chang-e, each dealing 20% damage and slowing enemies hit. The slow effect can stack (up to 20%).",
         "passive": false,
         "manaCost": "70/75/80/85/90/95",
         "cooldown": "7.0",
@@ -2622,7 +2737,7 @@
       },
       {
         "name": "Crescent Moon",
-        "description": "Chang'e summons the Crescent Moon, gaining a permanent 300 / 340 / 380 / 420 / 460 / 500 (+150% Total Magic Power) shield and 10% extra Movement Speed (that last until the shield is destroyed).Each time Chang'e casts a skill, she also gains 50% extra Movement Speed that decays over 2.5s.Crescent Moon also allows Chang'e's Basic Attacks to deals 20 (+35% Total Physical Attack) (+35% Total Magic Power) additional Magic Damage 2 times.Each time Change'e deals Magic damage with her Basic attack and skills, the cooldown of this skill is reduced by 0.2s.",
+        "description": "Chang-e summons the Crescent Moon, gaining a permanent 300 / 340 / 380 / 420 / 460 / 500 (+150% Total Magic Power) shield and 10% extra Movement Speed (that last until the shield is destroyed).Each time Chang-e casts a skill, she also gains 50% extra Movement Speed that decays over 2.5s.Crescent Moon also allows Chang-e's Basic Attacks to deals 20 (+35% Total Physical Attack) (+35% Total Magic Power) additional Magic Damage 2 times.Each time Change'e deals Magic damage with her Basic attack and skills, the cooldown of this skill is reduced by 0.2s.",
         "passive": false,
         "manaCost": "60/70/80/90/100/110",
         "cooldown": "12.0/11.5/10.5/10.0/9.5",
@@ -2630,7 +2745,7 @@
       },
       {
         "name": "Meteor Shower",
-        "description": "Chang'e fires 30 meteors in the target direction over 4s, each dealing 60 / 75 / 90 (+33% Total Magic Power) Magic Damage to the first enemy hit. This skill deals 100% extra damage to Minions and Creeps.Chang'e also gains 10% Movement Speed for the durationCrescent Moon: The Crescent Moon also fires meteors along with Chang'e, each dealing 33% damage.",
+        "description": "Chang-e fires 30 meteors in the target direction over 4s, each dealing 60 / 75 / 90 (+33% Total Magic Power) Magic Damage to the first enemy hit. This skill deals 100% extra damage to Minions and Creeps.Chang-e also gains 10% Movement Speed for the durationCrescent Moon: The Crescent Moon also fires meteors along with Chang-e, each dealing 33% damage.",
         "passive": false,
         "manaCost": "150/200/250",
         "cooldown": "36.0/33.0/30.0",
@@ -2677,13 +2792,19 @@
     ],
     "profileDirectory": "asset/champions/chang-e.png",
     "influence": {
-      "earlytomidgame": 6,
-      "lategame": 4,
-      "pickoff": 5,
+      "earlytomidgame": 8,
+      "lategame": 6,
+      "pickoff": 1,
       "teamfight": 3,
       "push": 2
     },
-    "tier": {},
+    "tier": {
+      "winrate": 49.38,
+      "pickrate": 0.58,
+      "banrate": 0.06,
+      "poin": 5.29,
+      "tier": "C"
+    },
     "emblems": {
       "roleEmblem": "Mage",
       "talent1": "Rupture",
@@ -2773,7 +2894,7 @@
       "Clint",
       "Zilong",
       "Nana",
-      "YiSunShin",
+      "Yi Sun Shin",
       "Natalia"
     ],
     "weakAgainsts": [
@@ -2785,11 +2906,11 @@
     ],
     "profileDirectory": "asset/champions/chou.png",
     "influence": {
-      "earlytomidgame": 6,
-      "lategame": 4,
+      "earlytomidgame": 4,
+      "lategame": 2,
       "pickoff": 1,
-      "teamfight": 2,
-      "push": 7
+      "teamfight": 3,
+      "push": 10
     },
     "tier": {
       "winrate": 44.03,
@@ -2895,11 +3016,11 @@
     ],
     "profileDirectory": "asset/champions/cici.png",
     "influence": {
-      "earlytomidgame": 6,
-      "lategame": 4,
-      "pickoff": 7,
-      "teamfight": 2,
-      "push": 1
+      "earlytomidgame": 2,
+      "lategame": 1,
+      "pickoff": 8,
+      "teamfight": 4,
+      "push": 5
     },
     "tier": {
       "winrate": 49.02,
@@ -3009,11 +3130,11 @@
     ],
     "profileDirectory": "asset/champions/claude.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 4,
-      "pickoff": 5,
-      "teamfight": 3,
-      "push": 7
+      "earlytomidgame": 2,
+      "lategame": 5,
+      "pickoff": 4,
+      "teamfight": 6,
+      "push": 3
     },
     "tier": {
       "winrate": 50.32,
@@ -3123,11 +3244,11 @@
     ],
     "profileDirectory": "asset/champions/clint.png",
     "influence": {
-      "earlytomidgame": 8,
-      "lategame": 2,
-      "pickoff": 5,
+      "earlytomidgame": 9,
+      "lategame": 3,
+      "pickoff": 2,
       "teamfight": 1,
-      "push": 4
+      "push": 5
     },
     "tier": {
       "winrate": 49.49,
@@ -3237,11 +3358,11 @@
     ],
     "profileDirectory": "asset/champions/cyclops.png",
     "influence": {
-      "earlytomidgame": 6,
-      "lategame": 2,
-      "pickoff": 3,
+      "earlytomidgame": 3,
+      "lategame": 10,
+      "pickoff": 2,
       "teamfight": 1,
-      "push": 8
+      "push": 4
     },
     "tier": {
       "winrate": 51.47,
@@ -3352,9 +3473,9 @@
     "profileDirectory": "asset/champions/diggie.png",
     "influence": {
       "earlytomidgame": 1,
-      "lategame": 5,
-      "pickoff": 9,
-      "teamfight": 2,
+      "lategame": 2,
+      "pickoff": 5,
+      "teamfight": 9,
       "push": 3
     },
     "tier": {
@@ -3465,9 +3586,9 @@
     ],
     "profileDirectory": "asset/champions/dyrroth.png",
     "influence": {
-      "earlytomidgame": 4,
-      "lategame": 6,
-      "pickoff": 5,
+      "earlytomidgame": 1,
+      "lategame": 10,
+      "pickoff": 4,
       "teamfight": 3,
       "push": 2
     },
@@ -3541,7 +3662,7 @@
       },
       {
         "name": "Primal Wrath",
-        "description": "PASSIVE: When inside Phylax, Edith can accumulate Wrath according to the damage she receives (calculated before damage reduction).ACTIVE: Edith ejects herself from Phylax, knocking back nearby enemies. After that she take flight and can perform ranged Basic Attack, each dealing 35 / 50 / 65 (+75% Total Physical Attack) (+25% Total Magic Power) Magic Damage. Edith also gains new skills in this state.When in flight Edith gains 350 / 500 / 650 (+5% Total HP)-350 (+20% Total HP) extra Shield, 50%â€“150% extra Attack Speed and 5%-20% Hybrid Lifesteal based on the Wrath she accumulated, and converts each point of Extra Physical Defense and Extra Magic Defense into 3.2 Magic Power.The Flight state lasts up to 8 / 10 / 12s.",
+        "description": "PASSIVE: When inside Phylax, Edith can accumulate Wrath according to the damage she receives (calculated before damage reduction).ACTIVE: Edith ejects herself from Phylax, knocking back nearby enemies. After that she take flight and can perform ranged Basic Attack, each dealing 35 / 50 / 65 (+75% Total Physical Attack) (+25% Total Magic Power) Magic Damage. Edith also gains new skills in this state.When in flight Edith gains 350 / 500 / 650 (+5% Total HP)-350 (+20% Total HP) extra Shield, 50%–150% extra Attack Speed and 5%-20% Hybrid Lifesteal based on the Wrath she accumulated, and converts each point of Extra Physical Defense and Extra Magic Defense into 3.2 Magic Power.The Flight state lasts up to 8 / 10 / 12s.",
         "passive": false,
         "manaCost": null,
         "cooldown": "40.0/37.0/34.0",
@@ -3582,7 +3703,7 @@
     ],
     "strongAgainsts": [
       "Paquito",
-      "Popol",
+      "Popol and Kupa",
       "Benedetta",
       "Phoveus",
       "Mathilda"
@@ -3596,11 +3717,11 @@
     ],
     "profileDirectory": "asset/champions/edith.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 10,
-      "pickoff": 3,
-      "teamfight": 2,
-      "push": 4
+      "earlytomidgame": 10,
+      "lategame": 3,
+      "pickoff": 4,
+      "teamfight": 1,
+      "push": 2
     },
     "tier": {
       "winrate": 48.33,
@@ -3711,11 +3832,11 @@
     ],
     "profileDirectory": "asset/champions/esmeralda.png",
     "influence": {
-      "earlytomidgame": 8,
-      "lategame": 6,
-      "pickoff": 1,
-      "teamfight": 3,
-      "push": 2
+      "earlytomidgame": 5,
+      "lategame": 8,
+      "pickoff": 2,
+      "teamfight": 1,
+      "push": 4
     },
     "tier": {
       "winrate": 44.92,
@@ -3824,11 +3945,11 @@
     ],
     "profileDirectory": "asset/champions/estes.png",
     "influence": {
-      "earlytomidgame": 10,
+      "earlytomidgame": 3,
       "lategame": 1,
-      "pickoff": 3,
-      "teamfight": 2,
-      "push": 4
+      "pickoff": 2,
+      "teamfight": 5,
+      "push": 9
     },
     "tier": {
       "winrate": 49.98,
@@ -3938,11 +4059,11 @@
     ],
     "profileDirectory": "asset/champions/eudora.png",
     "influence": {
-      "earlytomidgame": 3,
-      "lategame": 4,
-      "pickoff": 5,
-      "teamfight": 1,
-      "push": 7
+      "earlytomidgame": 8,
+      "lategame": 1,
+      "pickoff": 2,
+      "teamfight": 4,
+      "push": 5
     },
     "tier": {
       "winrate": 49.06,
@@ -4052,11 +4173,11 @@
     ],
     "profileDirectory": "asset/champions/fanny.png",
     "influence": {
-      "earlytomidgame": 1,
+      "earlytomidgame": 2,
       "lategame": 5,
-      "pickoff": 9,
-      "teamfight": 2,
-      "push": 3
+      "pickoff": 3,
+      "teamfight": 1,
+      "push": 9
     },
     "tier": {
       "winrate": 48.11,
@@ -4159,7 +4280,7 @@
       "Harley"
     ],
     "weakAgainsts": [
-      "X.borg",
+      "X-Borg",
       "Lylia",
       "Gusion",
       "Wanwan",
@@ -4167,10 +4288,10 @@
     ],
     "profileDirectory": "asset/champions/faramis.png",
     "influence": {
-      "earlytomidgame": 3,
-      "lategame": 6,
+      "earlytomidgame": 1,
+      "lategame": 10,
       "pickoff": 2,
-      "teamfight": 5,
+      "teamfight": 3,
       "push": 4
     },
     "tier": {
@@ -4266,26 +4387,26 @@
       }
     ],
     "strongAgainsts": [
-      "Luoyi",
+      "Luo Yi",
       "Cecilion",
       "Carmilla",
-      "Popol",
+      "Popol and Kupa",
       "Silvanna"
     ],
     "weakAgainsts": [
       "Eudora",
       "Paquito",
       "Kagura",
-      "X.borg",
+      "X-Borg",
       "Natan"
     ],
     "profileDirectory": "asset/champions/floryn.png",
     "influence": {
-      "earlytomidgame": 9,
-      "lategame": 2,
+      "earlytomidgame": 4,
+      "lategame": 3,
       "pickoff": 1,
-      "teamfight": 3,
-      "push": 5
+      "teamfight": 10,
+      "push": 2
     },
     "tier": {
       "winrate": 53.69,
@@ -4396,11 +4517,11 @@
     ],
     "profileDirectory": "asset/champions/franco.png",
     "influence": {
-      "earlytomidgame": 3,
+      "earlytomidgame": 2,
       "lategame": 5,
-      "pickoff": 4,
-      "teamfight": 7,
-      "push": 1
+      "pickoff": 9,
+      "teamfight": 1,
+      "push": 3
     },
     "tier": {
       "winrate": 44.94,
@@ -4505,7 +4626,7 @@
     ],
     "strongAgainsts": [
       "Esmeralda",
-      "YuZhong",
+      "Yu Zhong",
       "Barats"
     ],
     "weakAgainsts": [
@@ -4515,11 +4636,11 @@
     ],
     "profileDirectory": "asset/champions/fredrinn.png",
     "influence": {
-      "earlytomidgame": 4,
+      "earlytomidgame": 3,
       "lategame": 2,
       "pickoff": 1,
-      "teamfight": 3,
-      "push": 10
+      "teamfight": 5,
+      "push": 9
     },
     "tier": {
       "winrate": 47.53,
@@ -4629,11 +4750,11 @@
     ],
     "profileDirectory": "asset/champions/freya.png",
     "influence": {
-      "earlytomidgame": 5,
-      "lategame": 6,
+      "earlytomidgame": 3,
+      "lategame": 8,
       "pickoff": 2,
-      "teamfight": 3,
-      "push": 4
+      "teamfight": 6,
+      "push": 1
     },
     "tier": {
       "winrate": 54.06,
@@ -4744,11 +4865,11 @@
     ],
     "profileDirectory": "asset/champions/gatotkaca.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 9,
-      "pickoff": 3,
+      "earlytomidgame": 3,
+      "lategame": 1,
+      "pickoff": 4,
       "teamfight": 5,
-      "push": 2
+      "push": 7
     },
     "tier": {
       "winrate": 46.82,
@@ -4846,23 +4967,23 @@
       "Khaleed",
       "Benedetta",
       "Barats",
-      "Popol",
+      "Popol and Kupa",
       "Yve"
     ],
     "weakAgainsts": [
       "Beatrix",
       "Brody",
-      "YuZhong",
+      "Yu Zhong",
       "Paquito",
       "Wanwan"
     ],
     "profileDirectory": "asset/champions/gloo.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 3,
-      "pickoff": 7,
-      "teamfight": 4,
-      "push": 5
+      "earlytomidgame": 2,
+      "lategame": 1,
+      "pickoff": 4,
+      "teamfight": 6,
+      "push": 7
     },
     "tier": {
       "winrate": 50.91,
@@ -4972,10 +5093,10 @@
     ],
     "profileDirectory": "asset/champions/gord.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 7,
-      "pickoff": 6,
-      "teamfight": 4,
+      "earlytomidgame": 3,
+      "lategame": 6,
+      "pickoff": 4,
+      "teamfight": 5,
       "push": 2
     },
     "tier": {
@@ -4990,6 +5111,120 @@
       "talent1": "Inspire",
       "talent2": "Bargain Hunter",
       "talent3": "Impure Rage"
+    }
+  },
+  "Granger": {
+    "name": "Granger",
+    "type": [
+      "Marksman"
+    ],
+    "lane": "GOLD",
+    "description": "He is a bard who wanders all over the world and a demon hunter at the same time. He became an orphan in the war between the Empire and the Abyss, so he developed a massive hatred for the Abyss and the Demons. There are often legends about him among the Demons━as soon as you hear the miserable and sad music in the open country, run away quickly, because it may be a death song written just for you.",
+    "speciality": "Burst,Finisher",
+    "stats": {
+      "hp": 2370,
+      "hpRegen": 54,
+      "mana": 0,
+      "manaRegen": 0,
+      "movementSpeed": 240,
+      "physicalAtk": 100,
+      "physicalDef": 15,
+      "magicAtk": 0,
+      "magicDef": 10,
+      "atkSpeed": 102
+    },
+    "skills": [
+      {
+        "name": "Caprice",
+        "description": "Granger can fill his gun with up to 6 bullets at a time. Each 6th bullet is guaranteed to critically strike.\nGranger's Basic Attack will deal 50 (+110% Total Physical Attack) Physical Damage, but he only gains 40% of his total extra Attack Speed.",
+        "passive": true,
+        "manaCost": null,
+        "cooldown": null,
+        "iconDirectory": "Granger_Caprice.png"
+      },
+      {
+        "name": "Rhapsody",
+        "description": "Granger immediately reloads his gun and fires continuously in the target direction, dealing 35 / 65 / 95 / 125 / 155 / 185 (+70% Total Physical Attack) Physical Damage with each shot (deals 120 extra damage against Creeps).",
+        "passive": false,
+        "manaCost": null,
+        "cooldown": "10.0/9.6/9.2/8.8/8.4/8.0",
+        "iconDirectory": "Granger_Rhapsody.png"
+      },
+      {
+        "name": "Rondo",
+        "description": "Granger blinks in the designated direction, and his next 2 Basic Attacks deal extra 25% / 28% / 31% / 34% / 37% / 40% damage in 5s.Each time Rhapsody hits an enemy unit, the cooldown of this skill will be reduced by 0.5s.",
+        "passive": false,
+        "manaCost": null,
+        "cooldown": "8.0/7.6/7.2/6.8/6.4/6.0",
+        "iconDirectory": "Granger_Rondo.png"
+      },
+      {
+        "name": "Death Sonata",
+        "description": "Granger immediately reloads and fires a cannon shot in the target direction with the super canon hidden in his violin case. The cannon shot will pass through Minions and explode upon hitting an enemy hero, dealing Physical Damage equal to 80 / 120 / 160 (+70% Total Physical Attack) plus 12% of the  target's lost HP to enemies in the area and slowing them by 80%.Granger  can fire the super cannon 3 times at the cost of 2 bullets per shot, and can move once in the target direction after each shot. When Death Sonata ends, its cooldown will be reduced by 15% for every two bullets remaining.",
+        "passive": false,
+        "manaCost": null,
+        "cooldown": "60.0/55.0/50.0",
+        "iconDirectory": "Granger_Death_Sonata.png"
+      }
+    ],
+    "builds": [
+      {
+        "author": "Streamer : RID",
+        "description": "Jungle : Get movement speed from equipment to keep your distance.",
+        "battleSpell": "Flicker",
+        "item1": "Tough Boots",
+        "item2": "Hunter Strike",
+        "item3": "Malefic Roar",
+        "item4": "Brute Force Breastplate",
+        "item5": "Blade of Despair",
+        "item6": "Endless Battle"
+      },
+      {
+        "author": "No.1 KardoOo",
+        "description": "",
+        "battleSpell": "Flicker",
+        "item1": "Tough Boots",
+        "item2": "Hunter Strike",
+        "item3": "Endless Battle",
+        "item4": "Brute Force Breastplate",
+        "item5": "Malefic Roar",
+        "item6": "Blade of Despair"
+      }
+    ],
+    "strongAgainsts": [
+      "Khufra",
+      "Hanabi",
+      "Esmeralda",
+      "Kimmy",
+      "Claude"
+    ],
+    "weakAgainsts": [
+      "Guinevere",
+      "Minsitthar",
+      "Helcurt",
+      "Selena",
+      "Gusion"
+    ],
+    "profileDirectory": "asset/champions/granger.png",
+    "influence": {
+      "earlytomidgame": 5,
+      "lategame": 7,
+      "pickoff": 4,
+      "teamfight": 1,
+      "push": 3
+    },
+    "tier": {
+      "winrate": 48.95,
+      "pickrate": 0.47,
+      "banrate": 0.03,
+      "poin": 5.16,
+      "tier": "C"
+    },
+    "emblems": {
+      "roleEmblem": "Assassin",
+      "talent1": "Rupture",
+      "talent2": "Master Assassin",
+      "talent3": "Lethal Ignition"
     }
   },
   "Grock": {
@@ -5016,7 +5251,7 @@
     "skills": [
       {
         "name": "Earthen Force",
-        "description": "When near a wall or turret, Grock gains 10% extra Movement Speed, 15 (+8 Ã— Hero Level) Physical Defense, and 18 (+4.8 Ã— Hero Level) HP Regen.Each point of Grock's extra Physical Attack increases his Physical Defense by 0.5.",
+        "description": "When near a wall or turret, Grock gains 10% extra Movement Speed, 15 (+8 × Hero Level) Physical Defense, and 18 (+4.8 × Hero Level) HP Regen.Each point of Grock's extra Physical Attack increases his Physical Defense by 0.5.",
         "passive": true,
         "manaCost": null,
         "cooldown": null,
@@ -5063,12 +5298,12 @@
         "author": "Streamer : Solidus Gaming",
         "description": "Exp Lane : Full-on offense build with high burst damage against back line enemies.",
         "battleSpell": "Flicker",
-        "item1": "",
-        "item2": "",
-        "item3": "",
-        "item4": "",
-        "item5": "",
-        "item6": ""
+        "item1": "Tough Boots",
+        "item2": "Blade of the Heptaseas",
+        "item3": "Blade of Despair",
+        "item4": "Athena's Shield",
+        "item5": "Radiant Armor",
+        "item6": "Antique Cuirass"
       }
     ],
     "strongAgainsts": [
@@ -5086,11 +5321,11 @@
     ],
     "profileDirectory": "asset/champions/grock.png",
     "influence": {
-      "earlytomidgame": 5,
-      "lategame": 4,
-      "pickoff": 2,
-      "teamfight": 8,
-      "push": 1
+      "earlytomidgame": 2,
+      "lategame": 3,
+      "pickoff": 6,
+      "teamfight": 1,
+      "push": 8
     },
     "tier": {
       "winrate": 46.98,
@@ -5200,11 +5435,11 @@
     ],
     "profileDirectory": "asset/champions/guinevere.png",
     "influence": {
-      "earlytomidgame": 4,
+      "earlytomidgame": 1,
       "lategame": 7,
-      "pickoff": 6,
-      "teamfight": 2,
-      "push": 1
+      "pickoff": 2,
+      "teamfight": 4,
+      "push": 6
     },
     "tier": {
       "winrate": 51.05,
@@ -5314,11 +5549,11 @@
     ],
     "profileDirectory": "asset/champions/gusion.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 2,
-      "pickoff": 5,
-      "teamfight": 4,
-      "push": 8
+      "earlytomidgame": 3,
+      "lategame": 8,
+      "pickoff": 1,
+      "teamfight": 2,
+      "push": 6
     },
     "tier": {
       "winrate": 46.73,
@@ -5340,7 +5575,7 @@
       "Marksman"
     ],
     "lane": "GOLD",
-    "description": "As the oldest daughter of the Scarlet Supreme Grandmaster, Hanabi had been used to being the best amongst her peers. It was after the arrival of Hayabusa, a young ninja of the Shadow Sect, that Hanabi realized she was met with a strong rival... Through the rivalry that lasted their entire adolescence, Hanabi slowly fell in love with her rivalâ€”Hayabusa. But when she finally worked up the courage to reveal her feelings. Hayabusa had left without saying goodbye...",
+    "description": "As the oldest daughter of the Scarlet Supreme Grandmaster, Hanabi had been used to being the best amongst her peers. It was after the arrival of Hayabusa, a young ninja of the Shadow Sect, that Hanabi realized she was met with a strong rival... Through the rivalry that lasted their entire adolescence, Hanabi slowly fell in love with her rival—Hayabusa. But when she finally worked up the courage to reveal her feelings. Hayabusa had left without saying goodbye...",
     "speciality": "Finisher,Damage",
     "stats": {
       "hp": 2510,
@@ -5428,11 +5663,11 @@
     ],
     "profileDirectory": "asset/champions/hanabi.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 2,
-      "pickoff": 8,
+      "earlytomidgame": 10,
+      "lategame": 3,
+      "pickoff": 1,
       "teamfight": 4,
-      "push": 5
+      "push": 2
     },
     "tier": {
       "winrate": 49.81,
@@ -5558,10 +5793,10 @@
     ],
     "profileDirectory": "asset/champions/hanzo.png",
     "influence": {
-      "earlytomidgame": 3,
-      "lategame": 1,
-      "pickoff": 4,
-      "teamfight": 7,
+      "earlytomidgame": 1,
+      "lategame": 4,
+      "pickoff": 8,
+      "teamfight": 2,
       "push": 5
     },
     "tier": {
@@ -5673,10 +5908,10 @@
     "profileDirectory": "asset/champions/harith.png",
     "influence": {
       "earlytomidgame": 7,
-      "lategame": 3,
-      "pickoff": 4,
-      "teamfight": 1,
-      "push": 5
+      "lategame": 5,
+      "pickoff": 1,
+      "teamfight": 4,
+      "push": 3
     },
     "tier": {
       "winrate": 52.07,
@@ -5786,11 +6021,11 @@
     ],
     "profileDirectory": "asset/champions/harley.png",
     "influence": {
-      "earlytomidgame": 6,
-      "lategame": 2,
-      "pickoff": 8,
+      "earlytomidgame": 3,
+      "lategame": 4,
+      "pickoff": 7,
       "teamfight": 1,
-      "push": 3
+      "push": 5
     },
     "tier": {
       "winrate": 51.28,
@@ -5889,7 +6124,7 @@
       "Gord",
       "Eudora",
       "Miya",
-      "YiSunShin"
+      "Yi Sun Shin"
     ],
     "weakAgainsts": [
       "Kagura",
@@ -5900,11 +6135,11 @@
     ],
     "profileDirectory": "asset/champions/hayabusa.png",
     "influence": {
-      "earlytomidgame": 7,
-      "lategame": 1,
-      "pickoff": 4,
-      "teamfight": 3,
-      "push": 5
+      "earlytomidgame": 9,
+      "lategame": 5,
+      "pickoff": 1,
+      "teamfight": 2,
+      "push": 3
     },
     "tier": {
       "winrate": 46.83,
@@ -6015,10 +6250,10 @@
     "profileDirectory": "asset/champions/helcurt.png",
     "influence": {
       "earlytomidgame": 7,
-      "lategame": 4,
-      "pickoff": 6,
+      "lategame": 2,
+      "pickoff": 4,
       "teamfight": 1,
-      "push": 2
+      "push": 6
     },
     "tier": {
       "winrate": 49.95,
@@ -6131,9 +6366,9 @@
     "influence": {
       "earlytomidgame": 10,
       "lategame": 2,
-      "pickoff": 4,
-      "teamfight": 1,
-      "push": 3
+      "pickoff": 1,
+      "teamfight": 3,
+      "push": 4
     },
     "tier": {
       "winrate": 47.28,
@@ -6188,7 +6423,7 @@
       },
       {
         "name": "Ring Of Punishment",
-        "description": "Hylos releases the Ring of Punishment, dealing 100 / 130 / 160 / 190 / 220 / 250 (+20% Total Magic Power) Magic Damage to nearby enemies per second while slowing them by 4% and reducing their Attack Speed by 7.5% for 2.5 seconds (up to 8 stacks).Each stack also increases the enemy's damage taken from the Ring of Punishment by 5â€“20%. The Ring of Punishment consumes 30 Mana per second when it's active.Use Again: Hylos cancels the Ring of Punishment.",
+        "description": "Hylos releases the Ring of Punishment, dealing 100 / 130 / 160 / 190 / 220 / 250 (+20% Total Magic Power) Magic Damage to nearby enemies per second while slowing them by 4% and reducing their Attack Speed by 7.5% for 2.5 seconds (up to 8 stacks).Each stack also increases the enemy's damage taken from the Ring of Punishment by 5–20%. The Ring of Punishment consumes 30 Mana per second when it's active.Use Again: Hylos cancels the Ring of Punishment.",
         "passive": false,
         "manaCost": "30/40/60/90/120/150",
         "cooldown": "1.0",
@@ -6243,11 +6478,11 @@
     ],
     "profileDirectory": "asset/champions/hylos.png",
     "influence": {
-      "earlytomidgame": 6,
-      "lategame": 8,
-      "pickoff": 2,
-      "teamfight": 1,
-      "push": 3
+      "earlytomidgame": 3,
+      "lategame": 5,
+      "pickoff": 9,
+      "teamfight": 2,
+      "push": 1
     },
     "tier": {
       "winrate": 48.37,
@@ -6368,11 +6603,11 @@
     ],
     "profileDirectory": "asset/champions/irithel.png",
     "influence": {
-      "earlytomidgame": 4,
-      "lategame": 6,
+      "earlytomidgame": 1,
+      "lategame": 5,
       "pickoff": 3,
-      "teamfight": 2,
-      "push": 5
+      "teamfight": 7,
+      "push": 4
     },
     "tier": {
       "winrate": 49.37,
@@ -6411,7 +6646,7 @@
     "skills": [
       {
         "name": "Siphon Starlium",
-        "description": "Ixia's Basic Attacks and skills apply a stack of Starlium Charge to enemies on hit. When Ixia performs a Basic Attack on an enemy with two stacks of Starlium Charge, the attack will consume the stacks and be replaced with Siphon Starlium, dealing (150% Total Physical Attack) (+200 Ã— Lifesteal) plus (+10 Ã— Hero Level) Physical Damage to the target.Ixia recovers HP equal to the damage dealt by Siphon Starlium (only 20 (+100 Ã— Lifesteal)% against non-hero units).Siphon Starlium can trigger on all enemies in front of Ixia that are within her Basic Attack range, but it cannot critically strike.Ixia's Basic Attacks cannot trigger Lifesteal.",
+        "description": "Ixia's Basic Attacks and skills apply a stack of Starlium Charge to enemies on hit. When Ixia performs a Basic Attack on an enemy with two stacks of Starlium Charge, the attack will consume the stacks and be replaced with Siphon Starlium, dealing (150% Total Physical Attack) (+200 × Lifesteal) plus (+10 × Hero Level) Physical Damage to the target.Ixia recovers HP equal to the damage dealt by Siphon Starlium (only 20 (+100 × Lifesteal)% against non-hero units).Siphon Starlium can trigger on all enemies in front of Ixia that are within her Basic Attack range, but it cannot critically strike.Ixia's Basic Attacks cannot trigger Lifesteal.",
         "passive": true,
         "manaCost": null,
         "cooldown": null,
@@ -6444,7 +6679,7 @@
     ],
     "builds": [
       {
-        "author": "Streamer : ç–‘çŠ¯_ Yifan",
+        "author": "Streamer : 疑犯_ Yifan",
         "description": "Gold Lane : High attack speed, cast as many Siphon Starlium as possible!",
         "battleSpell": "Flicker",
         "item1": "Corrosion Scythe",
@@ -6478,11 +6713,11 @@
     ],
     "profileDirectory": "asset/champions/ixia.png",
     "influence": {
-      "earlytomidgame": 5,
-      "lategame": 9,
-      "pickoff": 3,
-      "teamfight": 2,
-      "push": 1
+      "earlytomidgame": 2,
+      "lategame": 5,
+      "pickoff": 4,
+      "teamfight": 3,
+      "push": 6
     },
     "tier": {
       "winrate": 52.58,
@@ -6592,11 +6827,11 @@
     ],
     "profileDirectory": "asset/champions/jawhead.png",
     "influence": {
-      "earlytomidgame": 3,
+      "earlytomidgame": 8,
       "lategame": 5,
-      "pickoff": 4,
-      "teamfight": 2,
-      "push": 6
+      "pickoff": 2,
+      "teamfight": 1,
+      "push": 4
     },
     "tier": {
       "winrate": 45.67,
@@ -6707,11 +6942,11 @@
     ],
     "profileDirectory": "asset/champions/johnson.png",
     "influence": {
-      "earlytomidgame": 1,
+      "earlytomidgame": 3,
       "lategame": 9,
-      "pickoff": 3,
+      "pickoff": 5,
       "teamfight": 2,
-      "push": 5
+      "push": 1
     },
     "tier": {
       "winrate": 45.03,
@@ -6812,16 +7047,16 @@
     ],
     "weakAgainsts": [
       "Hanabi",
-      "Zilong",
-      "Atlas"
+      "Atlas",
+      "Zilong"
     ],
     "profileDirectory": "asset/champions/joy.png",
     "influence": {
       "earlytomidgame": 2,
-      "lategame": 4,
-      "pickoff": 1,
-      "teamfight": 5,
-      "push": 8
+      "lategame": 3,
+      "pickoff": 4,
+      "teamfight": 10,
+      "push": 1
     },
     "tier": {
       "winrate": 53.64,
@@ -6861,7 +7096,7 @@
     "skills": [
       {
         "name": "Smith's Legacy",
-        "description": "After casting two different skills, Julian enhances his third skill. Casting the enhanced skill makes all his skills go on a 10â€“6.5s cooldown (decrease with his level) but his Basic Attack within the next 5s will deal 75 (+100% Total Physical Attack) (+120% Total Magic Power) Magic Damage and pull the target toward him.Julian gains 15% / 30% / 45% extra Hybrid Lifesteal for 5s each time he hits an enemy hero with his skills (up to 3 stacks).",
+        "description": "After casting two different skills, Julian enhances his third skill. Casting the enhanced skill makes all his skills go on a 10–6.5s cooldown (decrease with his level) but his Basic Attack within the next 5s will deal 75 (+100% Total Physical Attack) (+120% Total Magic Power) Magic Damage and pull the target toward him.Julian gains 15% / 30% / 45% extra Hybrid Lifesteal for 5s each time he hits an enemy hero with his skills (up to 3 stacks).",
         "passive": true,
         "manaCost": null,
         "cooldown": null,
@@ -6961,9 +7196,9 @@
     "profileDirectory": "asset/champions/julian.png",
     "influence": {
       "earlytomidgame": 2,
-      "lategame": 6,
-      "pickoff": 3,
-      "teamfight": 1,
+      "lategame": 1,
+      "pickoff": 4,
+      "teamfight": 5,
       "push": 8
     },
     "tier": {
@@ -7075,11 +7310,11 @@
     ],
     "profileDirectory": "asset/champions/kadita.png",
     "influence": {
-      "earlytomidgame": 7,
-      "lategame": 3,
-      "pickoff": 1,
-      "teamfight": 4,
-      "push": 5
+      "earlytomidgame": 5,
+      "lategame": 4,
+      "pickoff": 2,
+      "teamfight": 1,
+      "push": 8
     },
     "tier": {
       "winrate": 47.94,
@@ -7189,11 +7424,11 @@
     ],
     "profileDirectory": "asset/champions/kagura.png",
     "influence": {
-      "earlytomidgame": 5,
-      "lategame": 4,
-      "pickoff": 3,
-      "teamfight": 2,
-      "push": 6
+      "earlytomidgame": 1,
+      "lategame": 3,
+      "pickoff": 2,
+      "teamfight": 9,
+      "push": 5
     },
     "tier": {
       "winrate": 48,
@@ -7216,7 +7451,7 @@
       " Support"
     ],
     "lane": "ROAM",
-    "description": "As their leader of the Celestial Palace's Nazar guardians, Kaja was able to refine the power of lighting into pure energy to control as he so desired, inflicting catastrophic damage to all enemies who faced him, and was charged with directly protecting the ruler of the city. Countless eons ago, after the city's ruler created the Nazar guardians and departed, the city gradually fell into a state of ruin. When Uranus was activated, the ruler of the Celestial Palace handed down new orders to the Nazarâ€”to drive the evil demons from the city and rebuild the Celestial Palace in anticipation of the master's return.",
+    "description": "As their leader of the Celestial Palace's Nazar guardians, Kaja was able to refine the power of lighting into pure energy to control as he so desired, inflicting catastrophic damage to all enemies who faced him, and was charged with directly protecting the ruler of the city. Countless eons ago, after the city's ruler created the Nazar guardians and departed, the city gradually fell into a state of ruin. When Uranus was activated, the ruler of the Celestial Palace handed down new orders to the Nazar—to drive the evil demons from the city and rebuild the Celestial Palace in anticipation of the master's return.",
     "speciality": "Control,Charge",
     "stats": {
       "hp": 2609,
@@ -7304,11 +7539,11 @@
     ],
     "profileDirectory": "asset/champions/kaja.png",
     "influence": {
-      "earlytomidgame": 3,
-      "lategame": 6,
-      "pickoff": 8,
-      "teamfight": 1,
-      "push": 2
+      "earlytomidgame": 8,
+      "lategame": 3,
+      "pickoff": 2,
+      "teamfight": 6,
+      "push": 1
     },
     "tier": {
       "winrate": 47.85,
@@ -7386,7 +7621,7 @@
         "item1": "Arcane Boots",
         "item2": "Starlium Scythe",
         "item3": "Holy Crystal",
-        "item4": "Shadow Twinblades",
+        "item4": "Malefic Roar",
         "item5": "Divine Glaive",
         "item6": "Blood Wings"
       },
@@ -7418,11 +7653,11 @@
     ],
     "profileDirectory": "asset/champions/karina.png",
     "influence": {
-      "earlytomidgame": 8,
-      "lategame": 4,
+      "earlytomidgame": 9,
+      "lategame": 1,
       "pickoff": 2,
-      "teamfight": 5,
-      "push": 1
+      "teamfight": 3,
+      "push": 5
     },
     "tier": {
       "winrate": 47.97,
@@ -7532,11 +7767,11 @@
     ],
     "profileDirectory": "asset/champions/karrie.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 2,
-      "pickoff": 3,
-      "teamfight": 10,
-      "push": 4
+      "earlytomidgame": 2,
+      "lategame": 4,
+      "pickoff": 1,
+      "teamfight": 8,
+      "push": 5
     },
     "tier": {
       "winrate": 49.93,
@@ -7631,7 +7866,7 @@
       }
     ],
     "strongAgainsts": [
-      "Popol",
+      "Popol and Kupa",
       "Hanzo",
       "Silvanna",
       "Chou",
@@ -7640,17 +7875,17 @@
     "weakAgainsts": [
       "Cecilion",
       "Atlas",
-      "YuZhong",
+      "Yu Zhong",
       "Kimmy",
       "Helcurt"
     ],
     "profileDirectory": "asset/champions/khaleed.png",
     "influence": {
-      "earlytomidgame": 4,
-      "lategame": 3,
-      "pickoff": 6,
-      "teamfight": 5,
-      "push": 2
+      "earlytomidgame": 1,
+      "lategame": 8,
+      "pickoff": 2,
+      "teamfight": 6,
+      "push": 3
     },
     "tier": {
       "winrate": 53.18,
@@ -7760,11 +7995,11 @@
     ],
     "profileDirectory": "asset/champions/khufra.png",
     "influence": {
-      "earlytomidgame": 3,
-      "lategame": 2,
+      "earlytomidgame": 2,
+      "lategame": 9,
       "pickoff": 5,
-      "teamfight": 1,
-      "push": 9
+      "teamfight": 3,
+      "push": 1
     },
     "tier": {
       "winrate": 48.26,
@@ -7828,7 +8063,7 @@
       },
       {
         "name": "Maximum Charge",
-        "description": "After a period of charging, Kimmy launches a Luminous Chemical Attack in a designated direction.The projectile will explode upon hitting an enemy or reaching the maximum range, dealing 130 / 195 / 260 (+100% Total Physical Attack) (+115% Total Magic Power) â€“ 238 / 356 / 474 (+185% Total Physical Attack) (+211% Total Magic Power) Magic Damage to the primary target (scales with charging time) and 83% (5/6) damage to nearby enemies.Kimmy restores 30 energy if this skill hits an enemy.",
+        "description": "After a period of charging, Kimmy launches a Luminous Chemical Attack in a designated direction.The projectile will explode upon hitting an enemy or reaching the maximum range, dealing 130 / 195 / 260 (+100% Total Physical Attack) (+115% Total Magic Power) – 238 / 356 / 474 (+185% Total Physical Attack) (+211% Total Magic Power) Magic Damage to the primary target (scales with charging time) and 83% (5/6) damage to nearby enemies.Kimmy restores 30 energy if this skill hits an enemy.",
         "passive": false,
         "manaCost": "0",
         "cooldown": "28.0/24.0/20.0",
@@ -7876,11 +8111,11 @@
     ],
     "profileDirectory": "asset/champions/kimmy.png",
     "influence": {
-      "earlytomidgame": 2,
-      "lategame": 6,
-      "pickoff": 3,
-      "teamfight": 5,
-      "push": 4
+      "earlytomidgame": 9,
+      "lategame": 5,
+      "pickoff": 2,
+      "teamfight": 1,
+      "push": 3
     },
     "tier": {
       "winrate": 47.51,
@@ -7990,11 +8225,11 @@
     ],
     "profileDirectory": "asset/champions/lancelot.png",
     "influence": {
-      "earlytomidgame": 2,
-      "lategame": 6,
-      "pickoff": 1,
-      "teamfight": 3,
-      "push": 8
+      "earlytomidgame": 5,
+      "lategame": 2,
+      "pickoff": 4,
+      "teamfight": 8,
+      "push": 1
     },
     "tier": {
       "winrate": 45.29,
@@ -8128,11 +8363,11 @@
     ],
     "profileDirectory": "asset/champions/lapu-lapu.png",
     "influence": {
-      "earlytomidgame": 5,
-      "lategame": 2,
+      "earlytomidgame": 1,
+      "lategame": 5,
       "pickoff": 9,
-      "teamfight": 1,
-      "push": 3
+      "teamfight": 3,
+      "push": 2
     },
     "tier": {
       "winrate": 47.87,
@@ -8209,7 +8444,7 @@
         "battleSpell": "Flicker",
         "item1": "Swift Boots",
         "item2": "Berserker's Fury",
-        "item3": "Scarlet Phantom",
+        "item3": "Malefic Roar",
         "item4": "Haas's Claws",
         "item5": "Wind of Nature",
         "item6": "Malefic Roar"
@@ -8231,7 +8466,7 @@
       "Rafaela",
       "Vale",
       "Nana",
-      "YiSunShin"
+      "Yi Sun Shin"
     ],
     "weakAgainsts": [
       "Saber",
@@ -8242,11 +8477,11 @@
     ],
     "profileDirectory": "asset/champions/layla.png",
     "influence": {
-      "earlytomidgame": 4,
-      "lategame": 3,
-      "pickoff": 7,
-      "teamfight": 5,
-      "push": 1
+      "earlytomidgame": 6,
+      "lategame": 8,
+      "pickoff": 1,
+      "teamfight": 2,
+      "push": 3
     },
     "tier": {
       "winrate": 47.08,
@@ -8372,11 +8607,11 @@
     ],
     "profileDirectory": "asset/champions/leomord.png",
     "influence": {
-      "earlytomidgame": 1,
+      "earlytomidgame": 2,
       "lategame": 4,
-      "pickoff": 5,
-      "teamfight": 3,
-      "push": 7
+      "pickoff": 1,
+      "teamfight": 5,
+      "push": 8
     },
     "tier": {
       "winrate": 49.46,
@@ -8495,11 +8730,11 @@
     ],
     "profileDirectory": "asset/champions/lesley.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 2,
-      "pickoff": 9,
-      "teamfight": 5,
-      "push": 3
+      "earlytomidgame": 3,
+      "lategame": 1,
+      "pickoff": 2,
+      "teamfight": 8,
+      "push": 6
     },
     "tier": {
       "winrate": 46.15,
@@ -8546,7 +8781,7 @@
       },
       {
         "name": "Finch Poise",
-        "description": "PASSIVE: Lingâ€™s Critical Chance is permanently increased by {2.5% / 4% / 5.5% / 7% / 8.5% / 10%}.ACTIVE: Ling casts his Lightness Skill, leaping onto the designated wall, entering half-stealth state, restoring Lightness Points more quickly and gaining 30% Movement Speed.If Ling receives damage, he will leave the half-stealth state. If he is controlled, he will fall onto the ground and be slowed by 30% for 2s. When using this skill to jump from a wall to another, it will reset the Cooldown and refresh the half-stealth state.",
+        "description": "PASSIVE: Ling’s Critical Chance is permanently increased by {2.5% / 4% / 5.5% / 7% / 8.5% / 10%}.ACTIVE: Ling casts his Lightness Skill, leaping onto the designated wall, entering half-stealth state, restoring Lightness Points more quickly and gaining 30% Movement Speed.If Ling receives damage, he will leave the half-stealth state. If he is controlled, he will fall onto the ground and be slowed by 30% for 2s. When using this skill to jump from a wall to another, it will reset the Cooldown and refresh the half-stealth state.",
         "passive": false,
         "manaCost": "30",
         "cooldown": "20.0",
@@ -8609,11 +8844,11 @@
     ],
     "profileDirectory": "asset/champions/ling.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 10,
-      "pickoff": 3,
-      "teamfight": 2,
-      "push": 4
+      "earlytomidgame": 2,
+      "lategame": 1,
+      "pickoff": 10,
+      "teamfight": 4,
+      "push": 3
     },
     "tier": {
       "winrate": 46.73,
@@ -8724,11 +8959,11 @@
     ],
     "profileDirectory": "asset/champions/lolita.png",
     "influence": {
-      "earlytomidgame": 6,
-      "lategame": 3,
-      "pickoff": 2,
-      "teamfight": 8,
-      "push": 1
+      "earlytomidgame": 5,
+      "lategame": 9,
+      "pickoff": 1,
+      "teamfight": 3,
+      "push": 2
     },
     "tier": {
       "winrate": 50.36,
@@ -8854,11 +9089,11 @@
     ],
     "profileDirectory": "asset/champions/lunox.png",
     "influence": {
-      "earlytomidgame": 4,
-      "lategame": 1,
-      "pickoff": 2,
-      "teamfight": 3,
-      "push": 10
+      "earlytomidgame": 5,
+      "lategame": 2,
+      "pickoff": 3,
+      "teamfight": 9,
+      "push": 1
     },
     "tier": {
       "winrate": 52.29,
@@ -8897,7 +9132,7 @@
     "skills": [
       {
         "name": "Duality",
-        "description": "Luo Yi's skills create Sigils of Yin/Yang on the battlefield. Each Sigil lasts up to 6s.Sigils opposite attributes will trigger Yin-Yang Reaction when they are within a certain distance, dealing 365 (+20 Ã— Hero Level) (+190% Total Magic Power) Magic Damage to the marked enemies, stunning them for 1s, and pulling them toward each other .\nEach time Luo Yi applies a new Sigil to a marked enemy, she gains 300 (+10 Ã— Hero Level) (+150% Total Magic Power) shield (up to 3 stacks) and 30% extra Movement Speed that decays over 2s.",
+        "description": "Luo Yi's skills create Sigils of Yin/Yang on the battlefield. Each Sigil lasts up to 6s.Sigils opposite attributes will trigger Yin-Yang Reaction when they are within a certain distance, dealing 365 (+20 × Hero Level) (+190% Total Magic Power) Magic Damage to the marked enemies, stunning them for 1s, and pulling them toward each other .\nEach time Luo Yi applies a new Sigil to a marked enemy, she gains 300 (+10 × Hero Level) (+150% Total Magic Power) shield (up to 3 stacks) and 30% extra Movement Speed that decays over 2s.",
         "passive": true,
         "manaCost": null,
         "cooldown": null,
@@ -8921,7 +9156,7 @@
       },
       {
         "name": "Diversion",
-        "description": "Luo Yi creates a Teleport Circle around herself and marks target location (within 28 / 32 / 36 units) as its destination.After 3s delay, allied heroes (including herself) within the Circle will be teleported to the location.PASSIVE: Luo Yiâ€™s Cooldown Reduction is increased by 6% / 8% / 10%.",
+        "description": "Luo Yi creates a Teleport Circle around herself and marks target location (within 28 / 32 / 36 units) as its destination.After 3s delay, allied heroes (including herself) within the Circle will be teleported to the location.PASSIVE: Luo Yi’s Cooldown Reduction is increased by 6% / 8% / 10%.",
         "passive": false,
         "manaCost": "0",
         "cooldown": "50.0/45.0/40.0",
@@ -8960,7 +9195,7 @@
       "Hanabi"
     ],
     "weakAgainsts": [
-      "Popol",
+      "Popol and Kupa",
       "Wanwan",
       "Gusion",
       "Ling",
@@ -8968,11 +9203,11 @@
     ],
     "profileDirectory": "asset/champions/luo yi.png",
     "influence": {
-      "earlytomidgame": 4,
-      "lategame": 1,
-      "pickoff": 5,
-      "teamfight": 3,
-      "push": 7
+      "earlytomidgame": 2,
+      "lategame": 3,
+      "pickoff": 10,
+      "teamfight": 1,
+      "push": 4
     },
     "tier": {
       "winrate": 53.1,
@@ -9076,17 +9311,17 @@
     "weakAgainsts": [
       "Fanny",
       "Guinevere",
-      "X.borg",
+      "X-Borg",
       "Dyrroth",
       "Helcurt"
     ],
     "profileDirectory": "asset/champions/lylia.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 5,
-      "pickoff": 4,
-      "teamfight": 2,
-      "push": 8
+      "earlytomidgame": 4,
+      "lategame": 2,
+      "pickoff": 6,
+      "teamfight": 1,
+      "push": 7
     },
     "tier": {
       "winrate": 50.68,
@@ -9196,11 +9431,11 @@
     ],
     "profileDirectory": "asset/champions/martis.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 10,
-      "pickoff": 3,
+      "earlytomidgame": 5,
+      "lategame": 3,
+      "pickoff": 1,
       "teamfight": 2,
-      "push": 4
+      "push": 9
     },
     "tier": {
       "winrate": 48.51,
@@ -9318,11 +9553,11 @@
     ],
     "profileDirectory": "asset/champions/masha.png",
     "influence": {
-      "earlytomidgame": 5,
-      "lategame": 2,
-      "pickoff": 3,
-      "teamfight": 4,
-      "push": 6
+      "earlytomidgame": 1,
+      "lategame": 4,
+      "pickoff": 10,
+      "teamfight": 3,
+      "push": 2
     },
     "tier": {
       "winrate": 56.63,
@@ -9425,7 +9660,7 @@
       "Esmeralda"
     ],
     "weakAgainsts": [
-      "Luoyi",
+      "Luo Yi",
       "Carmilla",
       "Wanwan",
       "Badang",
@@ -9433,11 +9668,11 @@
     ],
     "profileDirectory": "asset/champions/mathilda.png",
     "influence": {
-      "earlytomidgame": 4,
-      "lategame": 5,
-      "pickoff": 8,
+      "earlytomidgame": 6,
+      "lategame": 3,
+      "pickoff": 4,
       "teamfight": 2,
-      "push": 1
+      "push": 5
     },
     "tier": {
       "winrate": 54.53,
@@ -9451,6 +9686,116 @@
       "talent1": "Agility",
       "talent2": "Pull Yourself Together",
       "talent3": "Brave Smite"
+    }
+  },
+  "Melissa": {
+    "name": "Melissa",
+    "type": [
+      "Marksman"
+    ],
+    "lane": "GOLD",
+    "description": "As an illegitimate child of a noble, Melissa grew up in the Lumina City, capital of the Moniyan Empire, where she runs a small tailor shop. Endowed with black magic, she uses cursed needles to fight, solving problems for her clients in unique ways.A girl with cursed needles who runs a tailor shop and solves problems for clients.",
+    "speciality": "Finisher,Damage",
+    "stats": {
+      "hp": 2460,
+      "hpRegen": 66,
+      "mana": 448,
+      "manaRegen": 3,
+      "movementSpeed": 248,
+      "physicalAtk": 123,
+      "physicalDef": 18,
+      "magicAtk": 0,
+      "magicDef": 0,
+      "atkSpeed": 94
+    },
+    "skills": [
+      {
+        "name": "Doll Buster",
+        "description": "Melissa deals 125% damage to Minions, Creeps and Summoned Units.",
+        "passive": true,
+        "manaCost": null,
+        "cooldown": null,
+        "iconDirectory": "Doll_Buster.png"
+      },
+      {
+        "name": "Falling!",
+        "description": "Increase attack speed by 50% / 55% / 60% / 65% / 70% / 75% for 3s.The skill's cooldown is reduced by 1.5s each time Melissa damages the enemy by attacking Muddles.",
+        "passive": false,
+        "manaCost": "60/65/70/75/80/85",
+        "cooldown": "10.5/9.8/9.1/8.4/7.7/7.0",
+        "iconDirectory": "Falling.png"
+      },
+      {
+        "name": "Eyes on You!",
+        "description": "Muddles deals 250 / 280 / 310 / 340 / 370 / 400 (+80% Total Physical Attack) Physical Damage on the first hit and links nearby enemies for up to 6s.Linked enemies will be slowed by 60% that decays over 1.5s and can break the link by moving out of the range.Muddles will return to Melissa early when there are no enemies around and immediately is she's too far away.When Muddles is present, you can tap the Attack Minion button to directly attack Muddles, though it cannot trigger the multi-hit damage.",
+        "passive": false,
+        "manaCost": "60/50/40/30/20/10",
+        "cooldown": "9.0/8.6/8.2/7.8/7.4/7.0",
+        "iconDirectory": "Eyes_on_You.png"
+      },
+      {
+        "name": "Go Away!",
+        "description": "When activated, the field knocks back enemies in the area and deals 500 / 700 / 900 (+100% Total Magic Power) Magic Damage. It'll then continuously knock back enemies who attempt to enter the field, dealing them 50 / 70 / 90 (+10% Total Magic Power) Magic Damage and briefly slowing them.The field will also interrupt the enemy's movement skills unless they're immune to control effects. The field will move with Melissa once, when she's about to move out of boundary.PASSIVE: Melissa's Physical and Magic Defense is increased by 3 / 4 / 5 . This effect is increased to 5 times when the skill is active.",
+        "passive": false,
+        "manaCost": "120/150/180",
+        "cooldown": "50.0/45.0/40.0",
+        "iconDirectory": "Go_Away.png"
+      }
+    ],
+    "builds": [
+      {
+        "author": "Streamer : Raja Belit",
+        "description": "Gold Lane : Full attack effect equipment, excellent in 1v1.",
+        "battleSpell": "Flicker",
+        "item1": "Corrosion Scythe",
+        "item2": "Swift Boots",
+        "item3": "Demon Hunter Sword",
+        "item4": "Golden Staff",
+        "item5": "Wind of Nature",
+        "item6": "Malefic Roar"
+      },
+      {
+        "author": "No.1 ДНИНа228",
+        "description": "",
+        "battleSpell": "Flicker",
+        "item1": "Corrosion Scythe",
+        "item2": "Demon Hunter Sword",
+        "item3": "Tough Boots",
+        "item4": "Golden Staff",
+        "item5": "Sea Halberd",
+        "item6": "Wind of Nature"
+      }
+    ],
+    "strongAgainsts": [
+      "Balmond",
+      "Akai",
+      "Zilong"
+    ],
+    "weakAgainsts": [
+      "Zilong",
+      "Saber",
+      "Natalia"
+    ],
+    "profileDirectory": "asset/champions/melissa.png",
+    "influence": {
+      "earlytomidgame": 7,
+      "lategame": 2,
+      "pickoff": 1,
+      "teamfight": 6,
+      "push": 4
+    },
+    "tier": {
+      "winrate": 50.42,
+      "pickrate": 0.36,
+      "banrate": 0.05,
+      "poin": 5.27,
+      "tier": "C"
+    },
+    "emblems": {
+      "roleEmblem": "Marksman",
+      "talent1": "Swift",
+      "talent2": "Master Assassin",
+      "talent3": "Weakness Finder"
     }
   },
   "Minotaur": {
@@ -9549,11 +9894,11 @@
     ],
     "profileDirectory": "asset/champions/minotaur.png",
     "influence": {
-      "earlytomidgame": 6,
+      "earlytomidgame": 1,
       "lategame": 3,
-      "pickoff": 4,
+      "pickoff": 5,
       "teamfight": 2,
-      "push": 5
+      "push": 9
     },
     "tier": {
       "winrate": 56.13,
@@ -9663,11 +10008,11 @@
     ],
     "profileDirectory": "asset/champions/minsitthar.png",
     "influence": {
-      "earlytomidgame": 3,
-      "lategame": 2,
-      "pickoff": 1,
-      "teamfight": 8,
-      "push": 6
+      "earlytomidgame": 4,
+      "lategame": 3,
+      "pickoff": 5,
+      "teamfight": 1,
+      "push": 7
     },
     "tier": {
       "winrate": 45.92,
@@ -9745,7 +10090,7 @@
         "item1": "Swift Boots",
         "item2": "Windtalker",
         "item3": "Berserker's Fury",
-        "item4": "Scarlet Phantom",
+        "item4": "Malefic Roar",
         "item5": "Haas's Claws",
         "item6": "Wind of Nature"
       },
@@ -9755,7 +10100,7 @@
         "battleSpell": "Flicker",
         "item1": "Berserker's Fury",
         "item2": "Swift Boots",
-        "item3": "Scarlet Phantom",
+        "item3": "Malefic Roar",
         "item4": "Windtalker",
         "item5": "Haas's Claws",
         "item6": "Blade of Despair"
@@ -9777,11 +10122,11 @@
     ],
     "profileDirectory": "asset/champions/miya.png",
     "influence": {
-      "earlytomidgame": 7,
-      "lategame": 4,
-      "pickoff": 2,
-      "teamfight": 1,
-      "push": 6
+      "earlytomidgame": 4,
+      "lategame": 1,
+      "pickoff": 5,
+      "teamfight": 2,
+      "push": 8
     },
     "tier": {
       "winrate": 46.33,
@@ -9891,11 +10236,11 @@
     ],
     "profileDirectory": "asset/champions/baxia.png",
     "influence": {
-      "earlytomidgame": 5,
-      "lategame": 2,
-      "pickoff": 8,
+      "earlytomidgame": 3,
+      "lategame": 1,
+      "pickoff": 2,
       "teamfight": 4,
-      "push": 1
+      "push": 10
     },
     "tier": {
       "winrate": 47.85,
@@ -9934,7 +10279,7 @@
     "skills": [
       {
         "name": "Spear of Quiescence",
-        "description": "Moskovâ€™s Basic Attack can penetrate the target and deal (68% Total Physical Attack) â€“ (110% Total Physical Attack) Physical Damage to enemies behind them (inherits Attack Effects).Each Basic Attack hits reduce the cooldown of Abyss Walker and Spear of Misery by 0.8s.",
+        "description": "Moskov’s Basic Attack can penetrate the target and deal (68% Total Physical Attack) – (110% Total Physical Attack) Physical Damage to enemies behind them (inherits Attack Effects).Each Basic Attack hits reduce the cooldown of Abyss Walker and Spear of Misery by 0.8s.",
         "passive": true,
         "manaCost": null,
         "cooldown": null,
@@ -10005,11 +10350,11 @@
     ],
     "profileDirectory": "asset/champions/moskov.png",
     "influence": {
-      "earlytomidgame": 7,
-      "lategame": 1,
-      "pickoff": 5,
-      "teamfight": 3,
-      "push": 4
+      "earlytomidgame": 5,
+      "lategame": 3,
+      "pickoff": 7,
+      "teamfight": 4,
+      "push": 1
     },
     "tier": {
       "winrate": 48.45,
@@ -10120,11 +10465,11 @@
     ],
     "profileDirectory": "asset/champions/nana.png",
     "influence": {
-      "earlytomidgame": 8,
-      "lategame": 6,
-      "pickoff": 1,
-      "teamfight": 3,
-      "push": 2
+      "earlytomidgame": 3,
+      "lategame": 2,
+      "pickoff": 4,
+      "teamfight": 6,
+      "push": 5
     },
     "tier": {
       "winrate": 51.3,
@@ -10207,7 +10552,7 @@
         "item6": "Demon Hunter Sword"
       },
       {
-        "author": "Streamer : ç–‘çŠ¯_ Yifan",
+        "author": "Streamer : 疑犯_ Yifan",
         "description": "Jungle : New CDD reduction & Crit build. Eliminate squishies with two enhanced Basic Attacks in late game.",
         "battleSpell": "Flicker",
         "item1": "Rapid Boots",
@@ -10234,7 +10579,7 @@
       "Layla",
       "Gord",
       "Eudora",
-      "YiSunShin"
+      "Yi Sun Shin"
     ],
     "weakAgainsts": [
       "Saber",
@@ -10245,10 +10590,10 @@
     ],
     "profileDirectory": "asset/champions/natalia.png",
     "influence": {
-      "earlytomidgame": 4,
-      "lategame": 7,
-      "pickoff": 5,
-      "teamfight": 3,
+      "earlytomidgame": 5,
+      "lategame": 3,
+      "pickoff": 2,
+      "teamfight": 9,
       "push": 1
     },
     "tier": {
@@ -10263,6 +10608,120 @@
       "talent1": "Agility",
       "talent2": "Master Assassin",
       "talent3": "Lethal Ignition"
+    }
+  },
+  "Natan": {
+    "name": "Natan",
+    "type": [
+      "Marksman"
+    ],
+    "lane": "GOLD",
+    "description": "A thousand years after falling into a deep slumber, the Lord of the Abyss and the Lord of Light awoke, and so the Endless War raged once more. Natan stood as Eruditio's leader, guiding the people in their search for hope in this world. Yet having faced numerous defeats he decided instead to cast his gaze not to the future, but to the pastâ€”by inventing a time machine. As the world teetered on the brink of destruction, his time machine finally reached completion as it absorbed the combined power of the Twilight Orbs: Natan stepped within, and started searching the past for a chance to save the world.A\ntime-traveler with a masterful grasp on all things scientific and\nmagical. \n",
+    "speciality": "Burst,Magic Damage",
+    "stats": {
+      "hp": 2530,
+      "hpRegen": 60,
+      "mana": 443,
+      "manaRegen": 30,
+      "movementSpeed": 245,
+      "physicalAtk": 110,
+      "physicalDef": 17,
+      "magicAtk": 0,
+      "magicDef": 0,
+      "atkSpeed": 87
+    },
+    "skills": [
+      {
+        "name": "Theory of Everything",
+        "description": "Natan gains a stack of Entanglement each time he or his Reverse-Clone hits an enemy with a skill (up to 6 stacks).Each stack lasts 5 seconds and grants 7.5%–15% extra Attack Speed and 7.5% Movement Speed.Natan's Basic Attacks projectiles will return to Natan after reaching the maximum range, dealing an extra 45 (+50% Total Physical Attack) (+70% Total Magic Power) Magic Damage to enemies along the way (inherits 70% of Natan's attack effects).",
+        "passive": true,
+        "manaCost": null,
+        "cooldown": null,
+        "iconDirectory": "Theory_of_Everything.png"
+      },
+      {
+        "name": "Superposition",
+        "description": "Natan shoots a dense mass of energy, dealing 225 / 285 / 345 / 405 / 465 / 525 (+100% Total Physical Attack) (+140% Total Magic Power) Magic Damage to enemies along its path.",
+        "passive": false,
+        "manaCost": "65/71/77/83/89/95",
+        "cooldown": "8.0/7.6/7.2/6.8/6.4/6.0",
+        "iconDirectory": "Superposition.png"
+      },
+      {
+        "name": "Interference!",
+        "description": "Natan launches a Gravitational Attractor in the target direction, dealing 150 / 180 / 210 / 240 / 270 / 300 (+50% Total Physical Attack) (+70% Total Magic Power) Magic Damage to enemies in its path and knocking them back.The Attractor detonate upon reaching the maximum range, dealing 30 / 35 / 40 / 45 / 50 / 55 (+10% Total Physical Attack) (+14% Total Magic Power) Magic Damage to nearby enemies and knocking them back.",
+        "passive": false,
+        "manaCost": "80/88/96/104/112/120",
+        "cooldown": "12.0/11.6/11.2/10.8/10.4/10.0",
+        "iconDirectory": "Interference.png"
+      },
+      {
+        "name": "Entropy?",
+        "description": "Natan summons a Reverse-Clone at a target location 6 units away that lasts 10s, inherits 35% / 37.5% / 40% of his attack attributes (and a portion of Attack Effects), and will copy moves and attacks in reverse.Use Again: Natan switches places with the Reverse-Clone.Each cast reduces other skills' remaining cooldowns by 50%. The Reverse-Clone will disappear if Natan is too far away, while the cooldown of this skill will be reduced by the remaining duration.",
+        "passive": false,
+        "manaCost": "100/50/0",
+        "cooldown": "38.0/33.0/28.0",
+        "iconDirectory": "EntropyF.png"
+      }
+    ],
+    "builds": [
+      {
+        "author": "Pro Player : AE Nino",
+        "description": "Gold Lane : Balanced build with good mobility, durability and damage.",
+        "battleSpell": "Flicker",
+        "item1": "Arcane Boots",
+        "item2": "Feather of Heaven",
+        "item3": "Genius Wand",
+        "item4": "Holy Crystal",
+        "item5": "Demon Hunter Sword",
+        "item6": "Wind of Nature"
+      },
+      {
+        "author": "No.1 TEED",
+        "description": "",
+        "battleSpell": "Flicker",
+        "item1": "Arcane Boots",
+        "item2": "Feather of Heaven",
+        "item3": "Starlium Scythe",
+        "item4": "Holy Crystal",
+        "item5": "Divine Glaive",
+        "item6": "Genius Wand"
+      }
+    ],
+    "strongAgainsts": [
+      "Barats",
+      "Thamuz",
+      "Phoveus",
+      "Gloo",
+      "Yu Zhong"
+    ],
+    "weakAgainsts": [
+      "Benedetta",
+      "Atlas",
+      "Granger",
+      "Esmeralda",
+      "Helcurt"
+    ],
+    "profileDirectory": "asset/champions/natan.png",
+    "influence": {
+      "earlytomidgame": 4,
+      "lategame": 6,
+      "pickoff": 7,
+      "teamfight": 2,
+      "push": 1
+    },
+    "tier": {
+      "winrate": 50.47,
+      "pickrate": 0.43,
+      "banrate": 0.23,
+      "poin": 5.49,
+      "tier": "C"
+    },
+    "emblems": {
+      "roleEmblem": "Marksman",
+      "talent1": "Agility",
+      "talent2": "Seasoned Hunter",
+      "talent3": "Quantum Charge"
     }
   },
   "Nolan": {
@@ -10288,7 +10747,7 @@
     "skills": [
       {
         "name": "Dimension Rift",
-        "description": "Nolanâ€™s skills can cut through space itself, leaving a rift on the ground that last 5s and slows enemies that come into contact with it by 30%.When a rift comes into contact with another Rift, it will explode after a short delay, dealing 150 (+120% Total Physical ATK) Physical Damage and pulling enemies in.Nolan gains extra 15 energy for each enemy hero or creeps hit by a rift explosion. When multiple hit explosion hits the same enemy at the same time, the subsequent damage would be reduced to 75% of the previous hit.After every 6s, Nolan will enhance his next Basic Attack to dash and pierce the target for (+120% Total Physical ATK) Physical Damage while creating a Rift.",
+        "description": "Nolan’s skills can cut through space itself, leaving a rift on the ground that last 5s and slows enemies that come into contact with it by 30%.When a rift comes into contact with another Rift, it will explode after a short delay, dealing 150 (+120% Total Physical ATK) Physical Damage and pulling enemies in.Nolan gains extra 15 energy for each enemy hero or creeps hit by a rift explosion. When multiple hit explosion hits the same enemy at the same time, the subsequent damage would be reduced to 75% of the previous hit.After every 6s, Nolan will enhance his next Basic Attack to dash and pierce the target for (+120% Total Physical ATK) Physical Damage while creating a Rift.",
         "passive": false,
         "manaCost": null,
         "cooldown": null,
@@ -10332,11 +10791,11 @@
     ],
     "profileDirectory": "asset/champions/nolan.png",
     "influence": {
-      "earlytomidgame": 7,
-      "lategame": 4,
-      "pickoff": 1,
-      "teamfight": 2,
-      "push": 6
+      "earlytomidgame": 5,
+      "lategame": 8,
+      "pickoff": 2,
+      "teamfight": 1,
+      "push": 4
     },
     "tier": {
       "winrate": 55.64,
@@ -10431,9 +10890,9 @@
       }
     ],
     "strongAgainsts": [
+      "Floryn",
       "Julian",
-      "Carmilla",
-      "Floryn"
+      "Carmilla"
     ],
     "weakAgainsts": [
       "Saber",
@@ -10442,11 +10901,11 @@
     ],
     "profileDirectory": "asset/champions/novaria.png",
     "influence": {
-      "earlytomidgame": 2,
-      "lategame": 7,
-      "pickoff": 1,
-      "teamfight": 4,
-      "push": 6
+      "earlytomidgame": 4,
+      "lategame": 10,
+      "pickoff": 3,
+      "teamfight": 1,
+      "push": 2
     },
     "tier": {
       "winrate": 49.38,
@@ -10556,11 +11015,11 @@
     ],
     "profileDirectory": "asset/champions/odette.png",
     "influence": {
-      "earlytomidgame": 4,
-      "lategame": 5,
-      "pickoff": 7,
-      "teamfight": 3,
-      "push": 1
+      "earlytomidgame": 3,
+      "lategame": 4,
+      "pickoff": 1,
+      "teamfight": 5,
+      "push": 7
     },
     "tier": {
       "winrate": 53.79,
@@ -10658,23 +11117,23 @@
     "strongAgainsts": [
       "Barats",
       "Khaleed",
-      "Luoyi",
-      "Popol",
+      "Luo Yi",
+      "Popol and Kupa",
       "Badang"
     ],
     "weakAgainsts": [
       "Benedetta",
       "Ling",
-      "YuZhong",
+      "Yu Zhong",
       "Aldous",
       "Mathilda"
     ],
     "profileDirectory": "asset/champions/paquito.png",
     "influence": {
-      "earlytomidgame": 2,
-      "lategame": 1,
-      "pickoff": 3,
-      "teamfight": 5,
+      "earlytomidgame": 5,
+      "lategame": 2,
+      "pickoff": 1,
+      "teamfight": 3,
       "push": 9
     },
     "tier": {
@@ -10793,11 +11252,11 @@
     ],
     "profileDirectory": "asset/champions/pharsa.png",
     "influence": {
-      "earlytomidgame": 3,
-      "lategame": 1,
+      "earlytomidgame": 4,
+      "lategame": 7,
       "pickoff": 2,
-      "teamfight": 10,
-      "push": 4
+      "teamfight": 6,
+      "push": 1
     },
     "tier": {
       "winrate": 44.58,
@@ -10903,15 +11362,15 @@
       "Brody",
       "Granger",
       "Benedetta",
-      "YuZhong"
+      "Yu Zhong"
     ],
     "profileDirectory": "asset/champions/phoveus.png",
     "influence": {
       "earlytomidgame": 4,
-      "lategame": 3,
-      "pickoff": 5,
-      "teamfight": 6,
-      "push": 2
+      "lategame": 1,
+      "pickoff": 2,
+      "teamfight": 5,
+      "push": 8
     },
     "tier": {
       "winrate": 50.75,
@@ -11037,11 +11496,11 @@
     ],
     "profileDirectory": "asset/champions/popol and kupa.png",
     "influence": {
-      "earlytomidgame": 2,
-      "lategame": 3,
-      "pickoff": 6,
-      "teamfight": 1,
-      "push": 8
+      "earlytomidgame": 3,
+      "lategame": 7,
+      "pickoff": 4,
+      "teamfight": 5,
+      "push": 1
     },
     "tier": {
       "winrate": 52.89,
@@ -11151,11 +11610,11 @@
     ],
     "profileDirectory": "asset/champions/rafaela.png",
     "influence": {
-      "earlytomidgame": 7,
-      "lategame": 3,
-      "pickoff": 5,
-      "teamfight": 4,
-      "push": 1
+      "earlytomidgame": 6,
+      "lategame": 4,
+      "pickoff": 2,
+      "teamfight": 1,
+      "push": 7
     },
     "tier": {
       "winrate": 52.39,
@@ -11279,7 +11738,7 @@
       "Zilong",
       "Layla",
       "Lapu-Lapu",
-      "YiSunShin"
+      "Yi Sun Shin"
     ],
     "weakAgainsts": [
       "Karina",
@@ -11290,11 +11749,11 @@
     ],
     "profileDirectory": "asset/champions/roger.png",
     "influence": {
-      "earlytomidgame": 4,
-      "lategame": 1,
-      "pickoff": 2,
-      "teamfight": 10,
-      "push": 3
+      "earlytomidgame": 3,
+      "lategame": 2,
+      "pickoff": 8,
+      "teamfight": 6,
+      "push": 1
     },
     "tier": {
       "winrate": 51.17,
@@ -11333,7 +11792,7 @@
     "skills": [
       {
         "name": "Let's Dance!",
-        "description": "Ruby starts with 10% Spell Vamp and her skill have 125% Spell Vamp Ratio (but her Basic Attacks cannot trigger Lifesteal).After each skill cast, Ruby can dash to another place, gaining 9 (+1.8 Ã— Hero Level) Physical Defense and Magic Defense (scales with level) for 4s (stacks up to 3 times).",
+        "description": "Ruby starts with 10% Spell Vamp and her skill have 125% Spell Vamp Ratio (but her Basic Attacks cannot trigger Lifesteal).After each skill cast, Ruby can dash to another place, gaining 9 (+1.8 × Hero Level) Physical Defense and Magic Defense (scales with level) for 4s (stacks up to 3 times).",
         "passive": true,
         "manaCost": null,
         "cooldown": null,
@@ -11404,11 +11863,11 @@
     ],
     "profileDirectory": "asset/champions/ruby.png",
     "influence": {
-      "earlytomidgame": 3,
-      "lategame": 5,
-      "pickoff": 9,
-      "teamfight": 2,
-      "push": 1
+      "earlytomidgame": 7,
+      "lategame": 1,
+      "pickoff": 6,
+      "teamfight": 4,
+      "push": 2
     },
     "tier": {
       "winrate": 55.4,
@@ -11447,7 +11906,7 @@
     "skills": [
       {
         "name": "Enemy's Bane",
-        "description": "Saber's attacks reduce Physical Defense by 3â€“8 for 5s on hit. This effect stacks up to 5 times.",
+        "description": "Saber's attacks reduce Physical Defense by 3–8 for 5s on hit. This effect stacks up to 5 times.",
         "passive": true,
         "manaCost": null,
         "cooldown": null,
@@ -11518,11 +11977,11 @@
     ],
     "profileDirectory": "asset/champions/saber.png",
     "influence": {
-      "earlytomidgame": 8,
-      "lategame": 3,
-      "pickoff": 2,
-      "teamfight": 1,
-      "push": 6
+      "earlytomidgame": 1,
+      "lategame": 6,
+      "pickoff": 3,
+      "teamfight": 2,
+      "push": 8
     },
     "tier": {
       "winrate": 47.11,
@@ -11657,10 +12116,10 @@
     ],
     "profileDirectory": "asset/champions/selena.png",
     "influence": {
-      "earlytomidgame": 3,
+      "earlytomidgame": 8,
       "lategame": 4,
       "pickoff": 5,
-      "teamfight": 7,
+      "teamfight": 2,
       "push": 1
     },
     "tier": {
@@ -11700,7 +12159,7 @@
     "skills": [
       {
         "name": "Knightess' Resolve",
-        "description": "Silvanna's Basic Attacks deal 25 (+45% Total Physical Attack) (+75% Total Magic Power) Magic Damage.Silvanna's attacks apply a mark on enemy heroes for 5s on hit, each mark reducing their Physical & Magic Defense by 3â€“6 (up to 5 stacks).Silvanna deals 30% extra damage to enemy heroes with the max number of marks.",
+        "description": "Silvanna's Basic Attacks deal 25 (+45% Total Physical Attack) (+75% Total Magic Power) Magic Damage.Silvanna's attacks apply a mark on enemy heroes for 5s on hit, each mark reducing their Physical & Magic Defense by 3–6 (up to 5 stacks).Silvanna deals 30% extra damage to enemy heroes with the max number of marks.",
         "passive": true,
         "manaCost": null,
         "cooldown": null,
@@ -11772,17 +12231,17 @@
     ],
     "weakAgainsts": [
       "Wanwan",
-      "X.borg",
+      "X-Borg",
       "Claude",
       "Esmeralda",
       "Moskov"
     ],
     "profileDirectory": "asset/champions/silvanna.png",
     "influence": {
-      "earlytomidgame": 5,
-      "lategame": 4,
-      "pickoff": 1,
-      "teamfight": 7,
+      "earlytomidgame": 2,
+      "lategame": 9,
+      "pickoff": 5,
+      "teamfight": 1,
       "push": 3
     },
     "tier": {
@@ -11901,11 +12360,11 @@
     ],
     "profileDirectory": "asset/champions/sun.png",
     "influence": {
-      "earlytomidgame": 3,
-      "lategame": 1,
-      "pickoff": 2,
-      "teamfight": 5,
-      "push": 9
+      "earlytomidgame": 4,
+      "lategame": 3,
+      "pickoff": 7,
+      "teamfight": 1,
+      "push": 5
     },
     "tier": {
       "winrate": 45.24,
@@ -12015,11 +12474,11 @@
     ],
     "profileDirectory": "asset/champions/terizla.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 2,
-      "pickoff": 10,
-      "teamfight": 3,
-      "push": 4
+      "earlytomidgame": 8,
+      "lategame": 4,
+      "pickoff": 2,
+      "teamfight": 1,
+      "push": 5
     },
     "tier": {
       "winrate": 51.32,
@@ -12128,11 +12587,11 @@
     ],
     "profileDirectory": "asset/champions/thamuz.png",
     "influence": {
-      "earlytomidgame": 2,
-      "lategame": 6,
-      "pickoff": 5,
-      "teamfight": 4,
-      "push": 3
+      "earlytomidgame": 3,
+      "lategame": 1,
+      "pickoff": 9,
+      "teamfight": 5,
+      "push": 2
     },
     "tier": {
       "winrate": 50.89,
@@ -12243,11 +12702,11 @@
     ],
     "profileDirectory": "asset/champions/tigreal.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 4,
-      "pickoff": 2,
-      "teamfight": 8,
-      "push": 5
+      "earlytomidgame": 5,
+      "lategame": 3,
+      "pickoff": 1,
+      "teamfight": 4,
+      "push": 7
     },
     "tier": {
       "winrate": 49.73,
@@ -12357,11 +12816,11 @@
     ],
     "profileDirectory": "asset/champions/uranus.png",
     "influence": {
-      "earlytomidgame": 2,
+      "earlytomidgame": 5,
       "lategame": 1,
-      "pickoff": 8,
-      "teamfight": 4,
-      "push": 5
+      "pickoff": 3,
+      "teamfight": 2,
+      "push": 9
     },
     "tier": {
       "winrate": 48.68,
@@ -12466,7 +12925,7 @@
     "strongAgainsts": [
       "Martis",
       "Hanabi",
-      "Chang’e",
+      "Chang-e",
       "Lesley",
       "Zhask"
     ],
@@ -12479,11 +12938,11 @@
     ],
     "profileDirectory": "asset/champions/vale.png",
     "influence": {
-      "earlytomidgame": 5,
-      "lategame": 4,
-      "pickoff": 3,
-      "teamfight": 6,
-      "push": 2
+      "earlytomidgame": 3,
+      "lategame": 1,
+      "pickoff": 8,
+      "teamfight": 2,
+      "push": 6
     },
     "tier": {
       "winrate": 51.38,
@@ -12496,6 +12955,120 @@
       "roleEmblem": "Mage",
       "talent1": "Rupture",
       "talent2": "Festival of Blood",
+      "talent3": "Lethal Ignition"
+    }
+  },
+  "Valentina": {
+    "name": "Valentina",
+    "type": [
+      "Mage"
+    ],
+    "lane": "MID",
+    "description": "In a battle against the Abyss's invasion. Valentina and her lover, Irlan, were betrayed by some members of House Paxley, which eventually caused Irlan to lose his soul. To revive her lover, Valentina made a deal with an Evil God and gained immortality and the power of shadow. Since then, she'd been hiding among the shadows, silently waiting for the appearance of the Heart of Anima━a broken piece from the Twilight Orb that was said to be the key to retrieving her lover's soul.Former head of House Paxley who'd stop at nothing to revive her lover.",
+    "speciality": "Burst,Reap",
+    "stats": {
+      "hp": 2701,
+      "hpRegen": 72,
+      "mana": 510,
+      "manaRegen": 38,
+      "movementSpeed": 240,
+      "physicalAtk": 115,
+      "physicalDef": 21,
+      "magicAtk": 0,
+      "magicDef": 0,
+      "atkSpeed": 98
+    },
+    "skills": [
+      {
+        "name": "Primal Force",
+        "description": "Valentina gains 8–50 extra EXP each time she deals damage to an enemy hero. Cooldown: 2s.\nIf the enemy hero's level isn't higher than Valentina's, 30% of the damage dealt is converted into her HP. The EXP scales with Valentina's level.",
+        "passive": true,
+        "manaCost": null,
+        "cooldown": "2.0",
+        "iconDirectory": "Primal_Force.png"
+      },
+      {
+        "name": "Shadow Strike",
+        "description": "Valentina casts Shadow Strike in the target direction, dealing 300 / 360 / 420 / 480 / 540 / 600 (+165% Total Magic Power) Magic Damage to enemies hit and slowing them by 40% for 1s.Enemy heroes hit by Shadow Strike are marked with a Shadow Sigil for 4s and will be terrified for 1s when hit by Shadow Strike again within the duration (a unit can only be terrified once within 4s).",
+        "passive": false,
+        "manaCost": "70/75/80/85/90/95",
+        "cooldown": "7.0/6.6/6.2/5.8/5.4/5.0",
+        "iconDirectory": "Shadow_Strike.png"
+      },
+      {
+        "name": "Arcane Shade",
+        "description": "Valentina dashes in the target direction, firing 3 Shadow Bolts at nearby enemies that deal 125 / 145 / 165 / 185 / 205 / 225 (+30% Total Magic Power) Magic Damage each.Valentina can cast this skill again within 6s (costs Mana).The cooldown of Shadow Strike is reduced by 1s each time a Shadow Bolt hits an enemy.",
+        "passive": false,
+        "manaCost": "45/50/55/60/65/70",
+        "cooldown": "12.0",
+        "iconDirectory": "Arcane_Shade.png"
+      },
+      {
+        "name": "I Am You",
+        "description": "Valentina slows the target enemy hero by 70% for 0.5s and gains the ability to cast their Ultimate.Casting the enemy's Ultimate turns Valentina into the enemy hero's form and allows her to inherit their Basic Attack type for up to 12s. Her skills remain unchanged, unless the enemy's Ultimate has a Morph effect.The stolen Ultimate's level will be equal to Valentina's level and the cooldown will be 120% of the target's cooldown (but not lower than 10s). Valentina gains (100% Total Magic Power) Physical Attack for the duration if the enemy is a Physical Damage hero.This cannot be used on an enemy Valentina.",
+        "passive": false,
+        "manaCost": "0",
+        "cooldown": "0.0",
+        "iconDirectory": "I_Am_You.png"
+      }
+    ],
+    "builds": [
+      {
+        "author": "Pro Player : TDK.Moon",
+        "description": "Mid Lane : Balanced CD reduction to steal skills, and dish out burst damage.",
+        "battleSpell": "Flicker",
+        "item1": "Clock of Destiny",
+        "item2": "Magic Shoes",
+        "item3": "Enchanted Talisman",
+        "item4": "Lightning Truncheon",
+        "item5": "Divine Glaive",
+        "item6": "Holy Crystal"
+      },
+      {
+        "author": "No.1 Sig",
+        "description": "",
+        "battleSpell": "Flicker",
+        "item1": "Arcane Boots",
+        "item2": "Enchanted Talisman",
+        "item3": "Lightning Truncheon",
+        "item4": "Glowing Wand",
+        "item5": "Genius Wand",
+        "item6": "Divine Glaive"
+      }
+    ],
+    "strongAgainsts": [
+      "Fanny",
+      "Gord",
+      "Lesley",
+      "Claude",
+      "Natalia"
+    ],
+    "weakAgainsts": [
+      "Chou",
+      "Lolita",
+      "Gusion",
+      "Helcurt",
+      "Lapu-Lapu"
+    ],
+    "profileDirectory": "asset/champions/valentina.png",
+    "influence": {
+      "earlytomidgame": 2,
+      "lategame": 6,
+      "pickoff": 7,
+      "teamfight": 4,
+      "push": 1
+    },
+    "tier": {
+      "winrate": 44.52,
+      "pickrate": 0.79,
+      "banrate": 0.31,
+      "poin": 5.16,
+      "tier": "C"
+    },
+    "emblems": {
+      "roleEmblem": "Mage",
+      "talent1": "Inspire",
+      "talent2": "Bargain Hunter",
       "talent3": "Lethal Ignition"
     }
   },
@@ -12593,11 +13166,11 @@
     ],
     "profileDirectory": "asset/champions/valir.png",
     "influence": {
-      "earlytomidgame": 5,
-      "lategame": 1,
-      "pickoff": 9,
-      "teamfight": 3,
-      "push": 2
+      "earlytomidgame": 2,
+      "lategame": 8,
+      "pickoff": 4,
+      "teamfight": 5,
+      "push": 1
     },
     "tier": {
       "winrate": 49.88,
@@ -12680,7 +13253,7 @@
         "item6": "Divine Glaive"
       },
       {
-        "author": "No.1 iyÐ±Ð¸asiya",
+        "author": "No.1 iyбиasiya",
         "description": "",
         "battleSpell": "Flicker",
         "item1": "Clock of Destiny",
@@ -12707,11 +13280,11 @@
     ],
     "profileDirectory": "asset/champions/vexana.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 3,
-      "pickoff": 2,
-      "teamfight": 4,
-      "push": 10
+      "earlytomidgame": 5,
+      "lategame": 9,
+      "pickoff": 3,
+      "teamfight": 1,
+      "push": 2
     },
     "tier": {
       "winrate": 50.85,
@@ -12824,16 +13397,16 @@
       "Ling",
       "Selena",
       "Lylia",
-      "X.borg",
+      "X-Borg",
       "Esmeralda"
     ],
     "profileDirectory": "asset/champions/wanwan.png",
     "influence": {
       "earlytomidgame": 4,
-      "lategame": 5,
+      "lategame": 3,
       "pickoff": 1,
-      "teamfight": 8,
-      "push": 2
+      "teamfight": 5,
+      "push": 7
     },
     "tier": {
       "winrate": 56.49,
@@ -12855,7 +13428,7 @@
       "Fighter"
     ],
     "lane": "ROAM",
-    "description": "After losing his loved ones in the accident caused by Erudtio, X.Borg decided to take revenge. In order to achieve his goal, he collected discarded technology and remade his body twice, eventually transforming himself into a cyborg that's capable of throwing flames and making blasts.A\ntalented teenager who burns everything with his Firaga Armor.\n\n",
+    "description": "After losing his loved ones in the accident caused by Erudtio, X-Borg decided to take revenge. In order to achieve his goal, he collected discarded technology and remade his body twice, eventually transforming himself into a cyborg that's capable of throwing flames and making blasts.A\ntalented teenager who burns everything with his Firaga Armor.\n\n",
     "speciality": "Regen,Burst",
     "stats": {
       "hp": 998,
@@ -12872,7 +13445,7 @@
     "skills": [
       {
         "name": "Firaga Armor",
-        "description": "X.Borg's Firaga Armor inherits 120% of his Max HP and absorbs all incoming damage when it's active. When the Armor is destroyed, X.Borg will disengage from it and roll in the direction of the Joystick (he is immune to damage in the process).The Armor's energy is gradually regenerate while X.Borg is in the Armorless State. At full energy, X.Borg re-equips the Armor and restore it to 30% of his Max HP. X.Borg's fire damage causes enemies to heat up. Enemies at maximum temperature will drop Firaga supplies when they take fire damage from X.Borg. Picking up a Firaga supply restores 10% of Armor HP, or 10 energy while in Armorless State.",
+        "description": "X-Borg's Firaga Armor inherits 120% of his Max HP and absorbs all incoming damage when it's active. When the Armor is destroyed, X-Borg will disengage from it and roll in the direction of the Joystick (he is immune to damage in the process).The Armor's energy is gradually regenerate while X-Borg is in the Armorless State. At full energy, X-Borg re-equips the Armor and restore it to 30% of his Max HP. X-Borg's fire damage causes enemies to heat up. Enemies at maximum temperature will drop Firaga supplies when they take fire damage from X-Borg. Picking up a Firaga supply restores 10% of Armor HP, or 10 energy while in Armorless State.",
         "passive": true,
         "manaCost": null,
         "cooldown": null,
@@ -12880,7 +13453,7 @@
       },
       {
         "name": "Fire Missiles",
-        "description": "X.Borg sprays fire in the target direction, dealing 25 / 40 / 55 / 70 / 85 / 100 (+60% Total Physical Attack) (+40% Total Magic Power) 7 times over 2s to enemies in range (only 75% / 80% / 85% / 90% / 95% / 100% damage against Minions).Enemies at maximum temperature are dealt True Damage instead.Armorless State: The attack area becomes narrower but longer, while the damage is reduced to 60% of that in Armored state.",
+        "description": "X-Borg sprays fire in the target direction, dealing 25 / 40 / 55 / 70 / 85 / 100 (+60% Total Physical Attack) (+40% Total Magic Power) 7 times over 2s to enemies in range (only 75% / 80% / 85% / 90% / 95% / 100% damage against Minions).Enemies at maximum temperature are dealt True Damage instead.Armorless State: The attack area becomes narrower but longer, while the damage is reduced to 60% of that in Armored state.",
         "passive": false,
         "manaCost": null,
         "cooldown": "4.0",
@@ -12888,7 +13461,7 @@
       },
       {
         "name": "Fire Stake",
-        "description": "X.Borg shoots 5 Fire Stakes at the edge of the fan-shaped indicator and retrieves them after 1.7s, each dealing 50 / 60 / 70 / 80 / 90 / 100 (+20% Total Physical Attack) Physical Damage and pulling the enemies in the path toward him.Firaga Supplies in the path will also be retrieved if touched by Fire Stakes.Armorless State: X.Borg adjusts Fire Stake Launcher to increase its range and shorten the distance between Fire Stakes.",
+        "description": "X-Borg shoots 5 Fire Stakes at the edge of the fan-shaped indicator and retrieves them after 1.7s, each dealing 50 / 60 / 70 / 80 / 90 / 100 (+20% Total Physical Attack) Physical Damage and pulling the enemies in the path toward him.Firaga Supplies in the path will also be retrieved if touched by Fire Stakes.Armorless State: X-Borg adjusts Fire Stake Launcher to increase its range and shorten the distance between Fire Stakes.",
         "passive": false,
         "manaCost": null,
         "cooldown": "12/11.4/10.8/10.2/9.6/9",
@@ -12896,7 +13469,7 @@
       },
       {
         "name": "Last Insanity",
-        "description": "X.Borg charges forward in the target direction while rotating and spraying fire, dealing 200 / 225 / 250 (+130% Extra Physical Attack) (+90% Total Magic Power) Physical Damage 7 times and slowing enemies by 25%.He stops upon running into an enemy hero and will slow them by an additional 40%.After 3s from the start of the skill, X.Borg's Firaga Armor will detonate, dealing True Damage to nearby enemies equal to 300 / 500 / 700 plus 15% of their Max HP. If the armor is destroyed before it can self-detonate, it will only deal 50% of the damage. When his Armor detonates, X.Borg will dash a short distance in the Joystick's direction and enter Armorless State while removing all debuffs from himself.This skill cannot be used in the Armorless State.Use Again: X.Borg stops spraying fire and immediately detonates his Firaga Armor.",
+        "description": "X-Borg charges forward in the target direction while rotating and spraying fire, dealing 200 / 225 / 250 (+130% Extra Physical Attack) (+90% Total Magic Power) Physical Damage 7 times and slowing enemies by 25%.He stops upon running into an enemy hero and will slow them by an additional 40%.After 3s from the start of the skill, X-Borg's Firaga Armor will detonate, dealing True Damage to nearby enemies equal to 300 / 500 / 700 plus 15% of their Max HP. If the armor is destroyed before it can self-detonate, it will only deal 50% of the damage. When his Armor detonates, X-Borg will dash a short distance in the Joystick's direction and enter Armorless State while removing all debuffs from himself.This skill cannot be used in the Armorless State.Use Again: X-Borg stops spraying fire and immediately detonates his Firaga Armor.",
         "passive": false,
         "manaCost": null,
         "cooldown": "30.0/27.0/24.0",
@@ -12943,13 +13516,19 @@
     ],
     "profileDirectory": "asset/champions/x-borg.png",
     "influence": {
-      "earlytomidgame": 2,
-      "lategame": 4,
-      "pickoff": 3,
-      "teamfight": 10,
-      "push": 1
+      "earlytomidgame": 4,
+      "lategame": 3,
+      "pickoff": 5,
+      "teamfight": 2,
+      "push": 6
     },
-    "tier": {},
+    "tier": {
+      "winrate": 52.01,
+      "pickrate": 1.14,
+      "banrate": 0.63,
+      "poin": 6.4,
+      "tier": "A"
+    },
     "emblems": {
       "roleEmblem": "Fighter",
       "talent1": "Thrill",
@@ -13055,11 +13634,11 @@
     ],
     "profileDirectory": "asset/champions/xavier.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 5,
-      "pickoff": 8,
-      "teamfight": 4,
-      "push": 2
+      "earlytomidgame": 5,
+      "lategame": 3,
+      "pickoff": 4,
+      "teamfight": 2,
+      "push": 6
     },
     "tier": {
       "winrate": 51.52,
@@ -13190,9 +13769,9 @@
     "profileDirectory": "asset/champions/yin.png",
     "influence": {
       "earlytomidgame": 1,
-      "lategame": 2,
-      "pickoff": 6,
-      "teamfight": 8,
+      "lategame": 4,
+      "pickoff": 10,
+      "teamfight": 2,
       "push": 3
     },
     "tier": {
@@ -13312,13 +13891,19 @@
     ],
     "profileDirectory": "asset/champions/yi sun shin.png",
     "influence": {
-      "earlytomidgame": 4,
-      "lategame": 8,
-      "pickoff": 2,
-      "teamfight": 5,
-      "push": 1
+      "earlytomidgame": 1,
+      "lategame": 6,
+      "pickoff": 7,
+      "teamfight": 4,
+      "push": 2
     },
-    "tier": {},
+    "tier": {
+      "winrate": 52.57,
+      "pickrate": 0.32,
+      "banrate": 0.03,
+      "poin": 5.45,
+      "tier": "C"
+    },
     "emblems": {
       "roleEmblem": "Assassin",
       "talent1": "Swift",
@@ -13424,15 +14009,15 @@
       "Harith",
       "Karrie",
       "Granger",
-      "X.borg"
+      "X-Borg"
     ],
     "profileDirectory": "asset/champions/yu zhong.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 9,
-      "pickoff": 3,
-      "teamfight": 5,
-      "push": 2
+      "earlytomidgame": 2,
+      "lategame": 6,
+      "pickoff": 4,
+      "teamfight": 7,
+      "push": 1
     },
     "tier": {
       "winrate": 51.65,
@@ -13527,7 +14112,7 @@
       }
     ],
     "strongAgainsts": [
-      "Luoyi",
+      "Luo Yi",
       "Cecilion",
       "Pharsa",
       "Valir",
@@ -13538,15 +14123,15 @@
       "Brody",
       "Benedetta",
       "Lapu-Lapu",
-      "Chang’e"
+      "Chang-e"
     ],
     "profileDirectory": "asset/champions/yve.png",
     "influence": {
-      "earlytomidgame": 1,
-      "lategame": 3,
-      "pickoff": 6,
+      "earlytomidgame": 4,
+      "lategame": 1,
+      "pickoff": 3,
       "teamfight": 2,
-      "push": 8
+      "push": 10
     },
     "tier": {
       "winrate": 47.91,
@@ -13664,11 +14249,11 @@
     ],
     "profileDirectory": "asset/champions/zhask.png",
     "influence": {
-      "earlytomidgame": 2,
-      "lategame": 6,
-      "pickoff": 7,
+      "earlytomidgame": 7,
+      "lategame": 5,
+      "pickoff": 4,
       "teamfight": 1,
-      "push": 4
+      "push": 3
     },
     "tier": {
       "winrate": 50.5,
@@ -13760,7 +14345,7 @@
         "item6": "Blade of Despair"
       },
       {
-        "author": "Streamer : ç–‘çŠ¯_ Yifan",
+        "author": "Streamer : 疑犯_ Yifan",
         "description": "Exp Lane : New Crit build. Farm early game, one shot enemies late game.",
         "battleSpell": "Flicker",
         "item1": "Swift Boots",
@@ -13787,11 +14372,11 @@
     ],
     "profileDirectory": "asset/champions/zilong.png",
     "influence": {
-      "earlytomidgame": 7,
-      "lategame": 2,
+      "earlytomidgame": 6,
+      "lategame": 5,
       "pickoff": 4,
-      "teamfight": 1,
-      "push": 6
+      "teamfight": 3,
+      "push": 2
     },
     "tier": {
       "winrate": 45.11,

@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobilelegendguide/entity/champion.dart';
 import 'package:mobilelegendguide/static_data.dart';
-import 'package:mobilelegendguide/view/heroPages/champion_page.dart';
 
 class TierListPage extends StatefulWidget {
   const TierListPage({super.key});
@@ -139,6 +138,7 @@ class _TierListPageState extends State<TierListPage> {
                   mainAxisSpacing: 5,
                   crossAxisSpacing: 5,
                   shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
                   children: [
                     for (var champ in champions
                         .where((element) => element.tier.tier == tier))

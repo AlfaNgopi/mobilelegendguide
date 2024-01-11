@@ -1,0 +1,99 @@
+{
+    "Aegis":{
+        "name":"Aegis",
+        "subname":"Protect Squishy Hero",
+        "description":"Gain a 750(+50*Hero Level) shield for 5s and grant a nearby allied hero with lowest HP an extra shield with 70% of the effect.",
+        "cooldown":"75.0",
+        "iconDirectory":"asset/bspell/aegis.png"
+    
+    },
+    "Retriburion":{
+        "name":"Retribution",
+        "subname":"Jungle Special",
+        "description":"Deal 520 (+80*Hero Level) True Damage in the target Creep or Minion. Increase Creep rewards by 60% and reduces damage taken from basic Creeps by 40%. Also grants 15% additional Damage Reduction in the allied jungle during the first 2 min. Cannot share Minion rewards with allied heroes in the first 5 min. Accumulate 5 creep kills, hero kills, or assists to upgrade the spell according to the Jungling Footwear's blessing, and 15 to gain 10 Physical Attack and Magic Power and 100 Max HP.",
+        "cooldown":"35.0",
+        "iconDirectory":"asset/bspell/retribution.png"
+    
+    },
+    "Inspire":{
+        "name":"Inspire",
+        "subname":"Enhance Basic Attack",
+        "description":"For up to 8 Basic Attacks within 5s, increase Attack Speed to 1.55 times and Attack Speed Cap to 500%. The basic attack also ignores 8(+1*Hero Level) of the target's Physical Defense and restores 60(+15%Total Physical Attack)(+15%Total Magic Power) HP on hit.",
+        "cooldown":"75.0",
+        "iconDirectory":"asset/bspell/inspire.png"
+    
+    },
+
+    "Sprint":{
+        "name":"Sprint",
+        "subname":"Long-Lasting Speed Boost",
+        "description":"Gains 50% extra Movement Speed and Slow Immunity for 6s.",
+        "cooldown":"100.0",
+        "iconDirectory":"asset/bspell/sprint.png"
+    
+    },
+    "Revitalize":{
+        "name":"Revitalize",
+        "subname":"Large AOE Heal",
+        "description":"Summons a Healing Spring on the spot that lasts 4s, restores 2.5% Max HP every 0.4s for affected allied heroes (including self), and increases their received Shield and HP Regen by 25% (cannot stack).",
+        "cooldown":"75.0",
+        "iconDirectory":"asset/bspell/revitalize.png"
+    
+    },
+    "Execute":{
+        "name":"Execute",
+        "subname":"Low HP Execution",
+        "description":"Deal 100(+10*Hero Level) plus 13% of target's lost HP True Damage to the target enemy hero. If the enemy is killed, 40% of the spell cooldown will be refunded.",
+        "cooldown":"90.0",
+        "iconDirectory":"asset/bspell/execute.png"
+    
+    },
+    "Petrify":{
+        "name":"Petrify",
+        "subname":"AOE control",
+        "description":"Deals 100(+15*Hero Level) Magic Damage to nearby enemies, petrify them for 0.8s, and slow them by 50% for 0.8s afterward.",
+        "cooldown":"75.0",
+        "iconDirectory":"asset/bspell/petrify.png"
+    
+    },
+    "Flicker":{
+        "name":"Flicker",
+        "subname":"Mobility",
+        "description":"Blink a fixed distance in the target direction and gain a 5(+1*Hero Level) extra Physical and Magic Defense afterward for 1s.",
+        "cooldown":"120.0",
+        "iconDirectory":"asset/bspell/flicker.png"
+    
+    },
+    "Purify":{
+        "name":"Purify",
+        "subname":"Cleanse Debuffs",
+        "description":"Remove all debuffs and gain Control Immunity and 15% extra Movement Speed for 1.2s.",
+        "cooldown":"90.0",
+        "iconDirectory":"asset/bspell/purify.png"
+    
+    },
+    "Flameshot":{
+        "name":"Flameshot",
+        "subname":"Attack & Defend",
+        "description":"Fires a Flaming Shot in the target direction, knocking back nearby enemies and dealing 200(+50%Total Magic Power)-680(+170%Total Magic Power) Magic Damage (scales with flying distance) to the first enemy hero or creep hit.",
+        "cooldown":"50.0",
+        "iconDirectory":"asset/bspell/flameshot.png"
+    
+    },
+    "Arrival":{
+        "name":"Arrival",
+        "subname":"Long-Range Support",
+        "description":"After channeling for 3s, teleports to an allied minion, structure, or trap and gains 60% extra Movement Speed (decays over 3s). If the channeling is canceled or interrupted, 30s of the cooldown will be refunded.",
+        "cooldown":"75.0",
+        "iconDirectory":"asset/bspell/arrival.png"
+    
+    },
+    "Vengeance":{
+        "name":"Vengeance",
+        "subname":"Reflect Damage",
+        "description":"For 3s, gains 35% Damage Reduction and deal 35% Magic Damage back to the attacker each time you received damage.",
+        "cooldown":"75.0",
+        "iconDirectory":"asset/bspell/vengeance.png"
+    
+    }
+}

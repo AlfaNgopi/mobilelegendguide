@@ -5,7 +5,7 @@ import 'package:mobilelegendguide/entity/spell.dart';
 import 'package:mobilelegendguide/static_data.dart';
 
 class Build {
-  String name;
+  String author;
 
   String description;
   late Item item1;
@@ -27,7 +27,7 @@ class Build {
   String? _battleSpellName;
 
   Build({
-    required this.name,
+    required this.author,
     required this.description,
     required String itemName1,
     required String itemName2,
@@ -81,7 +81,7 @@ class Build {
   }
 
   Map<String, dynamic> toJson() => {
-        'name': name,
+        'name': author,
         'desc': description,
         'item1': _itemName1,
         'item2': _itemName2,
@@ -93,8 +93,8 @@ class Build {
       };
 
   static Build fromJson(Map<String, dynamic> json) => Build(
-        name: json['name'],
-        description: json['desc'],
+        author: json['author'],
+        description: json['description'],
         itemName1: json['item1'],
         itemName2: json['item2'],
         itemName3: json['item3'],

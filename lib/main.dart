@@ -25,6 +25,7 @@ Future main() async {
     // uploadDataChampion();
     // uploadDataItem();
     // uploadDataEmblem();
+    // uploadDataSpell();
 
     runApp(const MainApp());
   }).catchError((error) {
