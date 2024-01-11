@@ -38,17 +38,16 @@ class ChampionClient {
 
   static createChampionFromJson() async {
     try {
-      final file = await rootBundle.loadString('asset/alice.json');
+      final file = await rootBundle.loadString('asset/champion.json');
 
-      List<String> lines = file.split('\n');
+      Map<String, dynamic> jsonfile = jsonDecode(file);
 
-      for (var line in lines) {
-        final json = jsonDecode(line);
+      for (var line in jsonfile.values) {
         final docChampion = FirebaseFirestore.instance
             .collection('champion')
-            .doc(json['name'].toString());
+            .doc(line['name'].toString());
 
-        await docChampion.set(json);
+        await docChampion.set(line);
       }
       print("Champion Client : createChampion success");
     } catch (e) {
