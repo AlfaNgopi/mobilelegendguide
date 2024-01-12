@@ -154,7 +154,7 @@ class _TierListPageState extends State<TierListPage> {
         height: 75,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: FittedBox(child: champ.icon),
+          child: FittedBox(child: CircleAvatar(backgroundImage: AssetImage(champ.profileDirectory))),
         ),
       );
 

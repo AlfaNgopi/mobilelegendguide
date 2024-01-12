@@ -100,6 +100,7 @@ class _ChampionSelectPageState extends State<ChampionSelectPage> {
                   mainAxisSpacing: 5,
                   crossAxisSpacing: 5,
                   shrinkWrap: true,
+                  physics: const ScrollPhysics(),
                   children: [
                     for (var champ in champions) buildChampionList(champ),
                   ]),
@@ -125,17 +126,16 @@ class _ChampionSelectPageState extends State<ChampionSelectPage> {
         return buildChampionList(champions[index]);
       });
 
-  Widget buildChampionList(Champion champ) => Container(
-        child: InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => ChampionPage(
-                            champion: champ,
-                          )));
-            },
-            child: champ.icon),
+  Widget buildChampionList(Champion champ) => InkWell(
+      child: FittedBox(child: CircleAvatar(backgroundImage: AssetImage(champ.profileDirectory))),
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => ChampionPage(
+                      champion: champ,
+                    )));
+      },
       );
 
   Widget buildTypeSelector(List<String> list, double cardsWidth) {

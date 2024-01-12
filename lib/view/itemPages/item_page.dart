@@ -13,6 +13,7 @@ class ItemPage extends StatelessWidget {
     //this variable
     const EdgeInsetsGeometry cardsMargin =
         EdgeInsets.symmetric(vertical: 10, horizontal: 10);
+    var width = MediaQuery.of(context).size.width;
 
     return Scaffold(
       backgroundColor: StaticData.backgroundColor,
@@ -32,9 +33,10 @@ class ItemPage extends StatelessWidget {
                   // color: Colors.yellow,
                   padding: const EdgeInsets.only(right: 10),
 
-                  child: Image.asset(
-                    item.iconDirectory,
-                    scale: 1,
+                  child: SizedBox(
+                    width: width * 0.2,
+                    child:FittedBox(child: item.icon)
+                    
                   ),
                 ),
                 Flexible(

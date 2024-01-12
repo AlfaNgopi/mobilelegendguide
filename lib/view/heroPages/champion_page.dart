@@ -39,11 +39,12 @@ class ChampionPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    // color: Colors.yellow,
-                    width: cardsWidth / 2,
-                    padding: const EdgeInsets.symmetric(horizontal: 5),
-                    child: Image.asset(champion.profileDirectory, scale: 0.6),
-                  ),
+                      // color: Colors.yellow,
+                      width: cardsWidth / 2,
+                      padding: const EdgeInsets.symmetric(horizontal: 5),
+                      child: Container(
+                          constraints: BoxConstraints(maxWidth: cardsWidth / 2),
+                          child: FittedBox(child: champion.icon))),
 
                   //class lane name
                   SizedBox(
@@ -350,7 +351,11 @@ class ChampionPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: List.generate(
                       champion.strongAgainst.length,
-                      (index) => champion.strongAgainst[index].icon,
+                      (index) => Expanded(
+                          child: Container(
+                              margin: EdgeInsets.all(8),
+                              constraints: BoxConstraints(maxWidth: 50),
+                              child: champion.strongAgainst[index].icon)),
                     )),
               ),
             ],
@@ -370,7 +375,11 @@ class ChampionPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: List.generate(
                       champion.weakAgainst.length,
-                      (index) => champion.weakAgainst[index].icon,
+                      (index) => Expanded(
+                          child: Container(
+                              margin: EdgeInsets.all(8),
+                              constraints: BoxConstraints(maxWidth: 50),
+                              child: champion.weakAgainst[index].icon)),
                     )),
               ),
             ],
