@@ -307,15 +307,19 @@ class ChampionPage extends StatelessWidget {
               SizedBox(
                 width: cardsWidth,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    champion.builds[0].item1.icon,
-                    champion.builds[0].item2.icon,
-                    champion.builds[0].item3.icon,
-                    champion.builds[0].item4.icon,
-                    champion.builds[0].item5.icon,
-                    champion.builds[0].item6.icon,
-                  ],
+                  children: List.generate(
+                    champion.builds[0].getItems().length,
+                    (index) => Expanded(
+                      child: Container(
+                        margin: EdgeInsets.all(8),
+                        constraints: BoxConstraints(maxWidth: 50),
+                        child: CircleAvatar(
+                            backgroundImage: AssetImage(champion.builds[0]
+                                .getItems()[index]
+                                .iconDirectory)),
+                      ),
+                    ),
+                  ),
                 ),
               ),
               FittedBox(

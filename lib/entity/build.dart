@@ -80,6 +80,8 @@ class Build {
         StaticData.spells.firstWhere((spell) => spell.name == battleSpellName);
   }
 
+  List<Item> getItems() => [item1, item2, item3, item4, item5, item6];
+
   Map<String, dynamic> toJson() => {
         'name': author,
         'desc': description,
