@@ -1,11 +1,8 @@
-import 'dart:ffi';
 
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
-import 'package:mobilelegendguide/entity/item.dart';
 import 'package:mobilelegendguide/entity/news/news.dart';
 import 'package:mobilelegendguide/static_data.dart';
-import 'package:mobilelegendguide/view/itemPages/item_page.dart';
 import 'package:mobilelegendguide/view/newsPages/news_page.dart';
 
 class NewsSelectPage extends StatefulWidget {
@@ -61,7 +58,7 @@ class _NewsSelectPageState extends State<NewsSelectPage> {
     return Scaffold(
       backgroundColor: StaticData.backgroundColor,
       appBar: AppBar(
-        title: const Text("Select News"),
+        title: const Text("News & Updates"),
       ),
       body: ListView(
         children: List.generate(newss.length, (index) {

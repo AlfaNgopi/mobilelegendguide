@@ -13,9 +13,7 @@ class NewsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //this variable
-    const EdgeInsetsGeometry cardsMargin =
-        EdgeInsets.symmetric(vertical: 10, horizontal: 10);
-    var width = MediaQuery.of(context).size.width;
+   
 
     return Scaffold(
       backgroundColor: StaticData.backgroundColor,

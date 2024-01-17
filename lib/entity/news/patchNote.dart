@@ -3,7 +3,7 @@
 import 'package:mobilelegendguide/entity/news/news.dart';
 
 class PatchNote extends News {
-  Map<String, dynamic> updates;
+  List<dynamic> updates;
 
   PatchNote({
     required String title,
