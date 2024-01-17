@@ -42,7 +42,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'FireBase',
-      home: const NewsSelectPage(),
+      home: const HomePage(),
       routes: {
         "/home": (context) => const HomePage(),
         "/champions": (context) => const ChampionSelectPage(),

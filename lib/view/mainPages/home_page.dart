@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
           child: Padding(
             padding: StaticData.cardsPadding,
             child: GridView.count(
-                scrollDirection: Axis.vertical,
+                physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 crossAxisCount: 2,
                 mainAxisSpacing: 10,
@@ -148,6 +148,25 @@ class _HomePageState extends State<HomePage> {
                               child:
                                   Image.asset("asset/other/strategyIcon.png")),
                           Text("Strategy", style: StaticData.menuTextStyle),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Card(
+                    color: Colors.blue,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, "/news");
+                      },
+                      child: Column(
+                        children: [
+                          const SizedBox(
+                              height: 100,
+                              child: Icon(Icons.newspaper, size: 100)),
+                          FittedBox(
+                            child: Text("News & Updates",
+                                style: StaticData.menuTextStyle),
+                          ),
                         ],
                       ),
                     ),

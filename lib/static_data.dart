@@ -10,7 +10,9 @@ import 'package:mobilelegendguide/entity/champion.dart';
 import 'package:mobilelegendguide/entity/emblem.dart';
 import 'package:mobilelegendguide/entity/item.dart';
 import 'package:mobilelegendguide/entity/lane.dart';
+import 'package:mobilelegendguide/entity/news/event.dart';
 import 'package:mobilelegendguide/entity/news/news.dart';
+import 'package:mobilelegendguide/entity/news/patchNote.dart';
 import 'package:mobilelegendguide/entity/spell.dart';
 import 'package:mobilelegendguide/entity/type.dart';
 
@@ -48,7 +50,18 @@ class StaticData {
   }
 
   static _loadNews() async {
-    news = await NewsClient.fetchPatchNotes();
+    List<PatchNote> patchNotes = await NewsClient.fetchPatchNotes();
+    for (PatchNote patch in patchNotes) {
+      await patch.changeThumnailUrl();
+      news.add(patch);
+    }
+    
+    List<EventNews> eventNews = await NewsClient.fetchEvent();
+    for (EventNews event in eventNews) {
+      await event.changeThumnailUrl();
+      await event.changeUrl();
+      news.add(event);
+    }
   }
 
   static _loadSpeels() async {

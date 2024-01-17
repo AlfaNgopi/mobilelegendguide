@@ -2,6 +2,7 @@
 
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:mobilelegendguide/entity/news/event.dart';
 import 'package:mobilelegendguide/entity/news/news.dart';
 import 'package:mobilelegendguide/entity/news/patchNote.dart';
 
@@ -24,16 +25,16 @@ class NewsClient {
     }
   }
 
-  //TODO: change to fetchAll
-  static Future<List<PatchNote>> fetchEvent() {
+  
+  static Future<List<EventNews>> fetchEvent() {
     try {
-      Future<List<PatchNote>> newss = FirebaseFirestore.instance
+      Future<List<EventNews>> newss = FirebaseFirestore.instance
           .collection('news')
           .doc('Event')
-          .collection("Patches")
+          .collection("Events")
           .get()
           .then((value) =>
-              value.docs.map((e) => PatchNote.fromJson(e.data())).toList());
+              value.docs.map((e)  =>  EventNews.fromJson(e.data())).toList());
 
       print("News Client : success fetchAll");
       return newss;
@@ -43,19 +44,5 @@ class NewsClient {
     }
   }
 
-  static Future<News> fetchNews(String name) {
-    try {
-      Future<News> type = FirebaseFirestore.instance
-          .collection('news')
-          .where('name', isEqualTo: name)
-          .get()
-          .then((value) => News.fromJson(value.docs.first.data()));
-
-      print("News Client : success $name");
-      return type;
-    } catch (e) {
-      print("News Client : $e");
-      return Future.error(e);
-    }
-  }
+  
 }

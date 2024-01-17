@@ -25,11 +25,7 @@ class _NewsSelectPageState extends State<NewsSelectPage> {
 
     var newsFromStaticData = await StaticData.getNews();
 
-    for (News news in newsFromStaticData) {
-      final dashImageref = storage.child(news.thumnailDirectory);
-      url = await dashImageref.getDownloadURL();
-      news.thumnailDirectory = url;
-    }
+    
 
     setState(() {
       newss = newsFromStaticData;

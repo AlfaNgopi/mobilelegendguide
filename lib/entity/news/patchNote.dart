@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:mobilelegendguide/entity/news/news.dart';
 
 class PatchNote extends News {
@@ -16,6 +17,11 @@ class PatchNote extends News {
           thumnailDirectory: thumnailDirectory,
           releaseDate: releaseDate,
           notes: notes,
+          storage: FirebaseStorage.instance
+              .ref()
+              .child('images')
+              .child("PatchNotes")
+              .child(title),
         );
 
   @override
