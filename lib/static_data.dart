@@ -3,12 +3,14 @@ import 'package:mobilelegendguide/client/champion_client.dart';
 import 'package:mobilelegendguide/client/emblem_client.dart';
 import 'package:mobilelegendguide/client/item_client.dart';
 import 'package:mobilelegendguide/client/lane_client.dart';
+import 'package:mobilelegendguide/client/news_Client.dart';
 import 'package:mobilelegendguide/client/spell_client.dart';
 import 'package:mobilelegendguide/client/type_client.dart';
 import 'package:mobilelegendguide/entity/champion.dart';
 import 'package:mobilelegendguide/entity/emblem.dart';
 import 'package:mobilelegendguide/entity/item.dart';
 import 'package:mobilelegendguide/entity/lane.dart';
+import 'package:mobilelegendguide/entity/news/news.dart';
 import 'package:mobilelegendguide/entity/spell.dart';
 import 'package:mobilelegendguide/entity/type.dart';
 
@@ -19,6 +21,7 @@ class StaticData {
   static List<Emblem> emblems = [];
   static List<Item> items = [];
   static List<Spell> spells = [];
+  static List<News> news = [];
 
   static loadData() async {
     await _loadLanes();
@@ -35,6 +38,17 @@ class StaticData {
       await champ.setStrongAgainstFromStaticData();
       await champ.setWeakAgainstFromStaticData();
     }
+  }
+
+  static Future<List<News>> getNews() async {
+    if (news.isEmpty) {
+      await _loadNews();
+    }
+    return news;
+  }
+
+  static _loadNews() async {
+    news = await NewsClient.fetchPatchNotes();
   }
 
   static _loadSpeels() async {

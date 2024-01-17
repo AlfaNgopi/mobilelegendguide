@@ -10,6 +10,7 @@ import 'package:mobilelegendguide/view/emblemPages/emblem_page.dart';
 import 'package:mobilelegendguide/view/heroPages/championselect_page.dart';
 import 'package:mobilelegendguide/view/itemPages/itemselect_page.dart';
 import 'package:mobilelegendguide/view/mainPages/home_page.dart';
+import 'package:mobilelegendguide/view/newsPages/newsselect_page.dart';
 import 'package:mobilelegendguide/view/tierPages/tierlist_page.dart';
 import 'package:mobilelegendguide/view/winratePages/winrate_Page.dart';
 
@@ -41,7 +42,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'FireBase',
-      home: const HomePage(),
+      home: const NewsSelectPage(),
       routes: {
         "/home": (context) => const HomePage(),
         "/champions": (context) => const ChampionSelectPage(),
@@ -50,6 +51,7 @@ class MainApp extends StatelessWidget {
         "/analytics": (context) => const AnalyticsPage(),
         "/tierlist": (context) => const TierListPage(),
         "/winrate": (context) => const WinratePage(),
+        "/news": (context) => const NewsSelectPage(),
       },
     );
   }
