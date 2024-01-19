@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mobilelegendguide/entity/news/event.dart';
-import 'package:mobilelegendguide/entity/news/patchNote.dart';
 import 'package:mobilelegendguide/static_data.dart';
 import 'package:mobilelegendguide/entity/news/news.dart';
-import 'package:mobilelegendguide/view/newsPages/event_body.dart';
-import 'package:mobilelegendguide/view/newsPages/patchnote_body.dart';
+import 'package:mobilelegendguide/view/newsPages/news_body.dart';
 
 class NewsPage extends StatelessWidget {
   final Color cardsColor = Colors.blue;
@@ -47,12 +44,7 @@ class NewsPage extends StatelessWidget {
               style: const TextStyle(color: Colors.white),
             ),
           ),
-          if (news is PatchNote)
-            buildPatchNoteBody(news as PatchNote)
-          else if (news is EventNews)
-            buildEventBody(news as EventNews)
-          else
-            Container(),
+          buildNewsBody(news),
         ],
       ),
     );

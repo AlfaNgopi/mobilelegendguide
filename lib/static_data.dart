@@ -10,9 +10,7 @@ import 'package:mobilelegendguide/entity/champion.dart';
 import 'package:mobilelegendguide/entity/emblem.dart';
 import 'package:mobilelegendguide/entity/item.dart';
 import 'package:mobilelegendguide/entity/lane.dart';
-import 'package:mobilelegendguide/entity/news/event.dart';
 import 'package:mobilelegendguide/entity/news/news.dart';
-import 'package:mobilelegendguide/entity/news/patchNote.dart';
 import 'package:mobilelegendguide/entity/spell.dart';
 import 'package:mobilelegendguide/entity/type.dart';
 
@@ -32,6 +30,7 @@ class StaticData {
     await _loadEmblems();
     await _loadItems();
     await _loadChampions();
+    await getNews();
   }
 
   static _loadChampions() async {
@@ -50,18 +49,14 @@ class StaticData {
   }
 
   static _loadNews() async {
-    List<PatchNote> patchNotes = await NewsClient.fetchPatchNotes();
-    for (PatchNote patch in patchNotes) {
+    List<News> newss2 = await NewsClient.fetchNews();
+    for (News patch in newss2) {
       await patch.changeThumnailUrl();
+      await patch.changeUrl();
       news.add(patch);
     }
+
     
-    List<EventNews> eventNews = await NewsClient.fetchEvent();
-    for (EventNews event in eventNews) {
-      await event.changeThumnailUrl();
-      await event.changeUrl();
-      news.add(event);
-    }
   }
 
   static _loadSpeels() async {
@@ -93,9 +88,9 @@ class StaticData {
   static EdgeInsetsGeometry get cardsPadding => const EdgeInsets.all(10);
 
   static List<Image> get carrouselImages => [
-        Image.asset("asset/carrousel/1.jpg"),
-        Image.asset("asset/carrousel/2.jpg"),
-        Image.asset("asset/carrousel/3.jpg")
+        Image.network(news[0].thumnailDirectory),
+        Image.network(news[1].thumnailDirectory),
+        Image.asset(news[2].thumnailDirectory),
       ];
 
   static TextStyle get selectTypeHero => const TextStyle(
