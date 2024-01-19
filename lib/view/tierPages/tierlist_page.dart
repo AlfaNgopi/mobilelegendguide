@@ -24,13 +24,16 @@ class _TierListPageState extends State<TierListPage> {
   void refresh() async {
     // var championsFromDatabase = await ChampionClient.fetchAll();
 
-    var championsFromStaticData = StaticData.champions;
+    List<Champion> championsFromStaticData = StaticData.champions;
 
     setState(() {
       champions = championsFromStaticData;
+      champions.sort((a, b) => b.tier.poin.compareTo(a.tier.poin));
       champCount = champions.length;
       isLoading = false;
     });
+
+    
   }
 
   @override
@@ -154,7 +157,9 @@ class _TierListPageState extends State<TierListPage> {
         height: 75,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: FittedBox(child: CircleAvatar(backgroundImage: AssetImage(champ.profileDirectory))),
+          child: FittedBox(
+              child: CircleAvatar(
+                  backgroundImage: AssetImage(champ.profileDirectory))),
         ),
       );
 

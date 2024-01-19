@@ -1,6 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:mobilelegendguide/entity/news/news.dart';
 import 'package:mobilelegendguide/static_data.dart';
+import 'package:mobilelegendguide/view/newsPages/news_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -10,6 +12,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  List<News> news = StaticData.news;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,10 +28,17 @@ class _HomePageState extends State<HomePage> {
       body: ListView(children: [
         SizedBox(
           child: CarouselSlider(
-            items: StaticData.carrouselImages
-                .map(
-                  (item) => Center(child: item),
-                )
+            items: StaticData.news
+                .map((item) => Center(
+                        child: FittedBox(
+                      child: TextButton(
+                          child: Image.network(item.thumnailDirectory),
+                          onPressed: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => NewsPage(news: item),
+                              ))),
+                    )))
                 .toList(),
             options: CarouselOptions(
               autoPlay: true,

@@ -90,7 +90,7 @@ class StaticData {
   static List<Image> get carrouselImages => [
         Image.network(news[0].thumnailDirectory),
         Image.network(news[1].thumnailDirectory),
-        Image.asset(news[2].thumnailDirectory),
+        Image.network(news[2].thumnailDirectory),
       ];
 
   static TextStyle get selectTypeHero => const TextStyle(
